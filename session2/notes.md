@@ -145,6 +145,66 @@ rather than executing it, so a non-compiling transformation is not automatically
 fatal. It is recorded here as an observation, not a cause.
 
 
+### Splitting the failed renames from the successful ones
+
+Nothing in the pipeline records which tests errored, so I matched perturbed rows
+back to the original dataset by test method name, which renaming does not touch.
+All 2432 rows in fold 1 matched. Comparing the code with whitespace normalised:
+
+| Category | Content unchanged | Changed |
+|---|---|---|
+| Async | 5 | 28 |
+| Conc | 4 | 17 |
+| Time | 2 | 7 |
+| UC | 2 | 14 |
+| OD | 6 | 16 |
+| Non-flaky | 863 | 1468 |
+
+Roughly 80 percent of flaky tests were genuinely renamed. The rest came back
+content-identical, which includes the errored tests and tests with no variables
+to rename. The confusion matrix shows zero correct predictions in every flaky
+category, so the unchanged group is misclassified too. This confirms with counts
+what section 2 argued from proportions.
+
+### Reformatting ruled out
+
+`variableRenaming_perturbation` wraps each test in a `WrapperClass` before
+parsing, re-indenting every line by four spaces, and the regex that strips the
+wrapper afterwards does not undo the indentation. This affects all 8574 tests,
+including those where no variable was renamed: exact string matches against the
+original dataset are 0 of 8574, while whitespace-normalised matches are 3483.
+None of the other four perturbations alter formatting.
+
+To test whether indentation alone breaks the model, I rebuilt the dataset with
+four spaces added to every line and nothing else changed, then ran plain
+prediction on it:
+
+| Category | RQ1 baseline | Re-indented only |
+|---|---|---|
+| Async | 59.91 | 60.79 |
+| Conc | 34.17 | 35.97 |
+| Time | 66.00 | 70.36 |
+| UC | 75.54 | 75.37 |
+| OD | 58.38 | 63.43 |
+| Non-flaky | 100.00 | 100.00 |
+| Macro | 67.50 | 67.50 |
+
+Indentation is not the cause. The model is unaffected by it.
+
+Incidentally, this run reproduced the artifact's shipped
+`FlakyLens_Result_Found_By_Author.csv` exactly, to all sixteen decimal places,
+where my original RQ1 run had matched only on the macro. I have no explanation
+for that.
+
+Evidence: `session3/session4_indent_result.txt`, `session3/perfold_indent_test.txt`.
+
+### What remains
+
+Ruled out so far: the 559 renaming errors, structural damage, wrapper-class
+leakage, and reformatting. What remains is the renamed identifiers themselves.
+The cause of the collapse is still open.
+
+
 
 ## 3. Established: deadcode results vary between runs
 
@@ -185,7 +245,7 @@ missing here.
 
 ### The symptom
 
-`rq4.sh` run three times (ran this again in session 2) in the same container session, no changes between runs:
+`rq4.sh` run three times(ran this again in session 2) in the same container session, no changes between runs:
 
 | Category | Run 1 | Run 2 | Run 3 | Mean | SD | Range |
 |---|---|---|---|---|---|---|
@@ -354,11 +414,14 @@ still seems worth asking about.
   well; OD truncates least and performs middling. (Estimate used 3.5 characters
   per token, not a real tokeniser, so treat as indicative.)
 - **Attribution varies run to run.** Rejected. Byte-identical across two runs.
-- **The 559 renaming errors cause the renaming collapse.** Rejected. 6.5% of
-  tests, and the result is uniformly zero.
+- **The 559 renaming errors cause the collapse.** Rejected with counts, not just
+  proportions. See the split table in section 2.
 - **The perturbed code is structurally damaged (wrapper class leakage).**
   Rejected. Sampled transformed tests are well-formed Java with no leftover
   scaffolding.
+- **Re-indentation by the renaming wrapper causes the collapse.** Rejected.
+  Adding four spaces to every line of all 8574 tests leaves macro F1 unchanged
+  at 67.50.
 
 Note on my own process: I initially proposed the `"Most"` / `"Most_Imp"`
 explanation, then withdrew it on the basis of a `grep -l` search for
