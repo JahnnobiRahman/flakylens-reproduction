@@ -181,6 +181,77 @@ run ten times to confirm consistent output, so a configuration step may be
 missing here.
 
 
+## 3b. Session 3 follow-up: the cause is a commented-out seed call
+
+The symptom
+
+rq4.sh run three times in the same container session, no changes between runs:
+
+Category	Run 1	Run 2	Run 3	Mean	SD	Range
+Async	53.75	53.61	55.07	54.14	0.80	1.46
+Conc	23.68	20.54	21.19	21.80	1.65	3.14
+Time	63.70	64.67	63.70	64.02	0.56	0.97
+UC	49.39	54.34	51.85	51.86	2.48	4.95
+OD	27.42	33.94	39.61	33.66	6.10	12.19
+Non-flaky	100.00	100.00	100.00	100.00	0.00	0.00
+Macro	53.25	56.62	55.42	55.10	1.71	3.38
+
+The macro is comparatively stable, but Test Order Dependency spans 12.19 points across three identical invocations. For reference, Table 5 reports OD deadcode at 39.66 and Table 6 at 40.46. Run 3 lands at 39.61, essentially on the reported value; run 1 at 27.42 is twelve points below it. Whether the artifact appears to reproduce the paper on this category depends on the draw.
+
+Non-flaky is the only category with zero variance across all runs.
+
+The cause
+
+generate_random_number in perturbation.py selects the injection category per test using random.choice, with no seed of its own.
+
+utils.py line 593 defines a seeding function that would cover it:
+
+python
+def set_seed(seed_value=42):
+    np.random.seed(seed_value)
+    torch.manual_seed(seed_value)
+    random.seed(seed_value)     # line 597 — the module generate_random_number uses
+
+Testing_per_project.py line 667 defines initialize_environment, which calls set_seed. But its only call site is line 678:
+
+python
+    #initialize_environment(42)
+
+It is commented out. grep -n "seed_value\|initialize_environment" across the file returns only lines 667, 669 and 678, so there is no other call. The seeding machinery is present and never executes on the testing path.
+
+By contrast, Bert_train_per_project.py does seed, at lines 145 and 146. The training path is seeded; the testing path is not.
+
+Confirmation
+
+Uncommenting line 678 and running three more times:
+
+Category	Seeded run 1	Seeded run 2	Seeded run 3
+Async	52.78	52.78	52.78
+Conc	19.14	19.14	19.14
+Time	62.33	62.33	62.33
+UC	42.73	42.73	42.73
+OD	30.83	30.83	30.83
+Non-flaky	100.00	100.00	100.00
+Macro	52.00	52.00	52.00
+
+All three are identical to every printed digit, including the full-precision precision and recall values. Enabling the one commented line makes the pipeline deterministic.
+
+Section 8 states that a fixed random seed was used and that the evaluation script was run ten times to confirm consistent output. That behaviour is reproducible only with line 678 enabled.
+
+Note on interpretation
+
+The seeded macro of 52.00 sits below the unseeded mean of 55.10 and below all three unseeded runs. Seed 42 happens to produce a harsher draw than average. Seeding fixes reproducibility, not accuracy, and 52.00 should not be read as the "correct" value that the unseeded runs were scattering around.
+
+Files
+session3/deadcode_unseeded.txt, session3/deadcode_seeded.txt — parsed output
+session3/perfold_*_run*.txt — per-fold evaluation files for each run
+session3/raw_*_run*.log — full console output
+session3/Testing_per_project_ORIGINAL.py — file as shipped
+session3/Testing_per_project_SEEDED.py — with line 678 uncommented
+
+The artifact file was restored to its original state after these runs.
+
+
 
 ## 4. Established: RQ3 output does not match Table 4
 
