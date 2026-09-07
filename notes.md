@@ -44,6 +44,11 @@ The least-important names go from near-absent to pervasive. The most-important
 names do not rise at all; they fall slightly, which is consistent with renaming
 overwriting some naturally-occurring identifiers.
 
+The `crashID` counts differ between runs (an earlier count gave
+634/479/553/511) because the perturbed CSVs are overwritten each time and the
+injection category is chosen without a seed, as described in Request 6.
+`job.schedule` is 0 in every run.
+
 **Sampled transformed tests.** In `session2/renamed_samples_fold1.txt`, four
 tests drawn from four different categories each received names from the head of
 the corresponding `else` list, in list order:
