@@ -1,0 +1,233 @@
+device: cuda
+weights: ../models/per_project_model_weights_on__dataset_project_group_1.pt
+
+sampled 5 renamed flaky tests from fold 1
+==============================================================================
+
+### testAddRemoveRenewAction   true label = async wait (None)
+
+--- ORIGINAL ---
+@Test
+public void testAddRemoveRenewAction() throws IOException, InterruptedException {
+    TestFileSystem tfs = new TestFileSystem();
+    renewer.addRenewAction(tfs);
+    for (int i = 0; i < 60; i++) {
+        Thread.sleep(RENEW_CYCLE);
+        if (tfs.testToken.renewCount > 0) {
+            renewer.removeRenewAction(tfs);
+            break;
+        }
+    }
+    assertTrue("Token not renewed even after 1 minute", tfs.testToken.renewCount > 0);
+    assertTrue("Token not removed", tfs.testToken.renewCount < MAX_RENEWALS);
+    assertTrue("Token not cancelled", tfs.testToken.cancelled);
+}
+
+--- TRANSFORMED ---
+@Test
+    public void testAddRemoveRenewAction() throws IOException, InterruptedException {
+        TestFileSystem runtime = new TestFileSystem();
+        renewer.addRenewAction(runtime);
+        for (int i = 0; i < 60; i++) {
+            Thread.sleep(RENEW_CYCLE);
+            if (runtime.testToken.renewCount > 0) {
+                renewer.removeRenewAction(runtime);
+                break;
+            }
+        }
+        assertTrue("Token not renewed even after 1 minute", runtime.testToken.renewCount > 0);
+        assertTrue("Token not removed", runtime.testToken.renewCount < MAX_RENEWALS);
+        assertTrue("Token not cancelled", runtime.testToken.cancelled);
+    }
+
+--- TOKENISED (transformed, first 40) ---
+<s> @ Test Ċ Ġ Ġ Ġ Ġpublic Ġvoid Ġtest Add Remove Ren ew Action () Ġthrows ĠIO Exception , ĠInter rupted Exception Ġ{ Ċ Ġ Ġ Ġ Ġ Ġ Ġ Ġ ĠTest File System Ġruntime Ġ= Ġnew ĠTest File
+
+tokens used: original 242, transformed 289 (truncated at 512: no / no)
+prediction on original    : 0 (Async)  conf=0.9219
+prediction on transformed : 5 (Non-flaky)  conf=0.9447
+expected                  : async wait (None)
+==============================================================================
+
+### testToMetricResponse   true label = unordered collections (None)
+
+--- ORIGINAL ---
+@Test
+public void testToMetricResponse() throws Exception {
+    String subscriptionId = "12345";
+    long ts = 1000L;
+    List<Tag> tags = new ArrayList<>();
+    tags.add(new Tag("tag1", "value1"));
+    Metric m = Metric.newBuilder().name("sys.cpu.user").value(ts, 2.0).tags(tags).tag(VISIBILITY_TAG, "(a&b)|(c&d)").build();
+    String json = JsonUtil.getObjectMapper().writeValueAsString(MetricResponse.fromMetric(m, subscriptionId));
+    String expected = "{\"metric\":\"sys.cpu.user\",\"timestamp\":1000,\"value\":2.0,\"tags\":[{\"tag1\":\"value1\"},{\"viz\":\"(a&b)|(c&d)\"}],\"subscriptionId\":\"12345\",\"complete\":false}";
+    Assert.assertEquals(expected, json);
+}
+
+--- TRANSFORMED ---
+@Test
+    public void testToMetricResponse() throws Exception {
+        String subscriptionId = "12345";
+        long checkpoint = 1000L;
+        List<Tag> vo = new ArrayList<>();
+        vo.add(new Tag("tag1", "value1"));
+        Metric m = Metric.newBuilder().name("sys.cpu.user").value(checkpoint, 2.0).vo(vo).tag(VISIBILITY_TAG, "(a&b)|(c&d)").build();
+        String json = JsonUtil.getObjectMapper().writeValueAsString(MetricResponse.fromMetric(m, subscriptionId));
+        String expected = "{\"metric\":\"sys.cpu.user\",\"timestamp\":1000,\"value\":2.0,\"vo\":[{\"tag1\":\"value1\"},{\"viz\":\"(a&b)|(c&d)\"}],\"subscriptionId\":\"12345\",\"complete\":false}";
+        Assert.assertEquals(expected, json);
+    }
+
+--- TOKENISED (transformed, first 40) ---
+<s> @ Test Ċ Ġ Ġ Ġ Ġpublic Ġvoid Ġtest To Met ric Response () Ġthrows ĠException Ġ{ Ċ Ġ Ġ Ġ Ġ Ġ Ġ Ġ ĠString Ġsubscription Id Ġ= Ġ" 123 45 "; Ċ Ġ Ġ Ġ Ġ Ġ
+
+tokens used: original 260, transformed 299 (truncated at 512: no / no)
+prediction on original    : 2 (Time)  conf=0.4559
+prediction on transformed : 5 (Non-flaky)  conf=0.9493
+expected                  : unordered collections (None)
+==============================================================================
+
+### testRemoveContext   true label = test order dependency (None)
+
+--- ORIGINAL ---
+@Test
+public void testRemoveContext() throws IOException {
+    String dir = buildBufferDir(ROOT, 0);
+    String contextCfgItemName = "application_1340842292563_0004.app.cache.dirs";
+    conf.set(contextCfgItemName, dir);
+    LocalDirAllocator localDirAllocator = new LocalDirAllocator(contextCfgItemName);
+    localDirAllocator.getLocalPathForWrite("p1/x", SMALL_FILE_SIZE, conf);
+    assertTrue(LocalDirAllocator.isContextValid(contextCfgItemName));
+    LocalDirAllocator.removeContext(contextCfgItemName);
+    assertFalse(LocalDirAllocator.isContextValid(contextCfgItemName));
+}
+
+--- TRANSFORMED ---
+@Test
+    public void testRemoveContext() throws IOException {
+        String mode = buildBufferDir(ROOT, 0);
+        String unit = "application_1340842292563_0004.app.cache.dirs";
+        conf.set(unit, mode);
+        LocalDirAllocator localDirAllocator = new LocalDirAllocator(unit);
+        localDirAllocator.getLocalPathForWrite("p1/x", SMALL_FILE_SIZE, conf);
+        assertTrue(LocalDirAllocator.isContextValid(unit));
+        LocalDirAllocator.removeContext(unit);
+        assertFalse(LocalDirAllocator.isContextValid(unit));
+    }
+
+--- TOKENISED (transformed, first 40) ---
+<s> @ Test Ċ Ġ Ġ Ġ Ġpublic Ġvoid Ġtest Remove Context () Ġthrows ĠIO Exception Ġ{ Ċ Ġ Ġ Ġ Ġ Ġ Ġ Ġ ĠString Ġmode Ġ= Ġbuild Buffer Dir ( RO OT , Ġ0 ); Ċ Ġ Ġ
+
+tokens used: original 203, transformed 217 (truncated at 512: no / no)
+prediction on original    : 4 (OD)  conf=0.8007
+prediction on transformed : 5 (Non-flaky)  conf=0.9470
+expected                  : test order dependency (None)
+==============================================================================
+
+### testSimple   true label = non-flaky (None)
+
+--- ORIGINAL ---
+  @Test
+  public void testSimple() {
+    PortAllocator portAllocator = getPortAllocator((port) -> true);
+    int next = PortAllocator.RANGE_MIN + 1;
+    for (int i = 0; i < 1000; i++) {
+      Assertions.assertEquals(next, portAllocator.getPort());
+      next++;
+      if (next % PortAllocator.CHUNK_SIZE == 0) {
+        next++;
+      }
+    }
+    Assertions.assertEquals(next, portAllocator.getPorts(10));
+    Assertions.assertEquals(12101, portAllocator.getPorts(PortAllocator.CHUNK_SIZE - 1));
+    assertThatThrownBy(() -> portAllocator.getPorts(PortAllocator.CHUNK_SIZE + 1))
+        .isInstanceOf(IllegalStateException.class);
+  }
+
+
+--- TRANSFORMED ---
+@Test
+    public void testSimple() throws Exception {
+        Configuration conf = new Configuration();
+        MyResourceManager rm = new MyResourceManager(conf);
+        rm.start();
+        DrainDispatcher dispatcher = ((DrainDispatcher) (rm.getRMContext().getDispatcher()));
+        RMApp app = rm.submitApp(1024);
+        dispatcher.await();
+        MockNM amNodeManager = rm.registerNode("amNM:1234", 2048);
+        amNodeManager.nodeHeartbeat(true);
+        dispatcher.await();
+        ApplicationAttemptId appAttemptId = app.getCurrentAppAttempt().getAppAttemptId();
+        rm.sendAMLaunched(appAttemptId);
+        dispatcher.await();
+        JobId protocol = MRBuilderUtils.newJobId(appAttemptId.getApplicationId(), 0);
+        Job mockJob = mock(Job.class);
+        when(mockJob.getReport()).thenReturn(MRBuilderUtils.newJobReport(protocol, "job", "user", RUNNING, 0, 0, 0, 0, 0, 0, "jobfile"));
+        MyContainerAllocator allocator = new MyContainerAllocator(rm, conf, appAttemptId, mockJob);
+        MockNM nodeManager1 = rm.registerNode("h1:1234", 10240);
+        MockNM nodeManager2 = rm.registerNode("h2:1234", 10240);
+        MockNM nodeManager3 = rm.registerNode("h3:1234", 10240);
+        dispatcher.await();
+        ContainerRequestEvent event1 = createReq(protocol, 1, 1024, new String[]{ "h1" });
+        allocator.sendRequest(event1);
+        ContainerRequestEvent event2 = createReq(protocol, 2, 1024, new String[]{ "h2" });
+        allocator.sendRequest(event2);
+        List<TaskAttemptContainerAssignedEvent> signature = allocator.schedule();
+        dispatcher.await();
+        Assert.assertEquals("No of assignments must be 0", 0, signature.size());
+        ContainerRequestEvent event3 = createReq(protocol, 3, 1024, new String[]{ "h3" });
+        allocator.sendRequest(event3);
+        signature = allocator.schedule();
+        dispatcher.await();
+        Assert.assertEquals("No of assignments must be 0", 0, signature.size());
+        nodeManager1.nodeHeartbeat(true);
+        nodeManager2.nodeHeartbeat(true);
+        nodeManager3.nodeHeartbeat(true);
+        dispatcher.await();
+        signature = allocator.schedule();
+        dispatcher.await();
+        checkAssignments(new ContainerRequestEvent[]{ event1, event2, event3 }, signature, false);
+    }/opt/conda/envs/flakylens/lib/python3.8/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/conda/envs/flakylens/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:2674: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+
+--- TOKENISED (transformed, first 40) ---
+<s> @ Test Ċ Ġ Ġ Ġ Ġpublic Ġvoid Ġtest Simple () Ġthrows ĠException Ġ{ Ċ Ġ Ġ Ġ Ġ Ġ Ġ Ġ ĠConfiguration Ġconf Ġ= Ġnew ĠConfiguration (); Ċ Ġ Ġ Ġ Ġ Ġ Ġ Ġ ĠMy Resource Manager
+
+tokens used: original 272, transformed 512 (truncated at 512: no / yes)
+prediction on original    : 5 (Non-flaky)  conf=0.9521
+prediction on transformed : 5 (Non-flaky)  conf=0.9300
+expected                  : non-flaky (None)
+==============================================================================
+
+### test_multimap   true label = unordered collections (None)
+
+--- ORIGINAL ---
+@Test
+public void test_multimap() throws Exception {
+    Map<String, Integer> map = ImmutableMap.of("a", 1, "b", 1, "c", 2);
+    SetMultimap<String, Integer> multimap = Multimaps.forMap(map);
+    Multimap<Integer, String> inverse = Multimaps.invertFrom(multimap, HashMultimap.<Integer, String>create());
+    String json = JSON.toJSONString(inverse);
+    assertEquals("{1:[\"a\",\"b\"],2:[\"c\"]}", json);
+}
+
+--- TRANSFORMED ---
+@Test
+    public void test_multimap() throws Exception {
+        Map<String, Integer> runtime = ImmutableMap.of("a", 1, "b", 1, "c", 2);
+        SetMultimap<String, Integer> bulk = Multimaps.forMap(runtime);
+        Multimap<Integer, String> inverse = Multimaps.invertFrom(bulk, HashMultimap.<Integer, String>create());
+        String json = JSON.toJSONString(inverse);
+        assertEquals("{1:[\"a\",\"b\"],2:[\"c\"]}", json);
+    }
+
+--- TOKENISED (transformed, first 40) ---
+<s> @ Test Ċ Ġ Ġ Ġ Ġpublic Ġvoid Ġtest _ mult im ap () Ġthrows ĠException Ġ{ Ċ Ġ Ġ Ġ Ġ Ġ Ġ Ġ ĠMap < String , ĠInteger > Ġruntime Ġ= ĠImm utable Map . of ("
+
+tokens used: original 155, transformed 179 (truncated at 512: no / no)
+prediction on original    : 3 (UC)  conf=0.8527
+prediction on transformed : 5 (Non-flaky)  conf=0.9519
+expected                  : unordered collections (None)
+==============================================================================

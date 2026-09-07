@@ -403,6 +403,32 @@ Class imbalance (8294 of 8574) is the obvious explanation, but complete immunity
 still seems worth asking about.
 
 
+## 5b. Checked: the expected checkpoint and tokeniser are loaded
+
+`Testing_per_project.py:376` calls `codebert_model_define()`, which loads
+`microsoft/codebert-base` with its matching `AutoTokenizer`
+(`utils.py:713-716`). The same tokeniser instance is used for encoding at
+line 193.
+
+Per-fold weights load at line 535:
+
+    model.load_state_dict(torch.load(model_weights_path+'_project_group_'+str(project_group)+'.pt'))
+
+resolving to `per_project_model_weights_on__dataset_project_group_N.pt`. All
+four files are present in `../models/`. The double underscore in the filename
+is consistent between the code and the files on disk, so it is cosmetic.
+
+The `RobertaTokenizer` at `utils.py:722` belongs to `codet5_model_define`,
+which is not called from this path.
+
+Lines 529, 531 and 532 are commented out and reference alternative checkpoints
+(`_With_noisy_train_data.pt`, `_Only_noisy_train_1024_data.pt`) that are not
+shipped. Leftover from earlier experiments.
+
+Nothing wrong here. This rules out checkpoint or tokeniser mismatch as an
+explanation for the discrepancies above.
+
+
 
 ## 6. Hypotheses tested and rejected
 

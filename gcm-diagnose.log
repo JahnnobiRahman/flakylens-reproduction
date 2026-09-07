@@ -1,0 +1,232 @@
+﻿Diagnose log at 2026-09-07T07:57:01Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager.exe
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.9.0+194ba290ce533465310d50f811684ab180536ae7
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 26200)
+Reading environment variables... OK
+ Variables:
+VSCODE_PID=24604
+GEM_SPEC_CACHE=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\gem-specs
+OS=Windows_NT
+TMP=C:\Users\USER\AppData\Local\Temp
+INTEL_DEV_REDIST=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\
+NO_COLOR=1
+PSModulePath=C:\Users\USER\OneDrive\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+NX_CACHE_DIRECTORY=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\nx
+VSCODE_CRASH_REPORTER_PROCESS_TYPE=extensionHost
+ProgramData=C:\ProgramData
+HOMEBREW_CACHE=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\homebrew
+CURSOR_RIPGREP_PATH=c:\Users\USER\AppData\Local\Programs\cursor\resources\app\node_modules\@vscode\ripgrep\bin\rg.exe
+CONDA_PKGS_DIRS=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\conda
+PSExecutionPolicyPreference=Bypass
+UV_CACHE_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\uv
+ComSpec=C:\WINDOWS\system32\cmd.exe
+PROCESSOR_REVISION=6102
+PIP_CACHE_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\pip
+NUMBER_OF_PROCESSORS=16
+LC_CTYPE=C.UTF-8
+YARN_CACHE_FOLDER=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\yarn
+EFC_26544_1592913036=1
+VSCODE_CWD=C:\Users\USER\AppData\Local\Programs\cursor
+BUNDLE_PATH=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\bundle
+GRADLE_USER_HOME=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\gradle
+PROCESSOR_LEVEL=25
+SystemDrive=C:
+SESSIONNAME=Console
+CURSOR_AGENT=1
+NUGET_PACKAGES=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\nuget
+__CURSOR_SANDBOX_ENV_RESTORE=builtin unset CURSOR_CONVERSATION_ID CURSOR_AGENT_STORE_FILES_DIR CURSOR_AGENT_STORE_SHARED_PATHS 2>/dev/null || true; builtin export CURSOR_CONVERSATION_ID='76176598-2a8f-492b-9a50-04b3d1a66d81'
+CP_HOME_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\cocoapods
+AGENT_TRANSCRIPTS=C:\Users\USER\.cursor\projects\e-flakylens-output\agent-transcripts
+CYPRESS_CACHE_FOLDER=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\cypress
+USERPROFILE=C:\Users\USER
+NPM_CONFIG_CACHE=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\npm
+PLAYWRIGHT_BROWSERS_PATH=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\playwright
+VSCODE_HANDLES_UNCAUGHT_ERRORS=true
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+VSCODE_NLS_CONFIG={"userLocale":"en-us","osLocale":"en-us","resolvedLanguage":"en","defaultMessagesFile":"C:\\Users\\USER\\AppData\\Local\\Programs\\cursor\\resources\\app\\out\\nls.messages.json","locale":"en-us","availableLanguages":{}}
+VSCODE_IPC_HOOK=\\.\pipe\01598e81-3.18.9-main-sock
+CURSOR_WORKSPACE_LABEL=flakylens-output
+COMPUTERNAME=DESKTOP-HBR34SK
+PUPPETEER_CACHE_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\puppeteer
+LOGONSERVER=\\DESKTOP-HBR34SK
+HOMEDRIVE=C:
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_24604_GXTBFULXZVLNTQKI
+CARGO_TARGET_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\cargo-target
+PUBLIC=C:\Users\Public
+GOCACHE=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\go-build
+ProgramW6432=C:\Program Files
+windir=C:\WINDOWS
+_ZO_DOCTOR=0
+CURSOR_CONVERSATION_ID=76176598-2a8f-492b-9a50-04b3d1a66d81
+FORCE_COLOR=0
+APPDATA=C:\Users\USER\AppData\Roaming
+HOMEPATH=\Users\USER
+Path=C:/Program Files/Git/mingw64/libexec/git-core;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\USER\bin;c:\Users\USER\AppData\Local\Programs\cursor\resources\app\node_modules\@vscode\ripgrep\bin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Cloudflare\Cloudflare WARP\;C:\Program Files\Git\cmd;C:\Users\USER\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\USER\AppData\Local\Programs\Python\Python313\;C:\Users\USER\AppData\Local\Microsoft\WindowsApps;C:\Users\USER\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\USER\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\USER\AppData\Local\Programs\DockerDesktop\resources\bin
+MIC_LD_LIBRARY_PATH=C:\Program Files (x86)\Common Files\Intel\Shared Libraries\compiler\lib\mic
+TERM=dumb
+LOCALAPPDATA=C:\Users\USER\AppData\Local
+EFC_26544_4126798990=1
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL
+OneDriveConsumer=C:\Users\USER\OneDrive
+PLINK_PROTOCOL=ssh
+GOMODCACHE=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\go-mod
+TURBO_CACHE_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\turbo
+CURSOR_EXTENSION_HOST_ROLE=agent-exec
+POETRY_CACHE_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\poetry
+OneDrive=C:\Users\USER\OneDrive
+CCACHE_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\ccache
+VSCODE_ESM_ENTRYPOINT=vs/workbench/api/node/extensionHostProcess
+USERNAME=USER
+COMPOSER_HOME=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\composer
+PNPM_STORE_PATH=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\pnpm-store
+ProgramFiles=C:\Program Files
+DriverData=C:\Windows\System32\Drivers\DriverData
+CURSOR_LAYOUT=unifiedAgent
+ProgramFiles(x86)=C:\Program Files (x86)
+BUN_INSTALL_CACHE_DIR=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\bun
+TMPDIR=C:\Users\USER\AppData\Local\Temp
+VSCODE_CODE_CACHE_PATH=C:\Users\USER\AppData\Roaming\Cursor\CachedData\2ba48ff3f7514cc4643c52ca9f7b3173d9b66130
+USERDOMAIN=DESKTOP-HBR34SK
+CommonProgramW6432=C:\Program Files\Common Files
+TEMP=C:\Users\USER\AppData\Local\Temp
+GIT_EXEC_PATH=C:/Program Files/Git/mingw64/libexec/git-core
+ALLUSERSPROFILE=C:\ProgramData
+npm_config_devdir=C:\Users\USER\AppData\Local\Temp\cursor-sandbox-cache\3eaa4ba91133a034ddb651dad8b6f560\node-gyp
+GIT_TRACE2_PARENT_SID=9dccb23a-8020-4db8-be6b-c8f6cac6ed97
+CommonProgramFiles=C:\Program Files\Common Files
+VSCODE_PROCESS_TITLE=extension-host (agent-exec) flakylens-output [2-10]
+PROCESSOR_ARCHITECTURE=AMD64
+MSYSTEM=MINGW64
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-HBR34SK
+SystemRoot=C:\WINDOWS
+PROCESSOR_IDENTIFIER=AMD64 Family 25 Model 97 Stepping 2, AuthenticAMD
+HOME=C:\Users\USER
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\USER\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\USER\AppData\Local\Temp\264b445ba34b1ea9966f2897'... OK
+Reading from temporary file 'C:\Users\USER\AppData\Local\Temp\264b445ba34b1ea9966f2897'... OK
+Deleting temporary file 'C:\Users\USER\AppData\Local\Temp\264b445ba34b1ea9966f2897'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\USER
+UserDataDirectoryPath: C:\Users\USER\.gcm
+GetCurrentDirectory(): E:\flakylens-output
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: False
+Exception:
+System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: An unexpected error occurred on a send. ---> System.IO.IOException: Unable to read data from the transport connection: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond. ---> System.Net.Sockets.SocketException: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+   at System.Net.Sockets.Socket.EndReceive(IAsyncResult asyncResult)
+   at System.Net.Sockets.NetworkStream.EndRead(IAsyncResult asyncResult)
+   --- End of inner exception stack trace ---
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitCredentialManager.Diagnostics.NetworkingDiagnostic.<RunInternalAsync>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at GitCredentialManager.Diagnostics.Diagnostic.<RunAsync>d__6.MoveNext()
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... warning: HEAD request failed
+Sending HEAD request to http://httpforever.com... OK
+Sending HEAD request to https://example.com...
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.55.0.windows.3'
+Locating current repository...Git repository at 'E:/flakylens-output/.git'
+ OK
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=schannel
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/USER/.gitconfig	user.name=Jahnnobi Rahman
+file:C:/Users/USER/.gitconfig	user.email=jahnnobirahman230@gmail.com
+file:C:/Users/USER/.gitconfig	safe.directory=E:/flakylens-output
+file:.git/config	core.repositoryformatversion=0
+file:.git/config	core.filemode=false
+file:.git/config	core.bare=false
+file:.git/config	core.logallrefupdates=true
+file:.git/config	core.symlinks=false
+file:.git/config	core.ignorecase=true
+file:.git/config	remote.origin.url=https://github.com/JahnnobiRahman/flakylens-reproduction.git
+file:.git/config	remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker is not enabled.
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\USER\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\USER\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
