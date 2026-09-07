@@ -1,0 +1,23 @@
+=== branch check: deadcode ===
+X_test_project_group1deadcode_perturbati job.schedule: 0 crashID: 594
+X_test_project_group2deadcode_perturbati job.schedule: 0 crashID: 503
+X_test_project_group3deadcode_perturbati job.schedule: 0 crashID: 544
+X_test_project_group4deadcode_perturbati job.schedule: 0 crashID: 514
+
+=== branch check: renaming ===
+most   original:    689  perturbed:    589  delta:   -100
+least  original:     75  perturbed:  13399  delta: +13324
+
+=== error split, fold 1 ===
+rows: 2432 matched: 2432
+changed  False  True
+label               
+0            5    28
+1            4    17
+2            2     7
+3            2    14
+4            6    16
+5          863  1468
+
+=== reformatting check ===
+exact matches: 0 of 8574   whitespace-normalised matches: 3483 of 8574
