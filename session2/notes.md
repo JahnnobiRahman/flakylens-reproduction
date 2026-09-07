@@ -205,13 +205,32 @@ gap is systematic rather than run-to-run variance. This also means that any
 attribution shift observed after a transformation would be attributable to the
 transformation rather than to noise.
 
-**Hypothesis, not verified.** The post-processing described in Sections 5.1.2 and
-5.1.4 (subword merging, stop-word removal, multiplication by model confidence and
-by log token frequency) and the normalisation mentioned in Section 6.3 do not
-appear to have been applied to this output. The `ĊĊ` token in the non-flaky row
-is a raw CodeBERT newline marker, which detokenisation should have removed.
-`calculate_most_and_least_imp_tokens.py` and `detokenization.py` are present in
-`/app/src` but have not been inspected yet.
+
+**Established: the post-processing runs but is incomplete.** Both helper
+modules are imported and called from `Testing_per_project.py`:
+`combine_tokens` at line 60 and used at line 114,
+`find_most_and_least_imp_tokens` at line 61 and called at line 665.
+So detokenisation and aggregation do execute.
+
+However, `find_most_and_least_imp_tokens` performs only a raw sum:
+
+    category_tokens[true_class][token] += score
+
+Grepping that file for `confidence`, `log`, `normal` and `*` returns
+nothing. The confidence weighting and log-frequency weighting described
+in Section 5.1.4, and the normalisation mentioned in Section 6.3, are
+absent from this path. `Test_confidence_score` is written into the
+per-test CSV at line 108 and is present in the files the function reads,
+but the function never accesses that column.
+
+This accounts for the magnitude gap: raw summed attribution stays in the
+1e-7 range, while the weighting steps are what would lift it to the
+1.252 and 41.09 ranges reported in Table 4.
+
+**On the `ĊĊ` token.** `is_special_character` in `detokenization.py`
+excludes `Ċ`, but `ĊĊ` is two characters, so it fails the `len(token)==1`
+test, and `Ċ` is not ASCII punctuation so the `string.punctuation` test
+also fails. The token passes the filter unchanged.
 
 
 
@@ -264,7 +283,7 @@ and reinstates the original explanation.
   group separately.
 - Control all random seeds in the deadcode path, run several repetitions, and
   report mean and standard deviation per category.
-- Open `calculate_most_and_least_imp_tokens.py` and `detokenization.py` and trace
+- [DONE] Open `calculate_most_and_least_imp_tokens.py` and `detokenization.py` and trace
   where aggregation, weighting and detokenisation occur; compare raw Integrated
   Gradients output against the final values.
 - Verify that the expected model checkpoint and tokeniser are being loaded.
