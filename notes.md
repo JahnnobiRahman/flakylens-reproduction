@@ -451,12 +451,35 @@ However, `find_most_and_least_imp_tokens` performs only a raw sum:
 
     category_tokens[true_class][token] += score
 
-Grepping that file for `confidence`, `log`, `normal` and `*` returns
-nothing. The confidence weighting and log-frequency weighting described
-in Section 5.1.4, and the normalisation mentioned in Section 6.3, are
-absent from this path. `Test_confidence_score` is written into the
-per-test CSV at line 108 and is present in the files the function reads,
-but the function never accesses that column.
+Searching the whole codebase, normalisation and log-scaling code does exist,
+in `collect_token_attention_scores` (`data_processing.py:26`), which applies
+z-score normalisation, a `log1p` transform and a 0.4 penalty for common Java
+keywords. But that function is imported only by `Testing_other_LLMs.py`
+(line 7), the RQ2 path, and operates on attention scores rather than
+Integrated Gradients output. `Testing_per_project.py` imports six other names
+from the same module at line 38 and not this one. So the weighting described
+in Section 5.1.4 and the normalisation in Section 6.3 are absent from the
+CodeBERT attribution path specifically, rather than from the codebase.
+
+
+### Raw versus final, measured
+
+Summing the raw per-test attribution scores by hand and comparing against the
+final aggregate file, Async category:
+
+| Token | Sum of raw per-test | Final aggregate | Ratio |
+|---|---|---|---|
+| Epoch | 1.266599e-07 | 1.266599e-07 | 1.0000 |
+| Contain | 6.332994e-08 | 6.332994e-08 | 1.0000 |
+| await | 4.047979e-08 | 4.047979e-08 | 1.0000 |
+| Aggregate | 2.235174e-08 | 2.235174e-08 | 1.0000 |
+| Injector | 2.194429e-08 | 2.194429e-08 | 1.0000 |
+
+Ratio 1.0000 for all ten tokens checked. The final values are the raw sums
+unmodified, confirming empirically that nothing is applied between the
+per-test CSV and the aggregate.
+
+Evidence: `session3/raw_vs_final_attribution.txt`.
 
 This accounts for the magnitude gap: raw summed attribution stays in the
 1e-7 range, while the weighting steps are what would lift it to the
