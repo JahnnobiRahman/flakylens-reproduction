@@ -200,9 +200,92 @@ Evidence: `session3/session4_indent_result.txt`, `session3/perfold_indent_test.t
 
 ### What remains
 
-Ruled out so far: the 559 renaming errors, structural damage, wrapper-class
-leakage, and reformatting. What remains is the renamed identifiers themselves.
-The cause of the collapse is still open.
+Ruled out: the 559 renaming errors, structural damage, wrapper-class leakage, and reformatting. The remaining candidate is that renaming removes discriminative identifiers rather than adding competing ones. See the trace below.
+
+### Tracing individual tests through the pipeline
+
+To see the collapse happen on a single test rather than in aggregate, I loaded
+fold 1's checkpoint directly (`per_project_model_weights_on__dataset_project_group_1.pt`),
+sampled five flaky tests whose content actually changed under renaming, and ran
+prediction on both the original and the transformed version of each. Script:
+`session3/trace_renamed.py`, output: `session3/session5_trace.txt`.
+
+#### The clearest case: `test_multimap`, true label Unordered Collections
+
+Original:
+
+```java
+@Test
+public void test_multimap() throws Exception {
+    Map<String, Integer> map = ImmutableMap.of("a", 1, "b", 1, "c", 2);
+    SetMultimap<String, Integer> multimap = Multimaps.forMap(map);
+    Multimap<Integer, String> inverse = Multimaps.invertFrom(multimap, HashMultimap.<Integer, String>create());
+    String json = JSON.toJSONString(inverse);
+    assertEquals("{1:[\"a\",\"b\"],2:[\"c\"]}", json);
+}
+```
+
+Transformed:
+
+```java
+@Test
+    public void test_multimap() throws Exception {
+        Map<String, Integer> runtime = ImmutableMap.of("a", 1, "b", 1, "c", 2);
+        SetMultimap<String, Integer> bulk = Multimaps.forMap(runtime);
+        Multimap<Integer, String> inverse = Multimaps.invertFrom(bulk, HashMultimap.<Integer, String>create());
+        String json = JSON.toJSONString(inverse);
+        assertEquals("{1:[\"a\",\"b\"],2:[\"c\"]}", json);
+    }
+```
+
+| | Prediction | Confidence |
+|---|---|---|
+| Original | 3 (UC) — correct | 0.8527 |
+| Transformed | 5 (Non-flaky) — wrong | 0.9519 |
+
+Two identifiers changed: `map` to `runtime`, `multimap` to `bulk`. Token counts
+155 and 179, so no truncation. Structure, imports, assertion and string literals
+are untouched.
+
+The model flips from correct to wrong, and does so *more* confidently than it was
+right.
+
+#### What this suggests about the mechanism
+
+`runtime` and `bulk` are positions 1 and 2 of the Concurrency least-important
+list in `perturbation.py`. They carry no signal for any category. Meanwhile the
+identifiers they replaced, `map` and `multimap`, are close relatives of the
+tokens Table 4 lists as most important for Unordered Collections (`List`,
+`Equals`, `Enum`, `JSON`, `set`).
+
+So variable renaming *removes* discriminative tokens and substitutes neutral
+ones. The other four perturbations *append* competing tokens and leave the
+original identifiers in place. That is a different operation, and it would
+explain why renaming collapses predictions toward the majority class while the
+others only degrade them.
+
+This is consistent with everything else observed: the collapse is uniform
+(everything becomes non-flaky rather than scattering across categories), it
+affects the ~80 percent of flaky tests that were genuinely renamed, and it is
+not caused by the errors, the reformatting, or structural damage.
+
+Stated carefully: this is a plausible mechanism supported by a worked example,
+not a proof. Establishing it would need the comparison run across all renamed
+tests rather than five, and ideally a control where identifiers are replaced with
+equally neutral names drawn from outside the perturbation lists.
+
+#### Secondary observation: indentation causes truncation on longer tests
+
+In the same trace, `testSimple` went from 272 tokens in the original to 512 in
+the transformed version, hitting the truncation limit. The four-space indent
+added by `variableRenaming_perturbation` inflates token counts, and long tests
+cross the 512-token boundary as a result.
+
+This does not contradict the earlier finding that re-indentation alone leaves
+macro F1 unchanged at 67.50. Most tests are short enough that the extra tokens do
+not matter. But for the longest tests, renaming both alters identifiers and
+truncates content, and those two effects are entangled in the current
+transformation.
 
 
 
