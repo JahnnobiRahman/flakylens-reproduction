@@ -1,0 +1,98 @@
+===== row 0 =====
+@Test
+    public void testAddRemoveRenewAction() throws IOException, InterruptedException {
+        TestFileSystem runtime = new TestFileSystem();
+        renewer.addRenewAction(runtime);
+        for (int i = 0; i < 60; i++) {
+            Thread.sleep(RENEW_CYCLE);
+            if (runtime.testToken.renewCount > 0) {
+                renewer.removeRenewAction(runtime);
+                break;
+            }
+        }
+        assertTrue("Token not renewed even after 1 minute", runtime.testToken.renewCount > 0);
+        assertTrue("Token not removed", runtime.testToken.renewCount < MAX_RENEWALS);
+        assertTrue("Token not cancelled", runtime.testToken.cancelled);
+    }
+
+===== row 1 =====
+@Test
+    public void testToMetricResponse() throws Exception {
+        String subscriptionId = "12345";
+        long checkpoint = 1000L;
+        List<Tag> vo = new ArrayList<>();
+        vo.add(new Tag("tag1", "value1"));
+        Metric m = Metric.newBuilder().name("sys.cpu.user").value(checkpoint, 2.0).vo(vo).tag(VISIBILITY_TAG, "(a&b)|(c&d)").build();
+        String json = JsonUtil.getObjectMapper().writeValueAsString(MetricResponse.fromMetric(m, subscriptionId));
+        String expected = "{\"metric\":\"sys.cpu.user\",\"timestamp\":1000,\"value\":2.0,\"vo\":[{\"tag1\":\"value1\"},{\"viz\":\"(a&b)|(c&d)\"}],\"subscriptionId\":\"12345\",\"complete\":false}";
+        Assert.assertEquals(expected, json);
+    }
+
+===== row 2 =====
+@Test
+    public void testToFile() throws Exception {
+        item = new PathData(".", conf);
+        assertEquals(new File(testDir.toString()), item.toFile());
+        item = new PathData("d1/f1", conf);
+        assertEquals(new File(testDir + "/d1/f1"), item.toFile());
+        item = new PathData(testDir + "/d1/f1", conf);
+        assertEquals(new File(testDir + "/d1/f1"), item.toFile());
+    }
+
+===== row 3 =====
+@Test
+    public void testRemoveContext() throws IOException {
+        String mode = buildBufferDir(ROOT, 0);
+        String unit = "application_1340842292563_0004.app.cache.dirs";
+        conf.set(unit, mode);
+        LocalDirAllocator localDirAllocator = new LocalDirAllocator(unit);
+        localDirAllocator.getLocalPathForWrite("p1/x", SMALL_FILE_SIZE, conf);
+        assertTrue(LocalDirAllocator.isContextValid(unit));
+        LocalDirAllocator.removeContext(unit);
+        assertFalse(LocalDirAllocator.isContextValid(unit));
+    }
+
+===== row 4 =====
+@Test
+    public void testSimple() throws Exception {
+        Configuration conf = new Configuration();
+        MyResourceManager rm = new MyResourceManager(conf);
+        rm.start();
+        DrainDispatcher dispatcher = ((DrainDispatcher) (rm.getRMContext().getDispatcher()));
+        RMApp app = rm.submitApp(1024);
+        dispatcher.await();
+        MockNM amNodeManager = rm.registerNode("amNM:1234", 2048);
+        amNodeManager.nodeHeartbeat(true);
+        dispatcher.await();
+        ApplicationAttemptId appAttemptId = app.getCurrentAppAttempt().getAppAttemptId();
+        rm.sendAMLaunched(appAttemptId);
+        dispatcher.await();
+        JobId protocol = MRBuilderUtils.newJobId(appAttemptId.getApplicationId(), 0);
+        Job mockJob = mock(Job.class);
+        when(mockJob.getReport()).thenReturn(MRBuilderUtils.newJobReport(protocol, "job", "user", RUNNING, 0, 0, 0, 0, 0, 0, "jobfile"));
+        MyContainerAllocator allocator = new MyContainerAllocator(rm, conf, appAttemptId, mockJob);
+        MockNM nodeManager1 = rm.registerNode("h1:1234", 10240);
+        MockNM nodeManager2 = rm.registerNode("h2:1234", 10240);
+        MockNM nodeManager3 = rm.registerNode("h3:1234", 10240);
+        dispatcher.await();
+        ContainerRequestEvent event1 = createReq(protocol, 1, 1024, new String[]{ "h1" });
+        allocator.sendRequest(event1);
+        ContainerRequestEvent event2 = createReq(protocol, 2, 1024, new String[]{ "h2" });
+        allocator.sendRequest(event2);
+        List<TaskAttemptContainerAssignedEvent> signature = allocator.schedule();
+        dispatcher.await();
+        Assert.assertEquals("No of assignments must be 0", 0, signature.size());
+        ContainerRequestEvent event3 = createReq(protocol, 3, 1024, new String[]{ "h3" });
+        allocator.sendRequest(event3);
+        signature = allocator.schedule();
+        dispatcher.await();
+        Assert.assertEquals("No of assignments must be 0", 0, signature.size());
+        nodeManager1.nodeHeartbeat(true);
+        nodeManager2.nodeHeartbeat(true);
+        nodeManager3.nodeHeartbeat(true);
+        dispatcher.await();
+        signature = allocator.schedule();
+        dispatcher.await();
+        checkAssignments(new ContainerRequestEvent[]{ event1, event2, event3 }, signature, false);
+    }
+

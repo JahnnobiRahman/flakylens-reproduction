@@ -1,0 +1,2 @@
+most   original:    689  perturbed:    589  delta:   -100
+least  original:     75  perturbed:  13399  delta: +13324
