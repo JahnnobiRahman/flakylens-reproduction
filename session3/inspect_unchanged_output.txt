@@ -1,0 +1,38 @@
+flaky tests with unchanged content: 20
+of those, prediction flipped: 20
+
+                                                                                 test_name  true_category  pred_original  conf_original  pred_renamed  conf_renamed  tokens_original  tokens_renamed
+                                                                   TestPathData.testToFile              4              3         0.6063             5        0.9513              144             174
+                                       extraSweepersGiveUpAfterFailingToAcquireEnoughTimes              1              1         0.3974             5        0.9496              399             477
+                                          ZKSessionTest.testReacquireLocksAfterSessionLost              0              0         0.8031             5        0.9439              430             512
+                                                 testTransactionMetaStoreAssignAndFailover              0              0         0.9041             5        0.9451              512             512
+                                                                          testQueryTimeout              0              1         0.4591             5        0.9446              512             512
+                           TestDelegationTokenForProxyUser.testDelegationTokenWithRealUser              4              0         0.8027             5        0.9481              370             440
+                                            TestPathData.testWithStringAndConfForBuggyPath              4              4         0.8099             5        0.9515               87             113
+                                                     TestPathData.testWithDirStringAndConf              4              4         0.8657             5        0.9504               88             118
+GridCacheRebalancingWithAsyncClearingTest.testCorrectRebalancingCurrentlyRentingPartitions              1              0         0.9234             5        0.9367              479             512
+                                                 ReplicatorTest.testReplicatorProducerName              0              0         0.8551             5        0.9490              260             314
+                                                   TestSecurityUtil.testBuildDTServiceName              4              4         0.3941             5        0.9481              154             176
+                                                         SystemCacheNotConfiguredTest.test              0              0         0.9191             5        0.9483              135             173
+                                                                  Issue1584.test_for_issue              3              0         0.4570             5        0.9473              390             480
+                                                                      SortFieldTest.test_1              3              3         0.8637             5        0.9519              180             214
+                                      testAuthenticationFromMultipleThreadsWithCachedToken              1              1         0.4803             5        0.9478              391             468
+                                   IgnitePdsThreadInterruptionTest.testInterruptsOnLFSRead              1              0         0.8635             5        0.9335              512             512
+                                                         testTrackMetadata_rowMarkerDelete              2              2         0.7492             5        0.9465              334             399
+                                                            testTrackMetadata_rowTombstone              2              2         0.7410             5        0.9448              366             435
+                                    MetadataHttpHandlerTestRun.testSystemMetadataRetrieval              0              2         0.6997             5        0.9463              512             512
+                                            TestSecurityUtil.testBuildTokenServiceSockAddr              4              0         0.6384             5        0.9510              152             170
+
+token growth:
+count    20.000000
+mean     40.800000
+std      30.191668
+min       0.000000
+25%      21.000000
+50%      33.500000
+75%      69.250000
+max      90.000000
+dtype: float64
+
+hit the 512 limit after renaming: 6 of 20
+hit the 512 limit before renaming: 4 of 20

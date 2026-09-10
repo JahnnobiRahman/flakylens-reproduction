@@ -1,0 +1,72 @@
+device: cuda
+weights: ../models/per_project_model_weights_on__dataset_project_group_1.pt
+rows: 2432
+processed 200
+processed 400
+processed 600
+processed 800
+processed 1000
+processed 1200
+processed 1400
+processed 1600
+processed 1800
+processed 2000
+processed 2200
+processed 2400
+/opt/conda/envs/flakylens/lib/python3.8/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/conda/envs/flakylens/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:2674: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+wrote 2432 rows to /output/session3/predictions_fold1_rename.csv
+
+flaky tests in this fold: 108
+
+=== predictions on ORIGINAL code (flaky only) ===
+pred_original           0  1  2   3  4  5
+true_label                               
+async wait             28  1  3   0  3  0
+concurrency            16  4  0   0  0  1
+test order dependency  12  0  5   2  8  0
+time                    3  0  6   0  0  0
+unordered collections   3  0  1  11  1  0
+
+=== predictions on RENAMED code (flaky only) ===
+pred_renamed            5
+true_label               
+async wait             35
+concurrency            21
+test order dependency  27
+time                    9
+unordered collections  16
+
+=== correct before vs after, per category ===
+                       correct_original  correct_renamed
+true_label                                              
+async wait                           28                0
+concurrency                           4                0
+test order dependency                 8                0
+time                                  6                0
+unordered collections                11                0
+
+counts per category:
+async wait               35
+test order dependency    27
+concurrency              21
+unordered collections    16
+time                      9
+Name: true_label, dtype: int64
+
+=== flipped, split by whether the code actually changed ===
+flipped       False  True
+code_changed             
+False             0    20
+True              1    87
+
+=== non-flaky tests ===
+correct on original: 2324 of 2324
+correct on renamed : 2324 of 2324
+
+=== truncation at 512 tokens ===
+original: 492 of 2432
+renamed : 624 of 2432

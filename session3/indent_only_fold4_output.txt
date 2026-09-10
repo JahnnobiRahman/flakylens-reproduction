@@ -1,0 +1,63 @@
+device: cuda
+weights: ../models/per_project_model_weights_on__dataset_project_group_4.pt
+rows: 2019
+processed 200
+processed 400
+processed 600
+processed 800
+processed 1000
+processed 1200
+processed 1400
+processed 1600
+processed 1800
+processed 2000
+/opt/conda/envs/flakylens/lib/python3.8/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/conda/envs/flakylens/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:2674: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+wrote 2019 rows to /output/session3/predictions_fold4_indent.csv
+
+flaky tests: 91   non-flaky: 1928
+
+=== flaky: predictions on ORIGINAL ===
+pred_original           0  1  2   3   4
+true_label                             
+async wait             12  2  1   0   3
+concurrency             1  2  0   0   2
+test order dependency   5  2  0   2  36
+time                    2  1  8   0   1
+unordered collections   0  0  0  10   1
+
+=== flaky: predictions on RE-INDENTED ===
+pred_indented           5
+true_label               
+async wait             18
+concurrency             5
+test order dependency  45
+time                   12
+unordered collections  11
+
+=== correct before vs after (flaky) ===
+                       correct_original  correct_indented
+true_label                                               
+async wait                           12                 0
+concurrency                           2                 0
+test order dependency                36                 0
+time                                  8                 0
+unordered collections                10                 0
+
+=== flipped ===
+flaky flipped     : 91 of 91
+non-flaky flipped : 7 of 1928
+
+=== non-flaky accuracy ===
+original  : 1921 of 1928
+indented  : 1928 of 1928
+
+=== truncation ===
+original hitting 512: 131
+indented hitting 512: 192
+
+=== flipped tests that were NOT truncated ===
+78 of 91 flipped flaky tests stayed under the limit
