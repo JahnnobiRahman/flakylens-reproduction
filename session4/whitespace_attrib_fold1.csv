@@ -1,0 +1,81 @@
+test_name,true_category,transform,pred_before,pred_after,flipped,ws_attrib_frac_before,ws_attrib_frac_after,total_attrib_before,total_attrib_after
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,indent +4,0,5,True,0.1559,0.4087,8.98792148811917,23.836535447289442
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,strip indent,0,0,False,0.1559,0.0646,8.98792148811917,6.8294289751578185
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,trailing spaces,0,0,False,0.1559,0.3773,8.98792148811917,8.74416567584611
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,remove blank lines,0,0,False,0.1559,0.1559,8.98792148811917,8.98792148811917
+MetricAdapterTest.testToMetricResponse,3,indent +4,2,5,True,0.0611,0.2298,3.9058765871621595,40.37424524859013
+MetricAdapterTest.testToMetricResponse,3,strip indent,2,3,True,0.0611,0.0373,3.9058765871621595,8.76216837802163
+MetricAdapterTest.testToMetricResponse,3,trailing spaces,2,5,True,0.0611,0.1955,3.9058765871621595,8.056423232980803
+MetricAdapterTest.testToMetricResponse,3,remove blank lines,2,2,False,0.0611,0.0611,3.9058765871621595,3.9058765871621595
+TestPathData.testToFile,4,indent +4,3,5,True,0.0537,0.3299,1.0862609744986598,6.346749884918499
+TestPathData.testToFile,4,strip indent,3,3,False,0.0537,0.0438,1.0862609744986598,3.12208425548616
+TestPathData.testToFile,4,trailing spaces,3,5,True,0.0537,0.4407,1.0862609744986598,6.10130187090893
+TestPathData.testToFile,4,remove blank lines,3,3,False,0.0537,0.0537,1.0862609744986598,1.0862609744986598
+TestLocalDirAllocator.testRemoveContext,4,indent +4,4,5,True,0.0913,0.323,5.6562035648370586,1.1332199392377151
+TestLocalDirAllocator.testRemoveContext,4,strip indent,4,4,False,0.0913,0.0448,5.6562035648370586,3.834528523876205
+TestLocalDirAllocator.testRemoveContext,4,trailing spaces,4,5,True,0.0913,0.4454,5.6562035648370586,13.950279761688355
+TestLocalDirAllocator.testRemoveContext,4,remove blank lines,4,4,False,0.0913,0.0913,5.6562035648370586,5.6562035648370586
+TestRMContainerAllocator.testSimple,0,indent +4,0,5,True,0.0966,0.2921,1.2366686799844584,26.02691213611478
+TestRMContainerAllocator.testSimple,0,strip indent,0,0,False,0.0966,0.0401,1.2366686799844584,2.6194201802620727
+TestRMContainerAllocator.testSimple,0,trailing spaces,0,0,False,0.0966,0.0939,1.2366686799844584,2.1908132976614527
+TestRMContainerAllocator.testSimple,0,remove blank lines,0,0,False,0.0966,0.0966,1.2366686799844584,1.2366686799844584
+MultiMapTes.test_multimap,3,indent +4,3,5,True,0.0794,0.3739,0.2549611264267658,34.422735876020724
+MultiMapTes.test_multimap,3,strip indent,3,3,False,0.0794,0.1293,0.2549611264267658,0.3413261625078993
+MultiMapTes.test_multimap,3,trailing spaces,3,5,True,0.0794,0.4854,0.2549611264267658,18.192933632523037
+MultiMapTes.test_multimap,3,remove blank lines,3,3,False,0.0794,0.0794,0.2549611264267658,0.2549611264267658
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,indent +4,0,5,True,0.0565,0.1677,7.944254718691738,5.231717483043614
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,strip indent,0,0,False,0.0565,0.0269,7.944254718691738,5.364114529319434
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,trailing spaces,0,5,True,0.0565,0.3493,7.944254718691738,11.886685247861518
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,remove blank lines,0,0,False,0.0565,0.0565,7.944254718691738,7.944254718691738
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,indent +4,1,5,True,0.0726,0.131,3.423635634988453,4.475989867704388
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,strip indent,1,0,True,0.0726,0.0948,3.423635634988453,3.109978935056553
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,trailing spaces,1,5,True,0.0726,0.3886,3.423635634988453,13.026361493658305
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,remove blank lines,1,1,False,0.0726,0.0726,3.423635634988453,3.423635634988453
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,indent +4,2,5,True,0.1075,0.2267,9.138166665729816,31.05817906226857
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,strip indent,2,2,False,0.1075,0.0592,9.138166665729816,19.834664381496125
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,trailing spaces,2,0,True,0.1075,0.1941,9.138166665729816,10.815207828693236
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,remove blank lines,2,2,False,0.1075,0.1075,9.138166665729816,9.138166665729816
+TestExchangeClient.testAddLocation,0,indent +4,0,5,True,0.0678,0.2024,2.012883598076507,57.56872459297089
+TestExchangeClient.testAddLocation,0,strip indent,0,0,False,0.0678,0.0243,2.012883598076507,3.4145505065961306
+TestExchangeClient.testAddLocation,0,trailing spaces,0,0,False,0.0678,0.1173,2.012883598076507,1.979839759049981
+TestExchangeClient.testAddLocation,0,remove blank lines,0,0,False,0.0678,0.0678,2.012883598076507,2.012883598076507
+TestDelegationToken.testDelegationTokenSecretManager,1,indent +4,0,5,True,0.1032,0.3023,4.973565933552348,12.23602436278395
+TestDelegationToken.testDelegationTokenSecretManager,1,strip indent,0,0,False,0.1032,0.0593,4.973565933552348,4.993658852019526
+TestDelegationToken.testDelegationTokenSecretManager,1,trailing spaces,0,0,False,0.1032,0.155,4.973565933552348,6.497254838679771
+TestDelegationToken.testDelegationTokenSecretManager,1,remove blank lines,0,0,False,0.1032,0.1032,4.973565933552348,4.973565933552348
+TestDFSIO.testReadSkip,4,indent +4,2,5,True,0.0867,0.4055,0.3027122012452051,25.885000507657953
+TestDFSIO.testReadSkip,4,strip indent,2,2,False,0.0867,0.0298,0.3027122012452051,0.35639806518417727
+TestDFSIO.testReadSkip,4,trailing spaces,2,2,False,0.0867,0.3931,0.3027122012452051,1.5384353130238542
+TestDFSIO.testReadSkip,4,remove blank lines,2,2,False,0.0867,0.0867,0.3027122012452051,0.3027122012452051
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,indent +4,0,5,True,0.3609,0.325,0.9493239282748959,28.876391425240357
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,strip indent,0,0,False,0.3609,0.0432,0.9493239282748959,1.571538851936343
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,trailing spaces,0,0,False,0.3609,0.5091,0.9493239282748959,6.023917857441452
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,remove blank lines,0,0,False,0.3609,0.3609,0.9493239282748959,0.9493239282748959
+ResponseContextTest.serializeWithTruncateArrayTest,3,indent +4,3,5,True,0.037,0.2774,3.0834246819226343,87.82609600287842
+ResponseContextTest.serializeWithTruncateArrayTest,3,strip indent,3,3,False,0.037,0.1024,3.0834246819226343,4.454597678726635
+ResponseContextTest.serializeWithTruncateArrayTest,3,trailing spaces,3,5,True,0.037,0.2107,3.0834246819226343,6.5556825764797235
+ResponseContextTest.serializeWithTruncateArrayTest,3,remove blank lines,3,3,False,0.037,0.037,3.0834246819226343,3.0834246819226343
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,indent +4,1,5,True,0.098,0.2957,2.1441954659285356,56.757678472162105
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,strip indent,1,1,False,0.098,0.062,2.1441954659285356,2.9932902431794255
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,trailing spaces,1,0,True,0.098,0.3377,2.1441954659285356,11.144620602019206
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,remove blank lines,1,1,False,0.098,0.098,2.1441954659285356,2.1441954659285356
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,indent +4,0,5,True,0.0893,0.2241,10.297650121693426,27.104697201095664
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,strip indent,0,0,False,0.0893,0.0349,10.297650121693426,10.516947818704583
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,trailing spaces,0,0,False,0.0893,0.1078,10.297650121693426,7.947266154960839
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,remove blank lines,0,0,False,0.0893,0.0893,10.297650121693426,10.297650121693426
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,indent +4,0,5,True,0.1537,0.331,5.394097996979867,88.51575447773824
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,strip indent,0,0,False,0.1537,0.0311,5.394097996979867,3.7460395068713286
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,trailing spaces,0,0,False,0.1537,0.2162,5.394097996979867,4.271566933683785
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,remove blank lines,0,0,False,0.1537,0.1537,5.394097996979867,5.394097996979867
+TestDFSIO.testReadBackward,4,indent +4,2,5,True,0.1309,0.4627,0.18195090066227781,2.2526739238034197
+TestDFSIO.testReadBackward,4,strip indent,2,2,False,0.1309,0.143,0.18195090066227781,0.10592370731416643
+TestDFSIO.testReadBackward,4,trailing spaces,2,2,False,0.1309,0.3911,0.18195090066227781,0.7560784363775332
+TestDFSIO.testReadBackward,4,remove blank lines,2,2,False,0.1309,0.1309,0.18195090066227781,0.18195090066227781
+TestDFSIO.testReadRandom,4,indent +4,2,5,True,0.0865,0.4098,0.3763706877189099,12.862750602612952
+TestDFSIO.testReadRandom,4,strip indent,2,2,False,0.0865,0.0371,0.3763706877189099,0.368645795611928
+TestDFSIO.testReadRandom,4,trailing spaces,2,2,False,0.0865,0.411,0.3763706877189099,1.0561712403324695
+TestDFSIO.testReadRandom,4,remove blank lines,2,2,False,0.0865,0.0865,0.3763706877189099,0.3763706877189099
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,indent +4,3,5,True,0.0981,0.3585,3.65442412422066,92.86174969466782
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,strip indent,3,3,False,0.0981,0.0536,3.65442412422066,7.52484606103811
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,trailing spaces,3,5,True,0.0981,0.2937,3.65442412422066,13.55655119748353
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,remove blank lines,3,3,False,0.0981,0.0981,3.65442412422066,3.65442412422066

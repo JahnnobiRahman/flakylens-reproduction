@@ -1,0 +1,80 @@
+device: cuda
+weights: ../models/per_project_model_weights_on__dataset_project_group_1.pt
+fold 1: 108 flaky, 100 non-flaky sampled
+
+tokenised 50 of 208
+tokenised 100 of 208
+tokenised 150 of 208
+tokenised 200 of 208
+
+wrote 832 rows to /output/session4/whitespace_tokens_fold1.csv
+
+============================================================================
+TOKEN BUDGET: how much of the input becomes whitespace
+============================================================================
+transform           class         ws% before   ws% after  tokens before  tokens after
+indent +4           flaky              23.4%       36.0%            344           377
+indent +4           non-flaky          32.7%       45.0%            264           301
+strip indent        flaky              23.4%        6.7%            344           304
+strip indent        non-flaky          32.7%        8.8%            264           204
+trailing spaces     flaky              23.4%       27.4%            344           355
+trailing spaces     non-flaky          32.7%       36.6%            264           276
+remove blank lines  flaky              23.4%       23.4%            344           344
+remove blank lines  non-flaky          32.7%       32.1%            264           263
+
+============================================================================
+TRUNCATION
+============================================================================
+transform             truncated before   truncated after
+indent +4                           50                70
+strip indent                        50                30
+trailing spaces                     50                54
+remove blank lines                  50                49
+
+============================================================================
+DID THE FLIPPED TESTS GAIN MORE WHITESPACE THAN THE REST?
+============================================================================
+transform              flipped: ws% gain   not flipped: ws% gain
+indent +4                          12.8%                    5.1%
+strip indent                      -18.8%                  -16.4%
+trailing spaces                     4.1%                    3.9%
+remove blank lines                  nan%                    0.0%
+
+============================================================================
+ATTRIBUTION: running IG on 20 flaky tests, before and after
+============================================================================
+  attributed 1 of 20
+  attributed 2 of 20
+  attributed 3 of 20
+  attributed 4 of 20
+  attributed 5 of 20
+  attributed 6 of 20
+  attributed 7 of 20
+  attributed 8 of 20
+  attributed 9 of 20
+  attributed 10 of 20
+  attributed 11 of 20
+  attributed 12 of 20
+  attributed 13 of 20
+  attributed 14 of 20
+  attributed 15 of 20
+  attributed 16 of 20
+  attributed 17 of 20
+  attributed 18 of 20
+  attributed 19 of 20
+  attributed 20 of 20
+/opt/conda/envs/flakylens/lib/python3.8/site-packages/huggingface_hub/file_download.py:797: FutureWarning: `resume_download` is deprecated and will be removed in version 1.0.0. Downloads always resume when possible. If you want to force a new download, use `force_download=True`.
+  warnings.warn(
+/opt/conda/envs/flakylens/lib/python3.8/site-packages/transformers/tokenization_utils_base.py:2674: FutureWarning: The `pad_to_max_length` argument is deprecated and will be removed in a future version, use `padding=True` or `padding='longest'` to pad to the longest sequence in the batch, or use `padding='max_length'` to pad to a max length. In this case, you can give a specific length with `max_length` (e.g. `max_length=45`) or leave max_length to None to pad to the maximal input size of the model (e.g. 512 for Bert).
+  warnings.warn(
+
+wrote 80 rows to /output/session4/whitespace_attrib_fold1.csv
+
+============================================================================
+ATTRIBUTION MASS ON WHITESPACE TOKENS
+============================================================================
+transform                 before       after      change
+indent +4                  10.4%       30.4%       20.0%
+strip indent               10.4%        5.8%       -4.6%
+trailing spaces            10.4%       30.6%       20.1%
+remove blank lines         10.4%       10.4%        0.0%

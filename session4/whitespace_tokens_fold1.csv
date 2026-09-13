@@ -1,0 +1,833 @@
+test_name,true_category,true_label,transform,tokens_before,tokens_after,ws_tokens_before,ws_tokens_after,ws_frac_before,ws_frac_after,truncated_before,truncated_after,pred_before,pred_after,conf_before,conf_after,flipped
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,async wait,indent +4,242,296,78,132,0.3223,0.4459,False,False,0,5,0.9219,0.9454,True
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,async wait,strip indent,242,180,78,14,0.3223,0.0778,False,False,0,0,0.9219,0.9146,False
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,async wait,trailing spaces,242,257,78,93,0.3223,0.3619,False,False,0,0,0.9219,0.6517,False
+TestDelegationTokenRenewer.testAddRemoveRenewAction,0,async wait,remove blank lines,242,242,78,78,0.3223,0.3223,False,False,0,0,0.9219,0.9219,False
+MetricAdapterTest.testToMetricResponse,3,unordered collections,indent +4,260,298,34,72,0.1308,0.2416,False,False,2,5,0.4559,0.9493,True
+MetricAdapterTest.testToMetricResponse,3,unordered collections,strip indent,260,236,34,10,0.1308,0.0424,False,False,2,3,0.4559,0.7514,True
+MetricAdapterTest.testToMetricResponse,3,unordered collections,trailing spaces,260,271,34,45,0.1308,0.1661,False,False,2,5,0.4559,0.7631,True
+MetricAdapterTest.testToMetricResponse,3,unordered collections,remove blank lines,260,260,34,34,0.1308,0.1308,False,False,2,2,0.4559,0.4559,False
+TestPathData.testToFile,4,test order dependency,indent +4,144,174,26,56,0.1806,0.3218,False,False,3,5,0.6063,0.9513,True
+TestPathData.testToFile,4,test order dependency,strip indent,144,126,26,8,0.1806,0.0635,False,False,3,3,0.6063,0.3572,False
+TestPathData.testToFile,4,test order dependency,trailing spaces,144,153,26,35,0.1806,0.2288,False,False,3,5,0.6063,0.8549,True
+TestPathData.testToFile,4,test order dependency,remove blank lines,144,144,26,26,0.1806,0.1806,False,False,3,3,0.6063,0.6063,False
+TestLocalDirAllocator.testRemoveContext,4,test order dependency,indent +4,203,241,34,72,0.1675,0.2988,False,False,4,5,0.8007,0.9475,True
+TestLocalDirAllocator.testRemoveContext,4,test order dependency,strip indent,203,179,34,10,0.1675,0.0559,False,False,4,4,0.8007,0.8974,False
+TestLocalDirAllocator.testRemoveContext,4,test order dependency,trailing spaces,203,214,34,45,0.1675,0.2103,False,False,4,5,0.8007,0.5428,True
+TestLocalDirAllocator.testRemoveContext,4,test order dependency,remove blank lines,203,203,34,34,0.1675,0.1675,False,False,4,4,0.8007,0.8007,False
+TestRMContainerAllocator.testSimple,0,async wait,indent +4,512,512,104,172,0.2031,0.3359,True,True,0,5,0.9225,0.9289,True
+TestRMContainerAllocator.testSimple,0,async wait,strip indent,512,512,104,30,0.2031,0.0586,True,True,0,0,0.9225,0.9167,False
+TestRMContainerAllocator.testSimple,0,async wait,trailing spaces,512,512,104,122,0.2031,0.2383,True,True,0,0,0.9225,0.9149,False
+TestRMContainerAllocator.testSimple,0,async wait,remove blank lines,512,512,104,104,0.2031,0.2031,True,True,0,0,0.9225,0.9225,False
+MultiMapTes.test_multimap,3,unordered collections,indent +4,155,181,22,48,0.1419,0.2652,False,False,3,5,0.8527,0.9521,True
+MultiMapTes.test_multimap,3,unordered collections,strip indent,155,140,22,7,0.1419,0.05,False,False,3,3,0.8527,0.7902,False
+MultiMapTes.test_multimap,3,unordered collections,trailing spaces,155,163,22,30,0.1419,0.184,False,False,3,5,0.8527,0.843,True
+MultiMapTes.test_multimap,3,unordered collections,remove blank lines,155,155,22,22,0.1419,0.1419,False,False,3,3,0.8527,0.8527,False
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,concurrency,indent +4,480,512,66,124,0.1375,0.2422,False,True,0,5,0.5273,0.9457,True
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,concurrency,strip indent,480,433,66,18,0.1375,0.0416,False,False,0,0,0.5273,0.591,False
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,concurrency,trailing spaces,480,499,66,85,0.1375,0.1703,False,False,0,5,0.5273,0.6175,True
+WorkflowHttpHandlerTest.testWorkflowForkFailure,1,concurrency,remove blank lines,480,480,66,66,0.1375,0.1375,False,False,0,0,0.5273,0.5273,False
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,concurrency,indent +4,399,477,74,152,0.1855,0.3187,False,False,1,5,0.3974,0.9496,True
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,concurrency,strip indent,399,348,74,20,0.1855,0.0575,False,False,1,0,0.3974,0.4388,True
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,concurrency,trailing spaces,399,420,74,95,0.1855,0.2262,False,False,1,5,0.3974,0.4733,True
+extraSweepersGiveUpAfterFailingToAcquireEnoughTimes,1,concurrency,remove blank lines,399,399,74,74,0.1855,0.1855,False,False,1,1,0.3974,0.3974,False
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,time,indent +4,377,463,98,184,0.2599,0.3974,False,False,2,5,0.6331,0.9286,True
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,time,strip indent,377,304,98,22,0.2599,0.0724,False,False,2,2,0.6331,0.6319,False
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,time,trailing spaces,377,400,98,121,0.2599,0.3025,False,False,2,0,0.6331,0.4257,True
+TopicReaderTest.testMultiReaderIsAbleToSeekWithTimeOnMiddleOfTopic,2,time,remove blank lines,377,377,98,98,0.2599,0.2599,False,False,2,2,0.6331,0.6331,False
+TestExchangeClient.testAddLocation,0,async wait,indent +4,512,512,89,148,0.1738,0.2891,True,True,0,5,0.9112,0.9455,True
+TestExchangeClient.testAddLocation,0,async wait,strip indent,512,512,89,27,0.1738,0.0527,True,True,0,0,0.9112,0.9096,False
+TestExchangeClient.testAddLocation,0,async wait,trailing spaces,512,512,89,107,0.1738,0.209,True,True,0,0,0.9112,0.8917,False
+TestExchangeClient.testAddLocation,0,async wait,remove blank lines,512,512,89,89,0.1738,0.1738,True,True,0,0,0.9112,0.9112,False
+TestDelegationToken.testDelegationTokenSecretManager,1,concurrency,indent +4,442,512,134,224,0.3032,0.4375,False,True,0,5,0.9117,0.9428,True
+TestDelegationToken.testDelegationTokenSecretManager,1,concurrency,strip indent,442,333,134,29,0.3032,0.0871,False,False,0,0,0.9117,0.7863,False
+TestDelegationToken.testDelegationTokenSecretManager,1,concurrency,trailing spaces,442,472,134,164,0.3032,0.3475,False,False,0,0,0.9117,0.857,False
+TestDelegationToken.testDelegationTokenSecretManager,1,concurrency,remove blank lines,442,442,134,134,0.3032,0.3032,False,False,0,0,0.9117,0.9117,False
+TestDFSIO.testReadSkip,4,test order dependency,indent +4,126,156,26,56,0.2063,0.359,False,False,2,5,0.7859,0.9407,True
+TestDFSIO.testReadSkip,4,test order dependency,strip indent,126,108,26,8,0.2063,0.0741,False,False,2,2,0.7859,0.7786,False
+TestDFSIO.testReadSkip,4,test order dependency,trailing spaces,126,135,26,35,0.2063,0.2593,False,False,2,2,0.7859,0.7545,False
+TestDFSIO.testReadSkip,4,test order dependency,remove blank lines,126,126,26,26,0.2063,0.2063,False,False,2,2,0.7859,0.7859,False
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,async wait,indent +4,430,512,98,192,0.2279,0.375,False,True,0,5,0.8031,0.9439,True
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,async wait,strip indent,430,358,98,25,0.2279,0.0698,False,False,0,0,0.8031,0.906,False
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,async wait,trailing spaces,430,456,98,124,0.2279,0.2719,False,False,0,0,0.8031,0.4425,False
+ZKSessionTest.testReacquireLocksAfterSessionLost,0,async wait,remove blank lines,430,430,98,98,0.2279,0.2279,False,False,0,0,0.8031,0.8031,False
+ResponseContextTest.serializeWithTruncateArrayTest,3,unordered collections,indent +4,399,457,54,112,0.1353,0.2451,False,False,3,5,0.652,0.9505,True
+ResponseContextTest.serializeWithTruncateArrayTest,3,unordered collections,strip indent,399,356,54,15,0.1353,0.0421,False,False,3,3,0.652,0.467,False
+ResponseContextTest.serializeWithTruncateArrayTest,3,unordered collections,trailing spaces,399,415,54,70,0.1353,0.1687,False,False,3,5,0.652,0.7819,True
+ResponseContextTest.serializeWithTruncateArrayTest,3,unordered collections,remove blank lines,399,399,54,54,0.1353,0.1353,False,False,3,3,0.652,0.652,False
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,concurrency,indent +4,385,467,106,188,0.2753,0.4026,False,False,1,5,0.4879,0.9439,True
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,concurrency,strip indent,385,303,106,21,0.2753,0.0693,False,False,1,1,0.4879,0.41,False
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,concurrency,trailing spaces,385,407,106,128,0.2753,0.3145,False,False,1,0,0.4879,0.5225,True
+shouldTogglePrepareForBulkLoadDuringRestoreCalls,1,concurrency,remove blank lines,385,385,106,106,0.2753,0.2753,False,False,1,1,0.4879,0.4879,False
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,async wait,indent +4,512,512,93,140,0.1816,0.2734,True,True,0,5,0.8077,0.9319,True
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,async wait,strip indent,512,512,93,24,0.1816,0.0469,True,True,0,0,0.8077,0.865,False
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,async wait,trailing spaces,512,512,93,105,0.1816,0.2051,True,True,0,0,0.8077,0.8136,False
+BacklogQuotaManagerTest.testConsumerBacklogEvictionTimeQuotaWithEmptyLedger,0,async wait,remove blank lines,512,512,93,93,0.1816,0.1816,True,True,0,0,0.8077,0.8077,False
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,async wait,indent +4,512,512,157,206,0.3066,0.4023,True,True,0,5,0.9216,0.9426,True
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,async wait,strip indent,512,416,157,32,0.3066,0.0769,True,False,0,0,0.9216,0.9212,False
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,async wait,trailing spaces,512,512,157,168,0.3066,0.3281,True,True,0,0,0.9216,0.8756,False
+InactiveTopicDeleteTest.testTopicLevelInActiveTopicApi,0,async wait,remove blank lines,512,512,157,157,0.3066,0.3066,True,True,0,0,0.9216,0.9216,False
+TestDFSIO.testReadBackward,4,test order dependency,indent +4,134,164,26,56,0.194,0.3415,False,False,2,5,0.7809,0.9373,True
+TestDFSIO.testReadBackward,4,test order dependency,strip indent,134,116,26,8,0.194,0.069,False,False,2,2,0.7809,0.7714,False
+TestDFSIO.testReadBackward,4,test order dependency,trailing spaces,134,143,26,35,0.194,0.2448,False,False,2,2,0.7809,0.7484,False
+TestDFSIO.testReadBackward,4,test order dependency,remove blank lines,134,134,26,26,0.194,0.194,False,False,2,2,0.7809,0.7809,False
+TestDFSIO.testReadRandom,4,test order dependency,indent +4,127,157,26,56,0.2047,0.3567,False,False,2,5,0.785,0.938,True
+TestDFSIO.testReadRandom,4,test order dependency,strip indent,127,109,26,8,0.2047,0.0734,False,False,2,2,0.785,0.7769,False
+TestDFSIO.testReadRandom,4,test order dependency,trailing spaces,127,136,26,35,0.2047,0.2574,False,False,2,2,0.785,0.7546,False
+TestDFSIO.testReadRandom,4,test order dependency,remove blank lines,127,127,26,26,0.2047,0.2047,False,False,2,2,0.785,0.785,False
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,test order dependency,indent +4,269,331,58,120,0.2156,0.3625,False,False,3,5,0.8416,0.9501,True
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,test order dependency,strip indent,269,226,58,16,0.2156,0.0708,False,False,3,3,0.8416,0.8283,False
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,test order dependency,trailing spaces,269,286,58,75,0.2156,0.2622,False,False,3,5,0.8416,0.6789,True
+5637994be37747e82b2d6d5b34555e2bee791fe6.testWithRevisions,4,test order dependency,remove blank lines,269,269,58,58,0.2156,0.2156,False,False,3,3,0.8416,0.8416,False
+CollectorContextTest.testCollectorContextWithKeyword,3,unordered collections,indent +4,222,256,30,64,0.1351,0.25,False,False,3,5,0.8648,0.9528,True
+CollectorContextTest.testCollectorContextWithKeyword,3,unordered collections,strip indent,222,201,30,9,0.1351,0.0448,False,False,3,3,0.8648,0.86,False
+CollectorContextTest.testCollectorContextWithKeyword,3,unordered collections,trailing spaces,222,232,30,40,0.1351,0.1724,False,False,3,5,0.8648,0.7802,True
+CollectorContextTest.testCollectorContextWithKeyword,3,unordered collections,remove blank lines,222,222,30,30,0.1351,0.1351,False,False,3,3,0.8648,0.8648,False
+TestPeerCache.testEviction,4,test order dependency,indent +4,465,512,138,205,0.2968,0.4004,False,True,0,5,0.9089,0.9387,True
+TestPeerCache.testEviction,4,test order dependency,strip indent,465,356,138,27,0.2968,0.0758,False,False,0,0,0.9089,0.7715,False
+TestPeerCache.testEviction,4,test order dependency,trailing spaces,465,493,138,166,0.2968,0.3367,False,False,0,0,0.9089,0.7362,False
+TestPeerCache.testEviction,4,test order dependency,remove blank lines,465,465,138,138,0.2968,0.2968,False,False,0,0,0.9089,0.9089,False
+PreviewDataPipelineTest.testLogicalTypePreviewRun,2,time,indent +4,512,512,105,183,0.2051,0.3574,True,True,0,5,0.6841,0.9478,True
+PreviewDataPipelineTest.testLogicalTypePreviewRun,2,time,strip indent,512,512,105,30,0.2051,0.0586,True,True,0,0,0.6841,0.4988,False
+PreviewDataPipelineTest.testLogicalTypePreviewRun,2,time,trailing spaces,512,512,105,122,0.2051,0.2383,True,True,0,5,0.6841,0.4987,True
+PreviewDataPipelineTest.testLogicalTypePreviewRun,2,time,remove blank lines,512,512,105,105,0.2051,0.2051,True,True,0,0,0.6841,0.6841,False
+TestHftpFileSystem.testHftpDefaultPorts,4,test order dependency,indent +4,203,241,34,72,0.1675,0.2988,False,False,0,5,0.5578,0.951,True
+TestHftpFileSystem.testHftpDefaultPorts,4,test order dependency,strip indent,203,179,34,10,0.1675,0.0559,False,False,0,4,0.5578,0.6289,True
+TestHftpFileSystem.testHftpDefaultPorts,4,test order dependency,trailing spaces,203,214,34,45,0.1675,0.2103,False,False,0,0,0.5578,0.417,False
+TestHftpFileSystem.testHftpDefaultPorts,4,test order dependency,remove blank lines,203,203,34,34,0.1675,0.1675,False,False,0,0,0.5578,0.5578,False
+testFlowNoConflictsWithClients,1,concurrency,indent +4,331,425,90,184,0.2719,0.4329,False,False,0,5,0.9244,0.9311,True
+testFlowNoConflictsWithClients,1,concurrency,strip indent,331,269,90,24,0.2719,0.0892,False,False,0,0,0.9244,0.9153,False
+testFlowNoConflictsWithClients,1,concurrency,trailing spaces,331,356,90,115,0.2719,0.323,False,False,0,0,0.9244,0.9191,False
+testFlowNoConflictsWithClients,1,concurrency,remove blank lines,331,331,90,90,0.2719,0.2719,False,False,0,0,0.9244,0.9244,False
+incrementUpperLimitIfOneMinuteElapsedSinceLastUpdate,0,async wait,indent +4,221,263,38,80,0.1719,0.3042,False,False,2,5,0.7948,0.9346,True
+incrementUpperLimitIfOneMinuteElapsedSinceLastUpdate,0,async wait,strip indent,221,197,38,11,0.1719,0.0558,False,False,2,2,0.7948,0.7931,False
+incrementUpperLimitIfOneMinuteElapsedSinceLastUpdate,0,async wait,trailing spaces,221,233,38,50,0.1719,0.2146,False,False,2,2,0.7948,0.7818,False
+incrementUpperLimitIfOneMinuteElapsedSinceLastUpdate,0,async wait,remove blank lines,221,221,38,38,0.1719,0.1719,False,False,2,2,0.7948,0.7948,False
+TestContainerAllocatorWithHostAffinity.testExpiredRequestAllocationOnAnyHost,0,async wait,indent +4,512,512,101,164,0.1973,0.3203,True,True,0,5,0.9142,0.9444,True
+TestContainerAllocatorWithHostAffinity.testExpiredRequestAllocationOnAnyHost,0,async wait,strip indent,512,495,101,24,0.1973,0.0485,True,False,0,0,0.9142,0.9107,False
+TestContainerAllocatorWithHostAffinity.testExpiredRequestAllocationOnAnyHost,0,async wait,trailing spaces,512,512,101,121,0.1973,0.2363,True,True,0,0,0.9142,0.8507,False
+TestContainerAllocatorWithHostAffinity.testExpiredRequestAllocationOnAnyHost,0,async wait,remove blank lines,512,512,101,101,0.1973,0.1973,True,True,0,0,0.9142,0.9142,False
+testTokenExpiry,2,time,indent +4,512,512,113,178,0.2207,0.3477,True,True,0,5,0.8026,0.9428,True
+testTokenExpiry,2,time,strip indent,512,492,113,28,0.2207,0.0569,True,False,0,0,0.8026,0.8959,False
+testTokenExpiry,2,time,trailing spaces,512,512,113,128,0.2207,0.25,True,True,0,0,0.8026,0.7008,False
+testTokenExpiry,2,time,remove blank lines,512,512,113,113,0.2207,0.2207,True,True,0,0,0.8026,0.8026,False
+TestPathData.testUnqualifiedUriContents,4,test order dependency,indent +4,99,121,18,40,0.1818,0.3306,False,False,4,5,0.9231,0.9522,True
+TestPathData.testUnqualifiedUriContents,4,test order dependency,strip indent,99,87,18,6,0.1818,0.069,False,False,4,4,0.9231,0.9317,False
+TestPathData.testUnqualifiedUriContents,4,test order dependency,trailing spaces,99,106,18,25,0.1818,0.2358,False,False,4,5,0.9231,0.8507,True
+TestPathData.testUnqualifiedUriContents,4,test order dependency,remove blank lines,99,99,18,18,0.1818,0.1818,False,False,4,4,0.9231,0.9231,False
+testTransactionMetaStoreAssignAndFailover,0,async wait,indent +4,512,512,173,235,0.3379,0.459,True,True,0,5,0.9041,0.9451,True
+testTransactionMetaStoreAssignAndFailover,0,async wait,strip indent,512,400,173,33,0.3379,0.0825,True,False,0,0,0.9041,0.881,False
+testTransactionMetaStoreAssignAndFailover,0,async wait,trailing spaces,512,512,173,194,0.3379,0.3789,True,True,0,0,0.9041,0.8718,False
+testTransactionMetaStoreAssignAndFailover,0,async wait,remove blank lines,512,512,173,173,0.3379,0.3379,True,True,0,0,0.9041,0.9041,False
+KeySharedSubscriptionTest.testRemoveFirstConsumer,0,async wait,indent +4,457,512,106,172,0.2319,0.3359,False,True,0,5,0.921,0.9442,True
+KeySharedSubscriptionTest.testRemoveFirstConsumer,0,async wait,strip indent,457,377,106,23,0.2319,0.061,False,False,0,0,0.921,0.912,False
+KeySharedSubscriptionTest.testRemoveFirstConsumer,0,async wait,trailing spaces,457,481,106,130,0.2319,0.2703,False,False,0,0,0.921,0.6555,False
+KeySharedSubscriptionTest.testRemoveFirstConsumer,0,async wait,remove blank lines,457,457,106,106,0.2319,0.2319,False,False,0,0,0.921,0.921,False
+PersistentFailoverE2ETest.testSimpleConsumerEventsWithoutPartition,1,concurrency,indent +4,512,512,90,154,0.1758,0.3008,True,True,0,5,0.889,0.9342,True
+PersistentFailoverE2ETest.testSimpleConsumerEventsWithoutPartition,1,concurrency,strip indent,512,512,90,28,0.1758,0.0547,True,True,0,0,0.889,0.9098,False
+PersistentFailoverE2ETest.testSimpleConsumerEventsWithoutPartition,1,concurrency,trailing spaces,512,512,90,102,0.1758,0.1992,True,True,0,0,0.889,0.9009,False
+PersistentFailoverE2ETest.testSimpleConsumerEventsWithoutPartition,1,concurrency,remove blank lines,512,512,90,90,0.1758,0.1758,True,True,0,0,0.889,0.889,False
+TestBlockFixer.testGeneratedBlock,1,concurrency,indent +4,512,512,142,200,0.2773,0.3906,True,True,0,5,0.9197,0.9382,True
+TestBlockFixer.testGeneratedBlock,1,concurrency,strip indent,512,512,142,32,0.2773,0.0625,True,True,0,0,0.9197,0.9165,False
+TestBlockFixer.testGeneratedBlock,1,concurrency,trailing spaces,512,512,142,158,0.2773,0.3086,True,True,0,0,0.9197,0.8627,False
+TestBlockFixer.testGeneratedBlock,1,concurrency,remove blank lines,512,512,142,142,0.2773,0.2773,True,True,0,0,0.9197,0.9197,False
+testQueryTimeout,0,async wait,indent +4,512,512,274,292,0.5352,0.5703,True,True,1,5,0.4591,0.9446,True
+testQueryTimeout,0,async wait,strip indent,512,384,274,49,0.5352,0.1276,True,False,1,1,0.4591,0.4915,False
+testQueryTimeout,0,async wait,trailing spaces,512,512,274,281,0.5352,0.5488,True,True,1,5,0.4591,0.5394,True
+testQueryTimeout,0,async wait,remove blank lines,512,512,274,274,0.5352,0.5352,True,True,1,1,0.4591,0.4591,False
+ProgramLifecycleHttpHandlerTest.testStartProgramWithDisabledRuntimeArgs,0,async wait,indent +4,352,402,46,96,0.1307,0.2388,False,False,4,5,0.7102,0.9476,True
+ProgramLifecycleHttpHandlerTest.testStartProgramWithDisabledRuntimeArgs,0,async wait,strip indent,352,320,46,13,0.1307,0.0406,False,False,4,4,0.7102,0.916,False
+ProgramLifecycleHttpHandlerTest.testStartProgramWithDisabledRuntimeArgs,0,async wait,trailing spaces,352,366,46,60,0.1307,0.1639,False,False,4,5,0.7102,0.5221,True
+ProgramLifecycleHttpHandlerTest.testStartProgramWithDisabledRuntimeArgs,0,async wait,remove blank lines,352,352,46,46,0.1307,0.1307,False,False,4,4,0.7102,0.7102,False
+DirectedMultiGraphTest.testConnectedComponents,3,unordered collections,indent +4,150,184,34,68,0.2267,0.3696,False,False,3,5,0.8596,0.9515,True
+DirectedMultiGraphTest.testConnectedComponents,3,unordered collections,strip indent,150,125,34,9,0.2267,0.072,False,False,3,3,0.8596,0.7605,False
+DirectedMultiGraphTest.testConnectedComponents,3,unordered collections,trailing spaces,150,160,34,44,0.2267,0.275,False,False,3,5,0.8596,0.9244,True
+DirectedMultiGraphTest.testConnectedComponents,3,unordered collections,remove blank lines,150,150,34,34,0.2267,0.2267,False,False,3,3,0.8596,0.8596,False
+TestRPCCompatibility.testVersion2ClientVersion2Server,4,test order dependency,indent +4,208,254,42,88,0.2019,0.3465,False,False,0,5,0.9198,0.9479,True
+TestRPCCompatibility.testVersion2ClientVersion2Server,4,test order dependency,strip indent,208,179,42,12,0.2019,0.067,False,False,0,0,0.9198,0.9092,False
+TestRPCCompatibility.testVersion2ClientVersion2Server,4,test order dependency,trailing spaces,208,221,42,55,0.2019,0.2489,False,False,0,0,0.9198,0.8782,False
+TestRPCCompatibility.testVersion2ClientVersion2Server,4,test order dependency,remove blank lines,208,208,42,42,0.2019,0.2019,False,False,0,0,0.9198,0.9198,False
+TestDelegationTokenForProxyUser.testDelegationTokenWithRealUser,4,test order dependency,indent +4,370,440,130,200,0.3514,0.4545,False,False,0,5,0.8027,0.9481,True
+TestDelegationTokenForProxyUser.testDelegationTokenWithRealUser,4,test order dependency,strip indent,370,259,130,18,0.3514,0.0695,False,False,0,4,0.8027,0.9158,True
+TestDelegationTokenForProxyUser.testDelegationTokenWithRealUser,4,test order dependency,trailing spaces,370,389,130,149,0.3514,0.383,False,False,0,5,0.8027,0.9091,True
+TestDelegationTokenForProxyUser.testDelegationTokenWithRealUser,4,test order dependency,remove blank lines,370,370,130,130,0.3514,0.3514,False,False,0,0,0.8027,0.8027,False
+ServerCnxTest.testDuplicateConcurrentSubscribeCommand,1,concurrency,indent +4,264,330,62,128,0.2348,0.3879,False,False,0,5,0.9219,0.945,True
+ServerCnxTest.testDuplicateConcurrentSubscribeCommand,1,concurrency,strip indent,264,221,62,17,0.2348,0.0769,False,False,0,0,0.9219,0.894,False
+ServerCnxTest.testDuplicateConcurrentSubscribeCommand,1,concurrency,trailing spaces,264,282,62,80,0.2348,0.2837,False,False,0,0,0.9219,0.9135,False
+ServerCnxTest.testDuplicateConcurrentSubscribeCommand,1,concurrency,remove blank lines,264,264,62,62,0.2348,0.2348,False,False,0,0,0.9219,0.9219,False
+TestPathData.testWithStringAndConfForBuggyPath,4,test order dependency,indent +4,87,113,22,48,0.2529,0.4248,False,False,4,5,0.8099,0.9515,True
+TestPathData.testWithStringAndConfForBuggyPath,4,test order dependency,strip indent,87,72,22,7,0.2529,0.0972,False,False,4,4,0.8099,0.9237,False
+TestPathData.testWithStringAndConfForBuggyPath,4,test order dependency,trailing spaces,87,95,22,30,0.2529,0.3158,False,False,4,5,0.8099,0.8387,True
+TestPathData.testWithStringAndConfForBuggyPath,4,test order dependency,remove blank lines,87,87,22,22,0.2529,0.2529,False,False,4,4,0.8099,0.8099,False
+TestModTime.testModTime,2,time,indent +4,512,512,165,219,0.3223,0.4277,True,True,0,5,0.9225,0.9414,True
+TestModTime.testModTime,2,time,strip indent,512,512,165,35,0.3223,0.0684,True,True,0,0,0.9225,0.923,False
+TestModTime.testModTime,2,time,trailing spaces,512,512,165,179,0.3223,0.3496,True,True,0,0,0.9225,0.7238,False
+TestModTime.testModTime,2,time,remove blank lines,512,512,165,165,0.3223,0.3223,True,True,0,0,0.9225,0.9225,False
+TestPathData.testWithDirStringAndConf,4,test order dependency,indent +4,88,118,26,56,0.2955,0.4746,False,False,4,5,0.8657,0.9504,True
+TestPathData.testWithDirStringAndConf,4,test order dependency,strip indent,88,70,26,8,0.2955,0.1143,False,False,4,4,0.8657,0.9172,False
+TestPathData.testWithDirStringAndConf,4,test order dependency,trailing spaces,88,97,26,35,0.2955,0.3608,False,False,4,4,0.8657,0.5116,False
+TestPathData.testWithDirStringAndConf,4,test order dependency,remove blank lines,88,88,26,26,0.2955,0.2955,False,False,4,4,0.8657,0.8657,False
+DefectTest.nullAndObjectValuesInMap,3,unordered collections,indent +4,126,148,18,40,0.1429,0.2703,False,False,3,5,0.7537,0.9397,True
+DefectTest.nullAndObjectValuesInMap,3,unordered collections,strip indent,126,114,18,6,0.1429,0.0526,False,False,3,3,0.7537,0.5546,False
+DefectTest.nullAndObjectValuesInMap,3,unordered collections,trailing spaces,126,133,18,25,0.1429,0.188,False,False,3,5,0.7537,0.6405,True
+DefectTest.nullAndObjectValuesInMap,3,unordered collections,remove blank lines,126,126,18,18,0.1429,0.1429,False,False,3,3,0.7537,0.7537,False
+testPendingAndInvalidate,1,concurrency,indent +4,512,512,238,264,0.4648,0.5156,True,True,5,5,0.609,0.9449,False
+testPendingAndInvalidate,1,concurrency,strip indent,512,511,238,42,0.4648,0.0822,True,False,5,0,0.609,0.9147,True
+testPendingAndInvalidate,1,concurrency,trailing spaces,512,512,238,248,0.4648,0.4844,True,True,5,5,0.609,0.9133,False
+testPendingAndInvalidate,1,concurrency,remove blank lines,512,512,238,238,0.4648,0.4648,True,True,5,5,0.609,0.609,False
+WorkflowClientTestRun.testWorkflowClient,0,async wait,indent +4,512,512,111,176,0.2168,0.3438,True,True,0,5,0.6057,0.9452,True
+WorkflowClientTestRun.testWorkflowClient,0,async wait,strip indent,512,512,111,28,0.2168,0.0547,True,True,0,0,0.6057,0.4523,False
+WorkflowClientTestRun.testWorkflowClient,0,async wait,trailing spaces,512,512,111,133,0.2168,0.2598,True,True,0,5,0.6057,0.5181,True
+WorkflowClientTestRun.testWorkflowClient,0,async wait,remove blank lines,512,512,111,111,0.2168,0.2168,True,True,0,0,0.6057,0.6057,False
+ColumnFamilyStoreTest.testRemoveSuperColumn,0,async wait,indent +4,383,465,78,160,0.2037,0.3441,False,False,0,5,0.824,0.946,True
+ColumnFamilyStoreTest.testRemoveSuperColumn,0,async wait,strip indent,383,326,78,21,0.2037,0.0644,False,False,0,0,0.824,0.7296,False
+ColumnFamilyStoreTest.testRemoveSuperColumn,0,async wait,trailing spaces,383,405,78,100,0.2037,0.2469,False,False,0,5,0.824,0.4824,True
+ColumnFamilyStoreTest.testRemoveSuperColumn,0,async wait,remove blank lines,383,383,78,78,0.2037,0.2037,False,False,0,0,0.824,0.824,False
+GiteePropertyPathNotificationExtractorTests.giteeSample,3,unordered collections,indent +4,157,183,22,48,0.1401,0.2623,False,False,3,5,0.5246,0.9517,True
+GiteePropertyPathNotificationExtractorTests.giteeSample,3,unordered collections,strip indent,157,142,22,7,0.1401,0.0493,False,False,3,4,0.5246,0.7441,True
+GiteePropertyPathNotificationExtractorTests.giteeSample,3,unordered collections,trailing spaces,157,165,22,30,0.1401,0.1818,False,False,3,5,0.5246,0.8747,True
+GiteePropertyPathNotificationExtractorTests.giteeSample,3,unordered collections,remove blank lines,157,157,22,22,0.1401,0.1401,False,False,3,3,0.5246,0.5246,False
+SegmentGenerationWithTimeColumnTest.testMinAllowedValue,2,time,indent +4,161,203,38,80,0.236,0.3941,False,False,2,5,0.7911,0.9446,True
+SegmentGenerationWithTimeColumnTest.testMinAllowedValue,2,time,strip indent,161,134,38,11,0.236,0.0821,False,False,2,2,0.7911,0.7879,False
+SegmentGenerationWithTimeColumnTest.testMinAllowedValue,2,time,trailing spaces,161,173,38,50,0.236,0.289,False,False,2,2,0.7911,0.711,False
+SegmentGenerationWithTimeColumnTest.testMinAllowedValue,2,time,remove blank lines,161,161,38,38,0.236,0.236,False,False,2,2,0.7911,0.7911,False
+TestFrameworkTestRun.testWorkerInstances,0,async wait,indent +4,512,512,117,205,0.2285,0.4004,True,True,0,5,0.9237,0.9355,True
+TestFrameworkTestRun.testWorkerInstances,0,async wait,strip indent,512,470,117,31,0.2285,0.066,True,False,0,0,0.9237,0.9205,False
+TestFrameworkTestRun.testWorkerInstances,0,async wait,trailing spaces,512,512,117,145,0.2285,0.2832,True,True,0,0,0.9237,0.8649,False
+TestFrameworkTestRun.testWorkerInstances,0,async wait,remove blank lines,512,512,117,117,0.2285,0.2285,True,True,0,0,0.9237,0.9237,False
+NotifyAboutChangesTest.notifyAboutChangesConcurrently,1,concurrency,indent +4,512,512,237,280,0.4629,0.5469,True,True,0,5,0.915,0.932,True
+NotifyAboutChangesTest.notifyAboutChangesConcurrently,1,concurrency,strip indent,512,410,237,35,0.4629,0.0854,True,False,0,0,0.915,0.7172,False
+NotifyAboutChangesTest.notifyAboutChangesConcurrently,1,concurrency,trailing spaces,512,512,237,250,0.4629,0.4883,True,True,0,0,0.915,0.9122,False
+NotifyAboutChangesTest.notifyAboutChangesConcurrently,1,concurrency,remove blank lines,512,512,237,237,0.4629,0.4629,True,True,0,0,0.915,0.915,False
+GridCacheRebalancingWithAsyncClearingTest.testCorrectRebalancingCurrentlyRentingPartitions,1,concurrency,indent +4,479,512,174,260,0.3633,0.5078,False,True,0,5,0.9234,0.9367,True
+GridCacheRebalancingWithAsyncClearingTest.testCorrectRebalancingCurrentlyRentingPartitions,1,concurrency,strip indent,479,333,174,28,0.3633,0.0841,False,False,0,0,0.9234,0.9221,False
+GridCacheRebalancingWithAsyncClearingTest.testCorrectRebalancingCurrentlyRentingPartitions,1,concurrency,trailing spaces,479,508,174,203,0.3633,0.3996,False,False,0,0,0.9234,0.9067,False
+GridCacheRebalancingWithAsyncClearingTest.testCorrectRebalancingCurrentlyRentingPartitions,1,concurrency,remove blank lines,479,479,174,174,0.3633,0.3633,False,False,0,0,0.9234,0.9234,False
+AntiAffinityNamespaceGroupTest.testBrokerSelectionForAntiAffinityGroup,1,concurrency,indent +4,512,512,133,168,0.2598,0.3281,True,True,0,5,0.8917,0.9427,True
+AntiAffinityNamespaceGroupTest.testBrokerSelectionForAntiAffinityGroup,1,concurrency,strip indent,512,512,133,32,0.2598,0.0625,True,True,0,0,0.8917,0.8353,False
+AntiAffinityNamespaceGroupTest.testBrokerSelectionForAntiAffinityGroup,1,concurrency,trailing spaces,512,512,133,143,0.2598,0.2793,True,True,0,0,0.8917,0.8234,False
+AntiAffinityNamespaceGroupTest.testBrokerSelectionForAntiAffinityGroup,1,concurrency,remove blank lines,512,512,133,133,0.2598,0.2598,True,True,0,0,0.8917,0.8917,False
+TestPathData.testQualifiedUriContents,4,test order dependency,indent +4,112,134,18,40,0.1607,0.2985,False,False,4,5,0.7383,0.9528,True
+TestPathData.testQualifiedUriContents,4,test order dependency,strip indent,112,100,18,6,0.1607,0.06,False,False,4,4,0.7383,0.8867,False
+TestPathData.testQualifiedUriContents,4,test order dependency,trailing spaces,112,119,18,25,0.1607,0.2101,False,False,4,5,0.7383,0.9093,True
+TestPathData.testQualifiedUriContents,4,test order dependency,remove blank lines,112,112,18,18,0.1607,0.1607,False,False,4,4,0.7383,0.7383,False
+NamespacesTest.testSubscribeRate,0,async wait,indent +4,510,512,98,164,0.1922,0.3203,False,True,0,5,0.9218,0.9409,True
+NamespacesTest.testSubscribeRate,0,async wait,strip indent,510,444,98,26,0.1922,0.0586,False,False,0,0,0.9218,0.9196,False
+NamespacesTest.testSubscribeRate,0,async wait,trailing spaces,510,512,98,117,0.1922,0.2285,False,True,0,0,0.9218,0.872,False
+NamespacesTest.testSubscribeRate,0,async wait,remove blank lines,510,510,98,98,0.1922,0.1922,False,False,0,0,0.9218,0.9218,False
+MappingCouchbaseConverterTests.writesAndReadsCustomFieldsConvertedClass,3,unordered collections,indent +4,512,512,113,184,0.2207,0.3594,True,True,3,5,0.6283,0.9356,True
+MappingCouchbaseConverterTests.writesAndReadsCustomFieldsConvertedClass,3,unordered collections,strip indent,512,512,113,33,0.2207,0.0645,True,True,3,3,0.6283,0.627,False
+MappingCouchbaseConverterTests.writesAndReadsCustomFieldsConvertedClass,3,unordered collections,trailing spaces,512,512,113,137,0.2207,0.2676,True,True,3,0,0.6283,0.3631,True
+MappingCouchbaseConverterTests.writesAndReadsCustomFieldsConvertedClass,3,unordered collections,remove blank lines,512,512,113,113,0.2207,0.2207,True,True,3,3,0.6283,0.6283,False
+testTopicLevelInactivePolicyUpdateAndClean,0,async wait,indent +4,512,512,109,177,0.2129,0.3457,True,True,0,5,0.922,0.9441,True
+testTopicLevelInactivePolicyUpdateAndClean,0,async wait,strip indent,512,512,109,32,0.2129,0.0625,True,True,0,0,0.922,0.9233,False
+testTopicLevelInactivePolicyUpdateAndClean,0,async wait,trailing spaces,512,512,109,126,0.2129,0.2461,True,True,0,0,0.922,0.8432,False
+testTopicLevelInactivePolicyUpdateAndClean,0,async wait,remove blank lines,512,512,109,109,0.2129,0.2129,True,True,0,0,0.922,0.922,False
+ManagedLedgerTest.testMaximumRolloverTime,0,async wait,indent +4,249,307,54,112,0.2169,0.3648,False,False,0,5,0.9019,0.9351,True
+ManagedLedgerTest.testMaximumRolloverTime,0,async wait,strip indent,249,215,54,15,0.2169,0.0698,False,False,0,0,0.9019,0.9085,False
+ManagedLedgerTest.testMaximumRolloverTime,0,async wait,trailing spaces,249,265,54,70,0.2169,0.2642,False,False,0,0,0.9019,0.8916,False
+ManagedLedgerTest.testMaximumRolloverTime,0,async wait,remove blank lines,249,249,54,54,0.2169,0.2169,False,False,0,0,0.9019,0.9019,False
+DiscoveryServiceTest.testBrokerDiscoveryRoundRobin,0,async wait,indent +4,126,160,42,76,0.3333,0.475,False,False,0,5,0.9126,0.9464,True
+DiscoveryServiceTest.testBrokerDiscoveryRoundRobin,0,async wait,strip indent,126,93,42,9,0.3333,0.0968,False,False,0,4,0.9126,0.6043,True
+DiscoveryServiceTest.testBrokerDiscoveryRoundRobin,0,async wait,trailing spaces,126,136,42,52,0.3333,0.3824,False,False,0,0,0.9126,0.6778,False
+DiscoveryServiceTest.testBrokerDiscoveryRoundRobin,0,async wait,remove blank lines,126,126,42,42,0.3333,0.3333,False,False,0,0,0.9126,0.9126,False
+testAutomaticStartStop,0,async wait,indent +4,232,298,62,128,0.2672,0.4295,False,False,0,5,0.9142,0.9351,True
+testAutomaticStartStop,0,async wait,strip indent,232,187,62,17,0.2672,0.0909,False,False,0,0,0.9142,0.9226,False
+testAutomaticStartStop,0,async wait,trailing spaces,232,250,62,80,0.2672,0.32,False,False,0,0,0.9142,0.8527,False
+testAutomaticStartStop,0,async wait,remove blank lines,232,232,62,62,0.2672,0.2672,False,False,0,0,0.9142,0.9142,False
+PrometheusMetricsTest.testPerTopicStats,1,concurrency,indent +4,512,512,109,164,0.2129,0.3203,True,True,0,5,0.914,0.9438,True
+PrometheusMetricsTest.testPerTopicStats,1,concurrency,strip indent,512,512,109,30,0.2129,0.0586,True,True,0,0,0.914,0.8975,False
+PrometheusMetricsTest.testPerTopicStats,1,concurrency,trailing spaces,512,512,109,123,0.2129,0.2402,True,True,0,0,0.914,0.7667,False
+PrometheusMetricsTest.testPerTopicStats,1,concurrency,remove blank lines,512,512,109,109,0.2129,0.2129,True,True,0,0,0.914,0.914,False
+TestPathData.testCwdContents,4,test order dependency,indent +4,85,107,18,40,0.2118,0.3738,False,False,4,5,0.9441,0.9507,True
+TestPathData.testCwdContents,4,test order dependency,strip indent,85,73,18,6,0.2118,0.0822,False,False,4,4,0.9441,0.9471,False
+TestPathData.testCwdContents,4,test order dependency,trailing spaces,85,92,18,25,0.2118,0.2717,False,False,4,5,0.9441,0.838,True
+TestPathData.testCwdContents,4,test order dependency,remove blank lines,85,85,18,18,0.2118,0.2118,False,False,4,4,0.9441,0.9441,False
+ProvisioningServiceTest.testCancelDeprovision,4,test order dependency,indent +4,242,284,42,84,0.1736,0.2958,False,False,0,5,0.6196,0.9481,True
+ProvisioningServiceTest.testCancelDeprovision,4,test order dependency,strip indent,242,213,42,11,0.1736,0.0516,False,False,0,0,0.6196,0.7383,False
+ProvisioningServiceTest.testCancelDeprovision,4,test order dependency,trailing spaces,242,254,42,54,0.1736,0.2126,False,False,0,0,0.6196,0.516,False
+ProvisioningServiceTest.testCancelDeprovision,4,test order dependency,remove blank lines,242,242,42,42,0.1736,0.1736,False,False,0,0,0.6196,0.6196,False
+testTimeWindows,2,time,indent +4,230,271,35,76,0.1522,0.2804,False,False,2,5,0.7916,0.9471,True
+testTimeWindows,2,time,strip indent,230,206,35,11,0.1522,0.0534,False,False,2,2,0.7916,0.792,False
+testTimeWindows,2,time,trailing spaces,230,242,35,47,0.1522,0.1942,False,False,2,2,0.7916,0.5969,False
+testTimeWindows,2,time,remove blank lines,230,230,35,35,0.1522,0.1522,False,False,2,2,0.7916,0.7916,False
+testGracefulClose,0,async wait,indent +4,349,419,126,196,0.361,0.4678,False,False,0,5,0.747,0.9397,True
+testGracefulClose,0,async wait,strip indent,349,246,126,18,0.361,0.0732,False,False,0,0,0.747,0.8429,False
+testGracefulClose,0,async wait,trailing spaces,349,368,126,145,0.361,0.394,False,False,0,0,0.747,0.6187,False
+testGracefulClose,0,async wait,remove blank lines,349,349,126,126,0.361,0.361,False,False,0,0,0.747,0.747,False
+testAsyncFunction,1,concurrency,indent +4,397,495,175,273,0.4408,0.5515,False,False,0,5,0.9124,0.9362,True
+testAsyncFunction,1,concurrency,strip indent,397,248,175,26,0.4408,0.1048,False,False,0,0,0.9124,0.8232,False
+testAsyncFunction,1,concurrency,trailing spaces,397,423,175,201,0.4408,0.4752,False,False,0,0,0.9124,0.6158,False
+testAsyncFunction,1,concurrency,remove blank lines,397,397,175,175,0.4408,0.4408,False,False,0,0,0.9124,0.9124,False
+TestHftpFileSystem.testHftpCustomDefaultPorts,4,test order dependency,indent +4,194,240,42,88,0.2165,0.3667,False,False,0,5,0.7865,0.9499,True
+TestHftpFileSystem.testHftpCustomDefaultPorts,4,test order dependency,strip indent,194,164,42,12,0.2165,0.0732,False,False,0,0,0.7865,0.7858,False
+TestHftpFileSystem.testHftpCustomDefaultPorts,4,test order dependency,trailing spaces,194,207,42,55,0.2165,0.2657,False,False,0,0,0.7865,0.7172,False
+TestHftpFileSystem.testHftpCustomDefaultPorts,4,test order dependency,remove blank lines,194,194,42,42,0.2165,0.2165,False,False,0,0,0.7865,0.7865,False
+testLedgerReachMaximumRolloverTime,0,async wait,indent +4,221,263,38,80,0.1719,0.3042,False,False,2,5,0.7182,0.9377,True
+testLedgerReachMaximumRolloverTime,0,async wait,strip indent,221,194,38,11,0.1719,0.0567,False,False,2,2,0.7182,0.7458,False
+testLedgerReachMaximumRolloverTime,0,async wait,trailing spaces,221,233,38,50,0.1719,0.2146,False,False,2,2,0.7182,0.6688,False
+testLedgerReachMaximumRolloverTime,0,async wait,remove blank lines,221,221,38,38,0.1719,0.1719,False,False,2,2,0.7182,0.7182,False
+MetadataSubscriberServiceTest.testSubscriber,0,async wait,indent +4,512,512,93,148,0.1816,0.2891,True,True,0,5,0.6094,0.947,True
+MetadataSubscriberServiceTest.testSubscriber,0,async wait,strip indent,512,512,93,29,0.1816,0.0566,True,True,0,0,0.6094,0.5878,False
+MetadataSubscriberServiceTest.testSubscriber,0,async wait,trailing spaces,512,512,93,107,0.1816,0.209,True,True,0,5,0.6094,0.5356,True
+MetadataSubscriberServiceTest.testSubscriber,0,async wait,remove blank lines,512,512,93,93,0.1816,0.1816,True,True,0,0,0.6094,0.6094,False
+JSONObjectTest_readObject.test_6,3,unordered collections,indent +4,243,305,60,122,0.2469,0.4,False,False,3,5,0.5454,0.9497,True
+JSONObjectTest_readObject.test_6,3,unordered collections,strip indent,243,201,60,18,0.2469,0.0896,False,False,3,3,0.5454,0.5299,False
+JSONObjectTest_readObject.test_6,3,unordered collections,trailing spaces,243,260,60,77,0.2469,0.2962,False,False,3,5,0.5454,0.768,True
+JSONObjectTest_readObject.test_6,3,unordered collections,remove blank lines,243,243,60,60,0.2469,0.2469,False,False,3,3,0.5454,0.5454,False
+AvroSchemaTest.testNotAllowNullSchema,3,unordered collections,indent +4,367,437,106,176,0.2888,0.4027,False,False,3,5,0.8157,0.9503,True
+AvroSchemaTest.testNotAllowNullSchema,3,unordered collections,strip indent,367,279,106,18,0.2888,0.0645,False,False,3,3,0.8157,0.7442,False
+AvroSchemaTest.testNotAllowNullSchema,3,unordered collections,trailing spaces,367,386,106,125,0.2888,0.3238,False,False,3,5,0.8157,0.7088,True
+AvroSchemaTest.testNotAllowNullSchema,3,unordered collections,remove blank lines,367,367,106,106,0.2888,0.2888,False,False,3,3,0.8157,0.8157,False
+Issue1492.test_for_issue,3,unordered collections,indent +4,272,346,70,144,0.2574,0.4162,False,False,0,5,0.7893,0.9466,True
+Issue1492.test_for_issue,3,unordered collections,strip indent,272,221,70,19,0.2574,0.086,False,False,0,0,0.7893,0.7229,False
+Issue1492.test_for_issue,3,unordered collections,trailing spaces,272,292,70,90,0.2574,0.3082,False,False,0,0,0.7893,0.7266,False
+Issue1492.test_for_issue,3,unordered collections,remove blank lines,272,272,70,70,0.2574,0.2574,False,False,0,0,0.7893,0.7893,False
+d0efffad5d2034bb07525cac9b299dac72c3045d.testCloseReason,4,test order dependency,indent +4,243,281,34,72,0.1399,0.2562,False,False,0,5,0.8803,0.9487,True
+d0efffad5d2034bb07525cac9b299dac72c3045d.testCloseReason,4,test order dependency,strip indent,243,219,34,10,0.1399,0.0457,False,False,0,0,0.8803,0.7079,False
+d0efffad5d2034bb07525cac9b299dac72c3045d.testCloseReason,4,test order dependency,trailing spaces,243,254,34,45,0.1399,0.1772,False,False,0,5,0.8803,0.4422,True
+d0efffad5d2034bb07525cac9b299dac72c3045d.testCloseReason,4,test order dependency,remove blank lines,243,243,34,34,0.1399,0.1399,False,False,0,0,0.8803,0.8803,False
+ReplicatorTest.testReplicatorProducerName,0,async wait,indent +4,260,314,54,108,0.2077,0.3439,False,False,0,5,0.8551,0.949,True
+ReplicatorTest.testReplicatorProducerName,0,async wait,strip indent,260,220,54,14,0.2077,0.0636,False,False,0,4,0.8551,0.7416,True
+ReplicatorTest.testReplicatorProducerName,0,async wait,trailing spaces,260,275,54,69,0.2077,0.2509,False,False,0,5,0.8551,0.8533,True
+ReplicatorTest.testReplicatorProducerName,0,async wait,remove blank lines,260,260,54,54,0.2077,0.2077,False,False,0,0,0.8551,0.8551,False
+test_date,2,time,indent +4,480,512,70,132,0.1458,0.2578,False,True,2,5,0.7289,0.9423,True
+test_date,2,time,strip indent,480,429,70,19,0.1458,0.0443,False,False,2,2,0.7289,0.6618,False
+test_date,2,time,trailing spaces,480,500,70,90,0.1458,0.18,False,False,2,5,0.7289,0.254,True
+test_date,2,time,remove blank lines,480,480,70,70,0.1458,0.1458,False,False,2,2,0.7289,0.7289,False
+TestSecurityUtil.testBuildDTServiceName,4,test order dependency,indent +4,154,176,18,40,0.1169,0.2273,False,False,4,5,0.3941,0.9481,True
+TestSecurityUtil.testBuildDTServiceName,4,test order dependency,strip indent,154,142,18,6,0.1169,0.0423,False,False,4,4,0.3941,0.6982,False
+TestSecurityUtil.testBuildDTServiceName,4,test order dependency,trailing spaces,154,161,18,25,0.1169,0.1553,False,False,4,5,0.3941,0.7458,True
+TestSecurityUtil.testBuildDTServiceName,4,test order dependency,remove blank lines,154,154,18,18,0.1169,0.1169,False,False,4,4,0.3941,0.3941,False
+SystemCacheNotConfiguredTest.test,0,async wait,indent +4,135,173,34,72,0.2519,0.4162,False,False,0,5,0.9191,0.9483,True
+SystemCacheNotConfiguredTest.test,0,async wait,strip indent,135,112,34,10,0.2519,0.0893,False,False,0,0,0.9191,0.9075,False
+SystemCacheNotConfiguredTest.test,0,async wait,trailing spaces,135,146,34,45,0.2519,0.3082,False,False,0,5,0.9191,0.4538,True
+SystemCacheNotConfiguredTest.test,0,async wait,remove blank lines,135,135,34,34,0.2519,0.2519,False,False,0,0,0.9191,0.9191,False
+TestUnderReplicatedBlocks.testSetrepIncWithUnderReplicatedBlocks,0,async wait,indent +4,447,512,122,192,0.2729,0.375,False,True,0,5,0.9139,0.945,True
+TestUnderReplicatedBlocks.testSetrepIncWithUnderReplicatedBlocks,0,async wait,strip indent,447,345,122,21,0.2729,0.0609,False,False,0,0,0.9139,0.8202,False
+TestUnderReplicatedBlocks.testSetrepIncWithUnderReplicatedBlocks,0,async wait,trailing spaces,447,469,122,144,0.2729,0.307,False,False,0,0,0.9139,0.8055,False
+TestUnderReplicatedBlocks.testSetrepIncWithUnderReplicatedBlocks,0,async wait,remove blank lines,447,447,122,122,0.2729,0.2729,False,False,0,0,0.9139,0.9139,False
+Issue1584.test_for_issue,3,unordered collections,indent +4,390,480,154,244,0.3949,0.5083,False,False,0,5,0.457,0.9473,True
+Issue1584.test_for_issue,3,unordered collections,strip indent,390,258,154,23,0.3949,0.0891,False,False,0,4,0.457,0.6379,True
+Issue1584.test_for_issue,3,unordered collections,trailing spaces,390,414,154,178,0.3949,0.43,False,False,0,5,0.457,0.8823,True
+Issue1584.test_for_issue,3,unordered collections,remove blank lines,390,390,154,154,0.3949,0.3949,False,False,0,0,0.457,0.457,False
+TestDelegationTokenForProxyUser.testWebHdfsDoAs,4,test order dependency,indent +4,512,512,141,188,0.2754,0.3672,True,True,0,5,0.8921,0.9423,True
+TestDelegationTokenForProxyUser.testWebHdfsDoAs,4,test order dependency,strip indent,512,512,141,33,0.2754,0.0645,True,True,0,0,0.8921,0.7254,False
+TestDelegationTokenForProxyUser.testWebHdfsDoAs,4,test order dependency,trailing spaces,512,512,141,147,0.2754,0.2871,True,True,0,0,0.8921,0.6864,False
+TestDelegationTokenForProxyUser.testWebHdfsDoAs,4,test order dependency,remove blank lines,512,512,141,141,0.2754,0.2754,True,True,0,0,0.8921,0.8921,False
+TestMetricsSystemImpl.testInitFirstVerifyCallBacks,3,unordered collections,indent +4,512,512,101,152,0.1973,0.2969,True,True,0,5,0.9231,0.939,True
+TestMetricsSystemImpl.testInitFirstVerifyCallBacks,3,unordered collections,strip indent,512,506,101,29,0.1973,0.0573,True,False,0,0,0.9231,0.9196,False
+TestMetricsSystemImpl.testInitFirstVerifyCallBacks,3,unordered collections,trailing spaces,512,512,101,108,0.1973,0.2109,True,True,0,0,0.9231,0.9142,False
+TestMetricsSystemImpl.testInitFirstVerifyCallBacks,3,unordered collections,remove blank lines,512,512,101,101,0.1973,0.1973,True,True,0,0,0.9231,0.9231,False
+WorkflowHttpHandlerTest.testWorkflowTokenPut,0,async wait,indent +4,512,512,73,124,0.1426,0.2422,True,True,0,5,0.7473,0.9475,True
+WorkflowHttpHandlerTest.testWorkflowTokenPut,0,async wait,strip indent,512,512,73,22,0.1426,0.043,True,True,0,0,0.7473,0.6437,False
+WorkflowHttpHandlerTest.testWorkflowTokenPut,0,async wait,trailing spaces,512,512,73,87,0.1426,0.1699,True,True,0,5,0.7473,0.4718,True
+WorkflowHttpHandlerTest.testWorkflowTokenPut,0,async wait,remove blank lines,512,512,73,73,0.1426,0.1426,True,True,0,0,0.7473,0.7473,False
+SortFieldTest.test_1,3,unordered collections,indent +4,180,214,30,64,0.1667,0.2991,False,False,3,5,0.8637,0.9519,True
+SortFieldTest.test_1,3,unordered collections,strip indent,180,159,30,9,0.1667,0.0566,False,False,3,3,0.8637,0.8481,False
+SortFieldTest.test_1,3,unordered collections,trailing spaces,180,190,30,40,0.1667,0.2105,False,False,3,5,0.8637,0.8697,True
+SortFieldTest.test_1,3,unordered collections,remove blank lines,180,180,30,30,0.1667,0.1667,False,False,3,3,0.8637,0.8637,False
+testWithMismatchingPending,1,concurrency,indent +4,512,512,178,224,0.3477,0.4375,True,True,0,5,0.9219,0.9442,True
+testWithMismatchingPending,1,concurrency,strip indent,512,389,178,26,0.3477,0.0668,True,False,0,0,0.9219,0.919,False
+testWithMismatchingPending,1,concurrency,trailing spaces,512,512,178,197,0.3477,0.3848,True,True,0,0,0.9219,0.5882,False
+testWithMismatchingPending,1,concurrency,remove blank lines,512,512,178,178,0.3477,0.3477,True,True,0,0,0.9219,0.9219,False
+MessageIdTest.producerSendAsync,0,async wait,indent +4,512,512,176,219,0.3438,0.4277,True,True,0,5,0.9178,0.9501,True
+MessageIdTest.producerSendAsync,0,async wait,strip indent,512,512,176,39,0.3438,0.0762,True,True,0,0,0.9178,0.8966,False
+MessageIdTest.producerSendAsync,0,async wait,trailing spaces,512,512,176,187,0.3438,0.3652,True,True,0,5,0.9178,0.5967,True
+MessageIdTest.producerSendAsync,0,async wait,remove blank lines,512,512,176,176,0.3438,0.3438,True,True,0,0,0.9178,0.9178,False
+testAuthenticationFromMultipleThreadsWithCachedToken,1,concurrency,indent +4,391,468,71,148,0.1816,0.3162,False,False,1,5,0.4803,0.9478,True
+testAuthenticationFromMultipleThreadsWithCachedToken,1,concurrency,strip indent,391,344,71,20,0.1816,0.0581,False,False,1,1,0.4803,0.4329,False
+testAuthenticationFromMultipleThreadsWithCachedToken,1,concurrency,trailing spaces,391,412,71,92,0.1816,0.2233,False,False,1,0,0.4803,0.6196,True
+testAuthenticationFromMultipleThreadsWithCachedToken,1,concurrency,remove blank lines,391,391,71,71,0.1816,0.1816,False,False,1,1,0.4803,0.4803,False
+MessageIdTest.testChecksumReconnection,0,async wait,indent +4,512,512,73,132,0.1426,0.2578,True,True,0,5,0.9248,0.9362,True
+MessageIdTest.testChecksumReconnection,0,async wait,strip indent,512,512,73,25,0.1426,0.0488,True,True,0,0,0.9248,0.926,False
+MessageIdTest.testChecksumReconnection,0,async wait,trailing spaces,512,512,73,92,0.1426,0.1797,True,True,0,0,0.9248,0.9136,False
+MessageIdTest.testChecksumReconnection,0,async wait,remove blank lines,512,512,73,73,0.1426,0.1426,True,True,0,0,0.9248,0.9248,False
+TestFairScheduler.testContinuousScheduling,0,async wait,indent +4,468,512,82,156,0.1752,0.3047,False,True,0,5,0.9211,0.9393,True
+TestFairScheduler.testContinuousScheduling,0,async wait,strip indent,468,408,82,22,0.1752,0.0539,False,False,0,0,0.9211,0.9181,False
+TestFairScheduler.testContinuousScheduling,0,async wait,trailing spaces,468,491,82,105,0.1752,0.2138,False,False,0,0,0.9211,0.9155,False
+TestFairScheduler.testContinuousScheduling,0,async wait,remove blank lines,468,468,82,82,0.1752,0.1752,False,False,0,0,0.9211,0.9211,False
+IgnitePdsThreadInterruptionTest.testInterruptsOnLFSRead,1,concurrency,indent +4,512,512,213,260,0.416,0.5078,True,True,0,5,0.8635,0.9335,True
+IgnitePdsThreadInterruptionTest.testInterruptsOnLFSRead,1,concurrency,strip indent,512,452,213,50,0.416,0.1106,True,False,0,0,0.8635,0.8458,False
+IgnitePdsThreadInterruptionTest.testInterruptsOnLFSRead,1,concurrency,trailing spaces,512,512,213,237,0.416,0.4629,True,True,0,0,0.8635,0.8642,False
+IgnitePdsThreadInterruptionTest.testInterruptsOnLFSRead,1,concurrency,remove blank lines,512,512,213,213,0.416,0.416,True,True,0,0,0.8635,0.8635,False
+shouldTerminateWhenFutureIsCancelled,1,concurrency,indent +4,512,512,179,247,0.3496,0.4824,True,True,1,5,0.5131,0.9444,True
+shouldTerminateWhenFutureIsCancelled,1,concurrency,strip indent,512,410,179,33,0.3496,0.0805,True,False,1,1,0.5131,0.5295,False
+shouldTerminateWhenFutureIsCancelled,1,concurrency,trailing spaces,512,512,179,202,0.3496,0.3945,True,True,1,0,0.5131,0.5123,True
+shouldTerminateWhenFutureIsCancelled,1,concurrency,remove blank lines,512,512,179,179,0.3496,0.3496,True,True,1,1,0.5131,0.5131,False
+testForceMetadataRefreshForPatternSubscriptionDuringRebalance,1,concurrency,indent +4,507,512,142,208,0.2801,0.4062,False,True,0,5,0.8998,0.9367,True
+testForceMetadataRefreshForPatternSubscriptionDuringRebalance,1,concurrency,strip indent,507,396,142,26,0.2801,0.0657,False,False,0,0,0.8998,0.9128,False
+testForceMetadataRefreshForPatternSubscriptionDuringRebalance,1,concurrency,trailing spaces,507,512,142,162,0.2801,0.3164,False,True,0,0,0.8998,0.8977,False
+testForceMetadataRefreshForPatternSubscriptionDuringRebalance,1,concurrency,remove blank lines,507,507,142,142,0.2801,0.2801,False,False,0,0,0.8998,0.8998,False
+testTrackMetadata_rowMarkerDelete,2,time,indent +4,334,399,59,124,0.1766,0.3108,False,False,2,5,0.7492,0.9465,True
+testTrackMetadata_rowMarkerDelete,2,time,strip indent,334,292,59,17,0.1766,0.0582,False,False,2,2,0.7492,0.721,False
+testTrackMetadata_rowMarkerDelete,2,time,trailing spaces,334,352,59,77,0.1766,0.2188,False,False,2,0,0.7492,0.3846,True
+testTrackMetadata_rowMarkerDelete,2,time,remove blank lines,334,334,59,59,0.1766,0.1766,False,False,2,2,0.7492,0.7492,False
+testTrackMetadata_rowTombstone,2,time,indent +4,366,435,63,132,0.1721,0.3034,False,False,2,5,0.741,0.9448,True
+testTrackMetadata_rowTombstone,2,time,strip indent,366,321,63,18,0.1721,0.0561,False,False,2,2,0.741,0.7761,False
+testTrackMetadata_rowTombstone,2,time,trailing spaces,366,385,63,82,0.1721,0.213,False,False,2,0,0.741,0.3781,True
+testTrackMetadata_rowTombstone,2,time,remove blank lines,366,366,63,63,0.1721,0.1721,False,False,2,2,0.741,0.741,False
+TestWritableName.testSetName,4,test order dependency,indent +4,85,107,18,40,0.2118,0.3738,False,False,4,5,0.9255,0.9519,True
+TestWritableName.testSetName,4,test order dependency,strip indent,85,73,18,6,0.2118,0.0822,False,False,4,4,0.9255,0.9381,False
+TestWritableName.testSetName,4,test order dependency,trailing spaces,85,92,18,25,0.2118,0.2717,False,False,4,5,0.9255,0.9286,True
+TestWritableName.testSetName,4,test order dependency,remove blank lines,85,85,18,18,0.2118,0.2118,False,False,4,4,0.9255,0.9255,False
+KafkaLookupExtractorFactoryTest.testStartStop,1,concurrency,indent +4,512,512,113,157,0.2207,0.3066,True,True,0,5,0.9138,0.9236,True
+KafkaLookupExtractorFactoryTest.testStartStop,1,concurrency,strip indent,512,512,113,30,0.2207,0.0586,True,True,0,0,0.9138,0.8701,False
+KafkaLookupExtractorFactoryTest.testStartStop,1,concurrency,trailing spaces,512,512,113,130,0.2207,0.2539,True,True,0,0,0.9138,0.7667,False
+KafkaLookupExtractorFactoryTest.testStartStop,1,concurrency,remove blank lines,512,512,113,113,0.2207,0.2207,True,True,0,0,0.9138,0.9138,False
+TestPeerCache.testAddAndRetrieve,4,test order dependency,indent +4,190,240,46,96,0.2421,0.4,False,False,0,5,0.9141,0.9461,True
+TestPeerCache.testAddAndRetrieve,4,test order dependency,strip indent,190,158,46,13,0.2421,0.0823,False,False,0,0,0.9141,0.8483,False
+TestPeerCache.testAddAndRetrieve,4,test order dependency,trailing spaces,190,204,46,60,0.2421,0.2941,False,False,0,0,0.9141,0.6388,False
+TestPeerCache.testAddAndRetrieve,4,test order dependency,remove blank lines,190,190,46,46,0.2421,0.2421,False,False,0,0,0.9141,0.9141,False
+MetadataHttpHandlerTestRun.testSystemMetadataRetrieval,0,async wait,indent +4,512,512,69,140,0.1348,0.2734,True,True,2,5,0.6997,0.9463,True
+MetadataHttpHandlerTestRun.testSystemMetadataRetrieval,0,async wait,strip indent,512,512,69,20,0.1348,0.0391,True,True,2,2,0.6997,0.696,False
+MetadataHttpHandlerTestRun.testSystemMetadataRetrieval,0,async wait,trailing spaces,512,512,69,87,0.1348,0.1699,True,True,2,5,0.6997,0.3439,True
+MetadataHttpHandlerTestRun.testSystemMetadataRetrieval,0,async wait,remove blank lines,512,512,69,69,0.1348,0.1348,True,True,2,2,0.6997,0.6997,False
+TestDFSIO.testRead,4,test order dependency,indent +4,99,125,22,48,0.2222,0.384,False,False,2,5,0.7879,0.941,True
+TestDFSIO.testRead,4,test order dependency,strip indent,99,84,22,7,0.2222,0.0833,False,False,2,2,0.7879,0.7836,False
+TestDFSIO.testRead,4,test order dependency,trailing spaces,99,107,22,30,0.2222,0.2804,False,False,2,2,0.7879,0.7611,False
+TestDFSIO.testRead,4,test order dependency,remove blank lines,99,99,22,22,0.2222,0.2222,False,False,2,2,0.7879,0.7879,False
+MappingCouchbaseConverterTests.writesAndReadsClassContainingCustomConvertedObjects,3,unordered collections,indent +4,512,512,113,183,0.2207,0.3574,True,True,3,5,0.6531,0.9365,True
+MappingCouchbaseConverterTests.writesAndReadsClassContainingCustomConvertedObjects,3,unordered collections,strip indent,512,512,113,33,0.2207,0.0645,True,True,3,3,0.6531,0.54,False
+MappingCouchbaseConverterTests.writesAndReadsClassContainingCustomConvertedObjects,3,unordered collections,trailing spaces,512,512,113,134,0.2207,0.2617,True,True,3,0,0.6531,0.4092,True
+MappingCouchbaseConverterTests.writesAndReadsClassContainingCustomConvertedObjects,3,unordered collections,remove blank lines,512,512,113,113,0.2207,0.2207,True,True,3,3,0.6531,0.6531,False
+TestHftpFileSystem.testHftpCustomUriPortWithDefaultPorts,4,test order dependency,indent +4,209,247,34,72,0.1627,0.2915,False,False,0,5,0.705,0.9507,True
+TestHftpFileSystem.testHftpCustomUriPortWithDefaultPorts,4,test order dependency,strip indent,209,185,34,10,0.1627,0.0541,False,False,0,4,0.705,0.4807,True
+TestHftpFileSystem.testHftpCustomUriPortWithDefaultPorts,4,test order dependency,trailing spaces,209,220,34,45,0.1627,0.2045,False,False,0,5,0.705,0.3968,True
+TestHftpFileSystem.testHftpCustomUriPortWithDefaultPorts,4,test order dependency,remove blank lines,209,209,34,34,0.1627,0.1627,False,False,0,0,0.705,0.705,False
+TestFrameworkTestRun.testAppWithServices,1,concurrency,indent +4,512,512,109,188,0.2129,0.3672,True,True,0,5,0.9229,0.9401,True
+TestFrameworkTestRun.testAppWithServices,1,concurrency,strip indent,512,512,109,34,0.2129,0.0664,True,True,0,0,0.9229,0.9229,False
+TestFrameworkTestRun.testAppWithServices,1,concurrency,trailing spaces,512,512,109,132,0.2129,0.2578,True,True,0,0,0.9229,0.8038,False
+TestFrameworkTestRun.testAppWithServices,1,concurrency,remove blank lines,512,512,109,109,0.2129,0.2129,True,True,0,0,0.9229,0.9229,False
+AbstractJavaCodegenTest.testAdditionalModelTypeAnnotationsSemiColon,3,unordered collections,indent +4,200,242,38,80,0.19,0.3306,False,False,4,5,0.7471,0.9512,True
+AbstractJavaCodegenTest.testAdditionalModelTypeAnnotationsSemiColon,3,unordered collections,strip indent,200,175,38,11,0.19,0.0629,False,False,4,4,0.7471,0.9073,False
+AbstractJavaCodegenTest.testAdditionalModelTypeAnnotationsSemiColon,3,unordered collections,trailing spaces,200,212,38,50,0.19,0.2358,False,False,4,5,0.7471,0.8279,True
+AbstractJavaCodegenTest.testAdditionalModelTypeAnnotationsSemiColon,3,unordered collections,remove blank lines,200,200,38,38,0.19,0.19,False,False,4,4,0.7471,0.7471,False
+CreateAppEngineStandardWtpProjectTest.testNoTestClassesInDeploymentAssembly,0,async wait,indent +4,331,413,97,180,0.2931,0.4358,False,False,4,5,0.4775,0.9485,True
+CreateAppEngineStandardWtpProjectTest.testNoTestClassesInDeploymentAssembly,0,async wait,strip indent,331,258,97,22,0.2931,0.0853,False,False,4,4,0.4775,0.9103,False
+CreateAppEngineStandardWtpProjectTest.testNoTestClassesInDeploymentAssembly,0,async wait,trailing spaces,331,354,97,120,0.2931,0.339,False,False,4,5,0.4775,0.7464,True
+CreateAppEngineStandardWtpProjectTest.testNoTestClassesInDeploymentAssembly,0,async wait,remove blank lines,331,331,97,97,0.2931,0.2931,False,False,4,4,0.4775,0.4775,False
+MetricsQueryTestRun.testingUserServiceGaugeMetrics,0,async wait,indent +4,278,344,62,128,0.223,0.3721,False,False,0,5,0.9207,0.9381,True
+MetricsQueryTestRun.testingUserServiceGaugeMetrics,0,async wait,strip indent,278,239,62,17,0.223,0.0711,False,False,0,0,0.9207,0.8813,False
+MetricsQueryTestRun.testingUserServiceGaugeMetrics,0,async wait,trailing spaces,278,296,62,80,0.223,0.2703,False,False,0,0,0.9207,0.8779,False
+MetricsQueryTestRun.testingUserServiceGaugeMetrics,0,async wait,remove blank lines,278,278,62,62,0.223,0.223,False,False,0,0,0.9207,0.9207,False
+TestPeerCache.testExpiry,4,test order dependency,indent +4,386,476,110,200,0.285,0.4202,False,False,0,5,0.7824,0.9397,True
+TestPeerCache.testExpiry,4,test order dependency,strip indent,386,300,110,23,0.285,0.0767,False,False,0,0,0.7824,0.7657,False
+TestPeerCache.testExpiry,4,test order dependency,trailing spaces,386,410,110,134,0.285,0.3268,False,False,0,0,0.7824,0.7186,False
+TestPeerCache.testExpiry,4,test order dependency,remove blank lines,386,386,110,110,0.285,0.285,False,False,0,0,0.7824,0.7824,False
+XmlValidatorTest.testValidate_badXml,0,async wait,indent +4,178,216,34,72,0.191,0.3333,False,False,4,5,0.8897,0.9505,True
+XmlValidatorTest.testValidate_badXml,0,async wait,strip indent,178,154,34,10,0.191,0.0649,False,False,4,4,0.8897,0.9158,False
+XmlValidatorTest.testValidate_badXml,0,async wait,trailing spaces,178,189,34,45,0.191,0.2381,False,False,4,5,0.8897,0.7253,True
+XmlValidatorTest.testValidate_badXml,0,async wait,remove blank lines,178,178,34,34,0.191,0.191,False,False,4,4,0.8897,0.8897,False
+TestSecurityUtil.testBuildTokenServiceSockAddr,4,test order dependency,indent +4,152,170,14,32,0.0921,0.1882,False,False,0,5,0.6384,0.951,True
+TestSecurityUtil.testBuildTokenServiceSockAddr,4,test order dependency,strip indent,152,143,14,5,0.0921,0.035,False,False,0,0,0.6384,0.4459,False
+TestSecurityUtil.testBuildTokenServiceSockAddr,4,test order dependency,trailing spaces,152,158,14,20,0.0921,0.1266,False,False,0,5,0.6384,0.6848,True
+TestSecurityUtil.testBuildTokenServiceSockAddr,4,test order dependency,remove blank lines,152,152,14,14,0.0921,0.0921,False,False,0,0,0.6384,0.6384,False
+TestDFSIO.testWrite,4,test order dependency,indent +4,100,126,22,48,0.22,0.381,False,False,2,5,0.7888,0.9418,True
+TestDFSIO.testWrite,4,test order dependency,strip indent,100,85,22,7,0.22,0.0824,False,False,2,2,0.7888,0.7866,False
+TestDFSIO.testWrite,4,test order dependency,trailing spaces,100,108,22,30,0.22,0.2778,False,False,2,2,0.7888,0.7558,False
+TestDFSIO.testWrite,4,test order dependency,remove blank lines,100,100,22,22,0.22,0.22,False,False,2,2,0.7888,0.7888,False
+socketTest,0,async wait,indent +4,512,512,197,228,0.3848,0.4453,True,True,0,5,0.9154,0.933,True
+socketTest,0,async wait,strip indent,512,359,197,31,0.3848,0.0864,True,False,0,0,0.9154,0.9195,False
+socketTest,0,async wait,trailing spaces,512,512,197,209,0.3848,0.4082,True,True,0,0,0.9154,0.8916,False
+socketTest,0,async wait,remove blank lines,512,512,197,197,0.3848,0.3848,True,True,0,0,0.9154,0.9154,False
+ConfigClientPropertiesTests.vanilla,5,non-flaky,indent +4,142,173,9,40,0.0634,0.2312,False,False,5,5,0.95,0.951,False
+ConfigClientPropertiesTests.vanilla,5,non-flaky,strip indent,142,126,9,8,0.0634,0.0635,False,False,5,3,0.95,0.4639,True
+ConfigClientPropertiesTests.vanilla,5,non-flaky,trailing spaces,142,150,9,17,0.0634,0.1133,False,False,5,5,0.95,0.9511,False
+ConfigClientPropertiesTests.vanilla,5,non-flaky,remove blank lines,142,141,9,8,0.0634,0.0567,False,False,5,5,0.95,0.9501,False
+PluginUtilsTest.testPluginUrlsWithZips,5,non-flaky,indent +4,262,315,92,145,0.3511,0.4603,False,False,5,5,0.9523,0.9515,False
+PluginUtilsTest.testPluginUrlsWithZips,5,non-flaky,strip indent,262,183,92,13,0.3511,0.071,False,False,5,3,0.9523,0.5303,True
+PluginUtilsTest.testPluginUrlsWithZips,5,non-flaky,trailing spaces,262,277,92,107,0.3511,0.3863,False,False,5,5,0.9523,0.9514,False
+PluginUtilsTest.testPluginUrlsWithZips,5,non-flaky,remove blank lines,262,261,92,91,0.3511,0.3487,False,False,5,5,0.9523,0.9518,False
+KeyStoreTextEncryptorLocatorTests.testDifferentKeyAndSecret,5,non-flaky,indent +4,118,145,8,35,0.0678,0.2414,False,False,5,5,0.9511,0.9527,False
+KeyStoreTextEncryptorLocatorTests.testDifferentKeyAndSecret,5,non-flaky,strip indent,118,104,8,7,0.0678,0.0673,False,False,5,3,0.9511,0.7023,True
+KeyStoreTextEncryptorLocatorTests.testDifferentKeyAndSecret,5,non-flaky,trailing spaces,118,125,8,15,0.0678,0.12,False,False,5,5,0.9511,0.9518,False
+KeyStoreTextEncryptorLocatorTests.testDifferentKeyAndSecret,5,non-flaky,remove blank lines,118,117,8,7,0.0678,0.0598,False,False,5,5,0.9511,0.9513,False
+QueryTest.querySingleLimit,5,non-flaky,indent +4,320,389,204,273,0.6375,0.7018,False,False,5,5,0.9513,0.9505,False
+QueryTest.querySingleLimit,5,non-flaky,strip indent,320,133,204,17,0.6375,0.1278,False,False,5,0,0.9513,0.8445,True
+QueryTest.querySingleLimit,5,non-flaky,trailing spaces,320,339,204,223,0.6375,0.6578,False,False,5,5,0.9513,0.9494,False
+QueryTest.querySingleLimit,5,non-flaky,remove blank lines,320,319,204,203,0.6375,0.6364,False,False,5,5,0.9513,0.9509,False
+RxQueryTest.queryOneExistedObjectTableUpdate,5,non-flaky,indent +4,512,512,285,330,0.5566,0.6445,True,True,5,5,0.9488,0.9482,False
+RxQueryTest.queryOneExistedObjectTableUpdate,5,non-flaky,strip indent,512,280,285,29,0.5566,0.1036,True,False,5,1,0.9488,0.5313,True
+RxQueryTest.queryOneExistedObjectTableUpdate,5,non-flaky,trailing spaces,512,512,285,302,0.5566,0.5898,True,True,5,5,0.9488,0.9474,False
+RxQueryTest.queryOneExistedObjectTableUpdate,5,non-flaky,remove blank lines,512,512,285,285,0.5566,0.5566,True,True,5,5,0.9488,0.9487,False
+TextUtilsTest.testParseDate,5,non-flaky,indent +4,46,61,24,39,0.5217,0.6393,False,False,5,5,0.9514,0.9519,False
+TextUtilsTest.testParseDate,5,non-flaky,strip indent,46,27,24,4,0.5217,0.1481,False,False,5,4,0.9514,0.9067,True
+TextUtilsTest.testParseDate,5,non-flaky,trailing spaces,46,50,24,28,0.5217,0.56,False,False,5,5,0.9514,0.951,False
+TextUtilsTest.testParseDate,5,non-flaky,remove blank lines,46,45,24,23,0.5217,0.5111,False,False,5,5,0.9514,0.9518,False
+Issue285Test.nestedTypeValidation,5,non-flaky,indent +4,182,219,52,89,0.2857,0.4064,False,False,5,5,0.9519,0.951,False
+Issue285Test.nestedTypeValidation,5,non-flaky,strip indent,182,139,52,9,0.2857,0.0647,False,False,5,4,0.9519,0.8307,True
+Issue285Test.nestedTypeValidation,5,non-flaky,trailing spaces,182,193,52,63,0.2857,0.3264,False,False,5,5,0.9519,0.952,False
+Issue285Test.nestedTypeValidation,5,non-flaky,remove blank lines,182,181,52,51,0.2857,0.2818,False,False,5,5,0.9519,0.9518,False
+Issue451Test.shouldWalkAnyOfPropertiesWithWithPayload,5,non-flaky,indent +4,104,123,44,63,0.4231,0.5122,False,False,5,5,0.952,0.9516,False
+Issue451Test.shouldWalkAnyOfPropertiesWithWithPayload,5,non-flaky,strip indent,104,66,44,5,0.4231,0.0758,False,False,5,4,0.952,0.8533,True
+Issue451Test.shouldWalkAnyOfPropertiesWithWithPayload,5,non-flaky,trailing spaces,104,109,44,49,0.4231,0.4495,False,False,5,5,0.952,0.9522,False
+Issue451Test.shouldWalkAnyOfPropertiesWithWithPayload,5,non-flaky,remove blank lines,104,103,44,43,0.4231,0.4175,False,False,5,5,0.952,0.9521,False
+Issue456Test.shouldWorkT3,5,non-flaky,indent +4,225,264,76,115,0.3378,0.4356,False,False,5,5,0.9526,0.9514,False
+Issue456Test.shouldWorkT3,5,non-flaky,strip indent,225,159,76,10,0.3378,0.0629,False,False,5,3,0.9526,0.5018,True
+Issue456Test.shouldWorkT3,5,non-flaky,trailing spaces,225,235,76,86,0.3378,0.366,False,False,5,5,0.9526,0.9515,False
+Issue456Test.shouldWorkT3,5,non-flaky,remove blank lines,225,224,76,75,0.3378,0.3348,False,False,5,5,0.9526,0.9523,False
+TransformationConfigTest.testEmbeddedConfigFlatten,5,non-flaky,indent +4,217,261,76,120,0.3502,0.4598,False,False,5,5,0.9523,0.9521,False
+TransformationConfigTest.testEmbeddedConfigFlatten,5,non-flaky,strip indent,217,152,76,11,0.3502,0.0724,False,False,5,4,0.9523,0.8137,True
+TransformationConfigTest.testEmbeddedConfigFlatten,5,non-flaky,trailing spaces,217,229,76,88,0.3502,0.3843,False,False,5,5,0.9523,0.9522,False
+TransformationConfigTest.testEmbeddedConfigFlatten,5,non-flaky,remove blank lines,217,216,76,75,0.3502,0.3472,False,False,5,5,0.9523,0.9524,False
+StressSettingsTest.isSerializable,5,non-flaky,indent +4,134,165,56,87,0.4179,0.5273,False,False,5,5,0.9521,0.9518,False
+StressSettingsTest.isSerializable,5,non-flaky,strip indent,134,87,56,8,0.4179,0.092,False,False,5,4,0.9521,0.9088,True
+StressSettingsTest.isSerializable,5,non-flaky,trailing spaces,134,142,56,64,0.4179,0.4507,False,False,5,5,0.9521,0.9522,False
+StressSettingsTest.isSerializable,5,non-flaky,remove blank lines,134,133,56,55,0.4179,0.4135,False,False,5,5,0.9521,0.9521,False
+TimelyTcpIT.testPutMultiple,5,non-flaky,indent +4,512,512,242,259,0.4727,0.5059,True,True,5,5,0.9501,0.9502,False
+TimelyTcpIT.testPutMultiple,5,non-flaky,strip indent,512,512,242,38,0.4727,0.0742,True,True,5,0,0.9501,0.9111,True
+TimelyTcpIT.testPutMultiple,5,non-flaky,trailing spaces,512,512,242,243,0.4727,0.4746,True,True,5,5,0.9501,0.9501,False
+TimelyTcpIT.testPutMultiple,5,non-flaky,remove blank lines,512,512,242,242,0.4727,0.4727,True,True,5,5,0.9501,0.9501,False
+BaseConnectorSmokeTest.testPredicate,5,non-flaky,indent +4,107,130,40,63,0.3738,0.4846,False,False,5,5,0.9532,0.9527,False
+BaseConnectorSmokeTest.testPredicate,5,non-flaky,strip indent,107,73,40,6,0.3738,0.0822,False,False,5,4,0.9532,0.5043,True
+BaseConnectorSmokeTest.testPredicate,5,non-flaky,trailing spaces,107,113,40,46,0.3738,0.4071,False,False,5,5,0.9532,0.9529,False
+BaseConnectorSmokeTest.testPredicate,5,non-flaky,remove blank lines,107,106,40,39,0.3738,0.3679,False,False,5,5,0.9532,0.9532,False
+AbstractAtlasDbKeyValueServiceTest.testGetRowsWhenMultipleVersions,5,non-flaky,indent +4,435,512,212,290,0.4874,0.5664,False,True,5,5,0.9522,0.9512,False
+AbstractAtlasDbKeyValueServiceTest.testGetRowsWhenMultipleVersions,5,non-flaky,strip indent,435,247,212,20,0.4874,0.081,False,False,5,3,0.9522,0.7949,True
+AbstractAtlasDbKeyValueServiceTest.testGetRowsWhenMultipleVersions,5,non-flaky,trailing spaces,435,456,212,233,0.4874,0.511,False,False,5,5,0.9522,0.9512,False
+AbstractAtlasDbKeyValueServiceTest.testGetRowsWhenMultipleVersions,5,non-flaky,remove blank lines,435,434,212,211,0.4874,0.4862,False,False,5,5,0.9522,0.9517,False
+HttpStringTestCase.testSerialization,5,non-flaky,indent +4,188,232,76,120,0.4043,0.5172,False,False,5,5,0.9521,0.951,False
+HttpStringTestCase.testSerialization,5,non-flaky,strip indent,188,122,76,11,0.4043,0.0902,False,False,5,4,0.9521,0.668,True
+HttpStringTestCase.testSerialization,5,non-flaky,trailing spaces,188,200,76,88,0.4043,0.44,False,False,5,5,0.9521,0.9504,False
+HttpStringTestCase.testSerialization,5,non-flaky,remove blank lines,188,187,76,75,0.4043,0.4011,False,False,5,5,0.9521,0.9515,False
+WorkerSourceTaskTest.testSendRecordsProducerCallbackFail,5,non-flaky,indent +4,234,289,68,123,0.2906,0.4256,False,False,5,5,0.9517,0.951,False
+WorkerSourceTaskTest.testSendRecordsProducerCallbackFail,5,non-flaky,strip indent,234,180,68,13,0.2906,0.0722,False,False,5,0,0.9517,0.552,True
+WorkerSourceTaskTest.testSendRecordsProducerCallbackFail,5,non-flaky,trailing spaces,234,251,68,85,0.2906,0.3386,False,False,5,5,0.9517,0.9508,False
+WorkerSourceTaskTest.testSendRecordsProducerCallbackFail,5,non-flaky,remove blank lines,234,233,68,67,0.2906,0.2876,False,False,5,5,0.9517,0.9514,False
+RateBasedBackPressureTest.testWindowSizeMustBeBiggerEqualThanTen,5,non-flaky,indent +4,103,118,24,39,0.233,0.3305,False,False,5,5,0.9507,0.9506,False
+RateBasedBackPressureTest.testWindowSizeMustBeBiggerEqualThanTen,5,non-flaky,strip indent,103,83,24,4,0.233,0.0482,False,False,5,3,0.9507,0.7039,True
+RateBasedBackPressureTest.testWindowSizeMustBeBiggerEqualThanTen,5,non-flaky,trailing spaces,103,107,24,28,0.233,0.2617,False,False,5,5,0.9507,0.9508,False
+RateBasedBackPressureTest.testWindowSizeMustBeBiggerEqualThanTen,5,non-flaky,remove blank lines,103,102,24,23,0.233,0.2255,False,False,5,5,0.9507,0.9502,False
+AbstractTestIntegrationSmokeTest.testShowSchemas,5,non-flaky,indent +4,142,179,56,93,0.3944,0.5196,False,False,5,5,0.9519,0.9516,False
+AbstractTestIntegrationSmokeTest.testShowSchemas,5,non-flaky,strip indent,142,95,56,9,0.3944,0.0947,False,False,5,4,0.9519,0.9359,True
+AbstractTestIntegrationSmokeTest.testShowSchemas,5,non-flaky,trailing spaces,142,153,56,67,0.3944,0.4379,False,False,5,5,0.9519,0.952,False
+AbstractTestIntegrationSmokeTest.testShowSchemas,5,non-flaky,remove blank lines,142,141,56,55,0.3944,0.3901,False,False,5,5,0.9519,0.952,False
+BaseConnectorTest.testSelectAll,5,non-flaky,indent +4,44,59,24,39,0.5455,0.661,False,False,5,5,0.9518,0.9517,False
+BaseConnectorTest.testSelectAll,5,non-flaky,strip indent,44,24,24,4,0.5455,0.1667,False,False,5,4,0.9518,0.904,True
+BaseConnectorTest.testSelectAll,5,non-flaky,trailing spaces,44,48,24,28,0.5455,0.5833,False,False,5,5,0.9518,0.9512,False
+BaseConnectorTest.testSelectAll,5,non-flaky,remove blank lines,44,43,24,23,0.5455,0.5349,False,False,5,5,0.9518,0.9518,False
+AnnotatedEndpointTest.testGenericMessageHandling,5,non-flaky,indent +4,394,481,132,219,0.335,0.4553,False,False,5,5,0.9516,0.9508,False
+AnnotatedEndpointTest.testGenericMessageHandling,5,non-flaky,strip indent,394,283,132,21,0.335,0.0742,False,False,5,0,0.9516,0.752,True
+AnnotatedEndpointTest.testGenericMessageHandling,5,non-flaky,trailing spaces,394,419,132,157,0.335,0.3747,False,False,5,5,0.9516,0.949,False
+AnnotatedEndpointTest.testGenericMessageHandling,5,non-flaky,remove blank lines,394,393,132,131,0.335,0.3333,False,False,5,5,0.9516,0.9511,False
+BucketNameValidatorTest.testValidation_nonStringInput,5,non-flaky,indent +4,79,98,18,37,0.2278,0.3776,False,False,5,5,0.9491,0.9514,False
+BucketNameValidatorTest.testValidation_nonStringInput,5,non-flaky,strip indent,79,66,18,5,0.2278,0.0758,False,False,5,4,0.9491,0.9363,True
+BucketNameValidatorTest.testValidation_nonStringInput,5,non-flaky,trailing spaces,79,84,18,23,0.2278,0.2738,False,False,5,5,0.9491,0.9508,False
+BucketNameValidatorTest.testValidation_nonStringInput,5,non-flaky,remove blank lines,79,78,18,17,0.2278,0.2179,False,False,5,5,0.9491,0.9494,False
+RxQueryTest.insertEmission,5,non-flaky,indent +4,366,481,148,263,0.4044,0.5468,False,False,5,5,0.9512,0.9505,False
+RxQueryTest.insertEmission,5,non-flaky,strip indent,366,249,148,27,0.4044,0.1084,False,False,5,0,0.9512,0.761,True
+RxQueryTest.insertEmission,5,non-flaky,trailing spaces,366,401,148,183,0.4044,0.4564,False,False,5,5,0.9512,0.9494,False
+RxQueryTest.insertEmission,5,non-flaky,remove blank lines,366,365,148,147,0.4044,0.4027,False,False,5,5,0.9512,0.9507,False
+RealtimeToOfflineSegmentsMinionClusterIntegrationTest.testQueryExceptions,5,non-flaky,indent +4,24,31,6,13,0.25,0.4194,False,False,5,5,0.9467,0.9501,False
+RealtimeToOfflineSegmentsMinionClusterIntegrationTest.testQueryExceptions,5,non-flaky,strip indent,24,20,6,2,0.25,0.1,False,False,5,4,0.9467,0.7551,True
+RealtimeToOfflineSegmentsMinionClusterIntegrationTest.testQueryExceptions,5,non-flaky,trailing spaces,24,26,6,8,0.25,0.3077,False,False,5,5,0.9467,0.9489,False
+RealtimeToOfflineSegmentsMinionClusterIntegrationTest.testQueryExceptions,5,non-flaky,remove blank lines,24,23,6,5,0.25,0.2174,False,False,5,5,0.9467,0.947,False
+TokenSequenceMatcherITest.testTokenSequenceMatcher9,5,non-flaky,indent +4,512,512,102,178,0.1992,0.3477,True,True,5,5,0.9532,0.9524,False
+TokenSequenceMatcherITest.testTokenSequenceMatcher9,5,non-flaky,strip indent,512,444,102,33,0.1992,0.0743,True,False,5,4,0.9532,0.6598,True
+TokenSequenceMatcherITest.testTokenSequenceMatcher9,5,non-flaky,trailing spaces,512,512,102,127,0.1992,0.248,True,True,5,5,0.9532,0.9526,False
+TokenSequenceMatcherITest.testTokenSequenceMatcher9,5,non-flaky,remove blank lines,512,511,102,101,0.1992,0.1977,True,False,5,5,0.9532,0.9529,False
+TextUtilsTest.testPropertiesToXML,5,non-flaky,indent +4,450,512,152,228,0.3378,0.4453,False,True,5,5,0.9523,0.9516,False
+TextUtilsTest.testPropertiesToXML,5,non-flaky,strip indent,450,321,152,21,0.3378,0.0654,False,False,5,3,0.9523,0.6012,True
+TextUtilsTest.testPropertiesToXML,5,non-flaky,trailing spaces,450,472,152,174,0.3378,0.3686,False,False,5,5,0.9523,0.9517,False
+TextUtilsTest.testPropertiesToXML,5,non-flaky,remove blank lines,450,449,152,151,0.3378,0.3363,False,False,5,5,0.9523,0.952,False
+LongSumAveragerTest.testComputeResult,5,non-flaky,indent +4,372,469,64,161,0.172,0.3433,False,False,5,5,0.9532,0.9521,False
+LongSumAveragerTest.testComputeResult,5,non-flaky,strip indent,372,338,64,23,0.172,0.068,False,False,5,3,0.9532,0.8646,True
+LongSumAveragerTest.testComputeResult,5,non-flaky,trailing spaces,372,401,64,93,0.172,0.2319,False,False,5,5,0.9532,0.9522,False
+LongSumAveragerTest.testComputeResult,5,non-flaky,remove blank lines,372,371,64,63,0.172,0.1698,False,False,5,5,0.9532,0.9527,False
+RealtimeKinesisIntegrationTest.testCountRecords,5,non-flaky,indent +4,106,134,34,62,0.3208,0.4627,False,False,5,5,0.9522,0.9512,False
+RealtimeKinesisIntegrationTest.testCountRecords,5,non-flaky,strip indent,106,79,34,7,0.3208,0.0886,False,False,5,0,0.9522,0.7511,True
+RealtimeKinesisIntegrationTest.testCountRecords,5,non-flaky,trailing spaces,106,114,34,42,0.3208,0.3684,False,False,5,5,0.9522,0.9512,False
+RealtimeKinesisIntegrationTest.testCountRecords,5,non-flaky,remove blank lines,106,105,34,33,0.3208,0.3143,False,False,5,5,0.9522,0.9516,False
+PulsarDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState,5,non-flaky,indent +4,67,82,28,43,0.4179,0.5244,False,False,5,5,0.951,0.9516,False
+PulsarDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState,5,non-flaky,strip indent,67,43,28,4,0.4179,0.093,False,False,5,4,0.951,0.9281,True
+PulsarDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState,5,non-flaky,trailing spaces,67,71,28,32,0.4179,0.4507,False,False,5,5,0.951,0.9518,False
+PulsarDatabaseHistoryTest.shouldStartWithEmptyTopicAndStoreDataAndRecoverAllState,5,non-flaky,remove blank lines,67,66,28,27,0.4179,0.4091,False,False,5,5,0.951,0.9516,False
+TestKafkaCheckpointManager.testReadCheckpointPriority,5,non-flaky,indent +4,297,348,62,113,0.2088,0.3247,False,False,5,5,0.9513,0.9517,False
+TestKafkaCheckpointManager.testReadCheckpointPriority,5,non-flaky,strip indent,297,250,62,13,0.2088,0.052,False,False,5,4,0.9513,0.7457,True
+TestKafkaCheckpointManager.testReadCheckpointPriority,5,non-flaky,trailing spaces,297,310,62,75,0.2088,0.2419,False,False,5,5,0.9513,0.9512,False
+TestKafkaCheckpointManager.testReadCheckpointPriority,5,non-flaky,remove blank lines,297,296,62,61,0.2088,0.2061,False,False,5,5,0.9513,0.9511,False
+AppEngineApplicationQueryJobTest.testRun_projectHasApplication,5,non-flaky,indent +4,179,237,44,102,0.2458,0.4304,False,False,5,5,0.952,0.9513,False
+AppEngineApplicationQueryJobTest.testRun_projectHasApplication,5,non-flaky,strip indent,179,153,44,14,0.2458,0.0915,False,False,5,0,0.952,0.5084,True
+AppEngineApplicationQueryJobTest.testRun_projectHasApplication,5,non-flaky,trailing spaces,179,196,44,61,0.2458,0.3112,False,False,5,5,0.952,0.9509,False
+AppEngineApplicationQueryJobTest.testRun_projectHasApplication,5,non-flaky,remove blank lines,179,178,44,43,0.2458,0.2416,False,False,5,5,0.952,0.9516,False
+MetricParserTest.testParseWithEscapedCharacters,5,non-flaky,indent +4,272,325,84,137,0.3088,0.4215,False,False,5,5,0.9522,0.9516,False
+MetricParserTest.testParseWithEscapedCharacters,5,non-flaky,strip indent,272,201,84,13,0.3088,0.0647,False,False,5,3,0.9522,0.8586,True
+MetricParserTest.testParseWithEscapedCharacters,5,non-flaky,trailing spaces,272,287,84,99,0.3088,0.3449,False,False,5,5,0.9522,0.9516,False
+MetricParserTest.testParseWithEscapedCharacters,5,non-flaky,remove blank lines,272,271,84,83,0.3088,0.3063,False,False,5,5,0.9522,0.9518,False
+TestLocalStoreMonitor.shouldDoNothingWhenTheJobIsRunning,5,non-flaky,indent +4,130,157,26,53,0.2,0.3376,False,False,5,5,0.9516,0.951,False
+TestLocalStoreMonitor.shouldDoNothingWhenTheJobIsRunning,5,non-flaky,strip indent,130,112,26,7,0.2,0.0625,False,False,5,0,0.9516,0.8283,True
+TestLocalStoreMonitor.shouldDoNothingWhenTheJobIsRunning,5,non-flaky,trailing spaces,130,137,26,33,0.2,0.2409,False,False,5,5,0.9516,0.9511,False
+TestLocalStoreMonitor.shouldDoNothingWhenTheJobIsRunning,5,non-flaky,remove blank lines,130,129,26,25,0.2,0.1938,False,False,5,5,0.9516,0.951,False
+FastJsonpHttpMessageConverter4Case2Test.isInjectComponent,5,non-flaky,indent +4,51,62,20,31,0.3922,0.5,False,False,5,5,0.9491,0.9504,False
+FastJsonpHttpMessageConverter4Case2Test.isInjectComponent,5,non-flaky,strip indent,51,34,20,3,0.3922,0.0882,False,False,5,4,0.9491,0.942,True
+FastJsonpHttpMessageConverter4Case2Test.isInjectComponent,5,non-flaky,trailing spaces,51,54,20,23,0.3922,0.4259,False,False,5,5,0.9491,0.9487,False
+FastJsonpHttpMessageConverter4Case2Test.isInjectComponent,5,non-flaky,remove blank lines,51,50,20,19,0.3922,0.38,False,False,5,5,0.9491,0.9496,False
+InterceptorTest.onRequest,5,non-flaky,indent +4,151,170,100,119,0.6623,0.7,False,False,5,5,0.9507,0.9498,False
+InterceptorTest.onRequest,5,non-flaky,strip indent,151,56,100,5,0.6623,0.0893,False,False,5,4,0.9507,0.6005,True
+InterceptorTest.onRequest,5,non-flaky,trailing spaces,151,156,100,105,0.6623,0.6731,False,False,5,5,0.9507,0.9501,False
+InterceptorTest.onRequest,5,non-flaky,remove blank lines,151,150,100,99,0.6623,0.66,False,False,5,5,0.9507,0.9499,False
+QueryTest.queryWithRawQueryAndArguments,5,non-flaky,indent +4,455,512,253,332,0.556,0.6484,False,True,5,5,0.9512,0.9502,False
+QueryTest.queryWithRawQueryAndArguments,5,non-flaky,strip indent,455,227,253,25,0.556,0.1101,False,False,5,0,0.9512,0.5482,True
+QueryTest.queryWithRawQueryAndArguments,5,non-flaky,trailing spaces,455,483,253,281,0.556,0.5818,False,False,5,5,0.9512,0.9498,False
+QueryTest.queryWithRawQueryAndArguments,5,non-flaky,remove blank lines,455,454,253,252,0.556,0.5551,False,False,5,5,0.9512,0.9509,False
+MetaKeySetTest.testContents,5,non-flaky,indent +4,465,512,132,191,0.2839,0.373,False,True,5,5,0.9527,0.952,False
+MetaKeySetTest.testContents,5,non-flaky,strip indent,465,350,132,17,0.2839,0.0486,False,False,5,3,0.9527,0.8115,True
+MetaKeySetTest.testContents,5,non-flaky,trailing spaces,465,482,132,149,0.2839,0.3091,False,False,5,5,0.9527,0.952,False
+MetaKeySetTest.testContents,5,non-flaky,remove blank lines,465,464,132,131,0.2839,0.2823,False,False,5,5,0.9527,0.9524,False
+RocksDbKeyValueServiceTest.testCreateTables,5,non-flaky,indent +4,95,114,36,55,0.3789,0.4825,False,False,5,5,0.952,0.9517,False
+RocksDbKeyValueServiceTest.testCreateTables,5,non-flaky,strip indent,95,64,36,5,0.3789,0.0781,False,False,5,4,0.952,0.3763,True
+RocksDbKeyValueServiceTest.testCreateTables,5,non-flaky,trailing spaces,95,100,36,41,0.3789,0.41,False,False,5,5,0.952,0.9519,False
+RocksDbKeyValueServiceTest.testCreateTables,5,non-flaky,remove blank lines,95,94,36,35,0.3789,0.3723,False,False,5,5,0.952,0.952,False
+TestKafkaSystemAdminJava.testStartpointTimestampVisitorShouldResolveToCorrectOffset,5,non-flaky,indent +4,350,430,58,138,0.1657,0.3209,False,False,5,5,0.9528,0.9515,False
+TestKafkaSystemAdminJava.testStartpointTimestampVisitorShouldResolveToCorrectOffset,5,non-flaky,strip indent,350,314,58,19,0.1657,0.0605,False,False,5,3,0.9528,0.2919,True
+TestKafkaSystemAdminJava.testStartpointTimestampVisitorShouldResolveToCorrectOffset,5,non-flaky,trailing spaces,350,374,58,82,0.1657,0.2193,False,False,5,5,0.9528,0.9518,False
+TestKafkaSystemAdminJava.testStartpointTimestampVisitorShouldResolveToCorrectOffset,5,non-flaky,remove blank lines,350,349,58,57,0.1657,0.1633,False,False,5,5,0.9528,0.9526,False
+ChineseSerializationITest.testChineseSerialization,5,non-flaky,indent +4,512,512,141,214,0.2754,0.418,True,True,5,5,0.9528,0.9515,False
+ChineseSerializationITest.testChineseSerialization,5,non-flaky,strip indent,512,512,141,37,0.2754,0.0723,True,True,5,4,0.9528,0.7493,True
+ChineseSerializationITest.testChineseSerialization,5,non-flaky,trailing spaces,512,512,141,165,0.2754,0.3223,True,True,5,5,0.9528,0.9527,False
+ChineseSerializationITest.testChineseSerialization,5,non-flaky,remove blank lines,512,512,141,142,0.2754,0.2773,True,True,5,5,0.9528,0.9529,False
+StartAndStopLatchTest.shouldReturnFalseWhenAwaitingForDependentLatchToComplete,5,non-flaky,indent +4,224,272,84,132,0.375,0.4853,False,False,5,5,0.949,0.9492,False
+StartAndStopLatchTest.shouldReturnFalseWhenAwaitingForDependentLatchToComplete,5,non-flaky,strip indent,224,155,84,12,0.375,0.0774,False,False,5,0,0.949,0.6767,True
+StartAndStopLatchTest.shouldReturnFalseWhenAwaitingForDependentLatchToComplete,5,non-flaky,trailing spaces,224,237,84,97,0.375,0.4093,False,False,5,5,0.949,0.9483,False
+StartAndStopLatchTest.shouldReturnFalseWhenAwaitingForDependentLatchToComplete,5,non-flaky,remove blank lines,224,223,84,83,0.375,0.3722,False,False,5,5,0.949,0.9487,False
+CouchbaseTemplateQueryIntegrationTests.beforeEach,5,non-flaky,indent +4,195,239,11,55,0.0564,0.2301,False,False,5,5,0.9474,0.9518,False
+CouchbaseTemplateQueryIntegrationTests.beforeEach,5,non-flaky,strip indent,195,176,11,11,0.0564,0.0625,False,False,5,4,0.9474,0.6544,True
+CouchbaseTemplateQueryIntegrationTests.beforeEach,5,non-flaky,trailing spaces,195,207,11,23,0.0564,0.1111,False,False,5,5,0.9474,0.9498,False
+CouchbaseTemplateQueryIntegrationTests.beforeEach,5,non-flaky,remove blank lines,195,194,11,10,0.0564,0.0515,False,False,5,5,0.9474,0.9476,False
+N1qlQueryCreatorTests.beforeEach,5,non-flaky,indent +4,62,81,6,25,0.0968,0.3086,False,False,5,5,0.9459,0.9516,False
+N1qlQueryCreatorTests.beforeEach,5,non-flaky,strip indent,62,52,6,5,0.0968,0.0962,False,False,5,4,0.9459,0.9159,True
+N1qlQueryCreatorTests.beforeEach,5,non-flaky,trailing spaces,62,67,6,11,0.0968,0.1642,False,False,5,5,0.9459,0.9488,False
+N1qlQueryCreatorTests.beforeEach,5,non-flaky,remove blank lines,62,61,6,5,0.0968,0.082,False,False,5,5,0.9459,0.947,False
+TextUtilsTest.testMaximalPrefix,5,non-flaky,indent +4,391,481,148,238,0.3785,0.4948,False,False,5,5,0.9525,0.9512,False
+TextUtilsTest.testMaximalPrefix,5,non-flaky,strip indent,391,265,148,22,0.3785,0.083,False,False,5,3,0.9525,0.8583,True
+TextUtilsTest.testMaximalPrefix,5,non-flaky,trailing spaces,391,416,148,173,0.3785,0.4159,False,False,5,5,0.9525,0.9519,False
+TextUtilsTest.testMaximalPrefix,5,non-flaky,remove blank lines,391,390,148,147,0.3785,0.3769,False,False,5,5,0.9525,0.9521,False
+DeployPropertyPageTest.testCorrectPanelIsShownForFacetedProject,5,non-flaky,indent +4,310,389,116,195,0.3742,0.5013,False,False,5,5,0.9522,0.9512,False
+DeployPropertyPageTest.testCorrectPanelIsShownForFacetedProject,5,non-flaky,strip indent,310,218,116,20,0.3742,0.0917,False,False,5,4,0.9522,0.8939,True
+DeployPropertyPageTest.testCorrectPanelIsShownForFacetedProject,5,non-flaky,trailing spaces,310,330,116,136,0.3742,0.4121,False,False,5,5,0.9522,0.9513,False
+DeployPropertyPageTest.testCorrectPanelIsShownForFacetedProject,5,non-flaky,remove blank lines,310,309,116,115,0.3742,0.3722,False,False,5,5,0.9522,0.9519,False
+AjpClientTestCase.run,5,non-flaky,indent +4,416,484,228,296,0.5481,0.6116,False,False,5,5,0.9503,0.9497,False
+AjpClientTestCase.run,5,non-flaky,strip indent,416,205,228,17,0.5481,0.0829,False,False,5,0,0.9503,0.9056,True
+AjpClientTestCase.run,5,non-flaky,trailing spaces,416,434,228,246,0.5481,0.5668,False,False,5,5,0.9503,0.9476,False
+AjpClientTestCase.run,5,non-flaky,remove blank lines,416,415,228,227,0.5481,0.547,False,False,5,5,0.9503,0.9501,False
+InterceptorTest.getNumberOfResultsWithQuery,5,non-flaky,indent +4,223,266,156,199,0.6996,0.7481,False,False,5,5,0.951,0.9505,False
+InterceptorTest.getNumberOfResultsWithQuery,5,non-flaky,strip indent,223,78,156,11,0.6996,0.141,False,False,5,0,0.951,0.7795,True
+InterceptorTest.getNumberOfResultsWithQuery,5,non-flaky,trailing spaces,223,234,156,167,0.6996,0.7137,False,False,5,5,0.951,0.9491,False
+InterceptorTest.getNumberOfResultsWithQuery,5,non-flaky,remove blank lines,223,222,156,155,0.6996,0.6982,False,False,5,5,0.951,0.9507,False
+EncryptionControllerTests.shouldThrowExceptionOnDecryptInvalidData,5,non-flaky,indent +4,88,107,6,25,0.0682,0.2336,False,False,5,5,0.9487,0.9516,False
+EncryptionControllerTests.shouldThrowExceptionOnDecryptInvalidData,5,non-flaky,strip indent,88,76,6,5,0.0682,0.0658,False,False,5,4,0.9487,0.9137,True
+EncryptionControllerTests.shouldThrowExceptionOnDecryptInvalidData,5,non-flaky,trailing spaces,88,93,6,11,0.0682,0.1183,False,False,5,5,0.9487,0.9506,False
+EncryptionControllerTests.shouldThrowExceptionOnDecryptInvalidData,5,non-flaky,remove blank lines,88,87,6,5,0.0682,0.0575,False,False,5,5,0.9487,0.9493,False
+RocksDbKeyValueServiceTest.testMetadata,5,non-flaky,indent +4,94,113,36,55,0.383,0.4867,False,False,5,5,0.9521,0.9517,False
+RocksDbKeyValueServiceTest.testMetadata,5,non-flaky,strip indent,94,63,36,5,0.383,0.0794,False,False,5,3,0.9521,0.3371,True
+RocksDbKeyValueServiceTest.testMetadata,5,non-flaky,trailing spaces,94,99,36,41,0.383,0.4141,False,False,5,5,0.9521,0.952,False
+RocksDbKeyValueServiceTest.testMetadata,5,non-flaky,remove blank lines,94,93,36,35,0.383,0.3763,False,False,5,5,0.9521,0.9521,False
+AbstractTransactionTest.testRangePagingBatchesReverse,5,non-flaky,indent +4,274,326,100,152,0.365,0.4663,False,False,5,5,0.9525,0.9513,False
+AbstractTransactionTest.testRangePagingBatchesReverse,5,non-flaky,strip indent,274,187,100,13,0.365,0.0695,False,False,5,4,0.9525,0.5194,True
+AbstractTransactionTest.testRangePagingBatchesReverse,5,non-flaky,trailing spaces,274,288,100,114,0.365,0.3958,False,False,5,5,0.9525,0.9515,False
+AbstractTransactionTest.testRangePagingBatchesReverse,5,non-flaky,remove blank lines,274,273,100,99,0.365,0.3626,False,False,5,5,0.9525,0.9522,False
+TokenAuthIntegTests.testExpiredTokensDeletedAfterExpiration,5,non-flaky,indent +4,512,512,235,281,0.459,0.5488,True,True,5,5,0.951,0.9505,False
+TokenAuthIntegTests.testExpiredTokensDeletedAfterExpiration,5,non-flaky,strip indent,512,512,235,36,0.459,0.0703,True,True,5,0,0.951,0.5809,True
+TokenAuthIntegTests.testExpiredTokensDeletedAfterExpiration,5,non-flaky,trailing spaces,512,512,235,258,0.459,0.5039,True,True,5,5,0.951,0.9506,False
+TokenAuthIntegTests.testExpiredTokensDeletedAfterExpiration,5,non-flaky,remove blank lines,512,512,235,235,0.459,0.459,True,True,5,5,0.951,0.9509,False
+TestViewfsWithNfs3.testNumExports,5,non-flaky,indent +4,60,75,18,33,0.3,0.44,False,False,5,5,0.9511,0.9518,False
+TestViewfsWithNfs3.testNumExports,5,non-flaky,strip indent,60,46,18,4,0.3,0.087,False,False,5,4,0.9511,0.8991,True
+TestViewfsWithNfs3.testNumExports,5,non-flaky,trailing spaces,60,64,18,22,0.3,0.3438,False,False,5,5,0.9511,0.9511,False
+TestViewfsWithNfs3.testNumExports,5,non-flaky,remove blank lines,60,59,18,17,0.3,0.2881,False,False,5,5,0.9511,0.9512,False
+SmtpRequestEncoderTest.testEncodeDataAndContent,5,non-flaky,indent +4,275,319,92,136,0.3345,0.4263,False,False,5,5,0.9517,0.9513,False
+SmtpRequestEncoderTest.testEncodeDataAndContent,5,non-flaky,strip indent,275,194,92,11,0.3345,0.0567,False,False,5,4,0.9517,0.632,True
+SmtpRequestEncoderTest.testEncodeDataAndContent,5,non-flaky,trailing spaces,275,287,92,104,0.3345,0.3624,False,False,5,5,0.9517,0.9509,False
+SmtpRequestEncoderTest.testEncodeDataAndContent,5,non-flaky,remove blank lines,275,274,92,91,0.3345,0.3321,False,False,5,5,0.9517,0.9514,False
+FileMetadataTest.testFileMetadataReadWriteAcrossFormats,5,non-flaky,indent +4,512,512,144,212,0.2812,0.4141,True,True,5,5,0.9495,0.9499,False
+FileMetadataTest.testFileMetadataReadWriteAcrossFormats,5,non-flaky,strip indent,512,512,144,35,0.2812,0.0684,True,True,5,2,0.9495,0.7767,True
+FileMetadataTest.testFileMetadataReadWriteAcrossFormats,5,non-flaky,trailing spaces,512,512,144,166,0.2812,0.3242,True,True,5,5,0.9495,0.9494,False
+FileMetadataTest.testFileMetadataReadWriteAcrossFormats,5,non-flaky,remove blank lines,512,512,144,144,0.2812,0.2812,True,True,5,5,0.9495,0.9494,False
+StringN1qlQueryCreatorTests.beforeEach,5,non-flaky,indent +4,98,121,7,30,0.0714,0.2479,False,False,5,5,0.9434,0.9511,False
+StringN1qlQueryCreatorTests.beforeEach,5,non-flaky,strip indent,98,86,7,6,0.0714,0.0698,False,False,5,4,0.9434,0.9445,True
+StringN1qlQueryCreatorTests.beforeEach,5,non-flaky,trailing spaces,98,104,7,13,0.0714,0.125,False,False,5,5,0.9434,0.9483,False
+StringN1qlQueryCreatorTests.beforeEach,5,non-flaky,remove blank lines,98,97,7,6,0.0714,0.0619,False,False,5,5,0.9434,0.9445,False
+OfflineClusterIntegrationTest.testDistinctCountHll,5,non-flaky,indent +4,512,512,101,181,0.1973,0.3535,True,True,5,5,0.9524,0.952,False
+OfflineClusterIntegrationTest.testDistinctCountHll,5,non-flaky,strip indent,512,454,101,27,0.1973,0.0595,True,False,5,3,0.9524,0.4316,True
+OfflineClusterIntegrationTest.testDistinctCountHll,5,non-flaky,trailing spaces,512,512,101,130,0.1973,0.2539,True,True,5,5,0.9524,0.9518,False
+OfflineClusterIntegrationTest.testDistinctCountHll,5,non-flaky,remove blank lines,512,512,101,101,0.1973,0.1973,True,True,5,5,0.9524,0.9521,False
+SmtpResponseDecoderTest.testDecodeTwoLineResponse,5,non-flaky,indent +4,232,289,92,149,0.3966,0.5156,False,False,5,5,0.9516,0.9507,False
+SmtpResponseDecoderTest.testDecodeTwoLineResponse,5,non-flaky,strip indent,232,154,92,14,0.3966,0.0909,False,False,5,0,0.9516,0.8851,True
+SmtpResponseDecoderTest.testDecodeTwoLineResponse,5,non-flaky,trailing spaces,232,248,92,108,0.3966,0.4355,False,False,5,5,0.9516,0.9506,False
+SmtpResponseDecoderTest.testDecodeTwoLineResponse,5,non-flaky,remove blank lines,232,231,92,91,0.3966,0.3939,False,False,5,5,0.9516,0.9512,False
+NettyRouterPipelineTest.channelRead,5,non-flaky,indent +4,399,483,184,268,0.4612,0.5549,False,False,5,5,0.9511,0.9506,False
+NettyRouterPipelineTest.channelRead,5,non-flaky,strip indent,399,242,184,21,0.4612,0.0868,False,False,5,0,0.9511,0.5958,True
+NettyRouterPipelineTest.channelRead,5,non-flaky,trailing spaces,399,421,184,206,0.4612,0.4893,False,False,5,5,0.9511,0.9489,False
+NettyRouterPipelineTest.channelRead,5,non-flaky,remove blank lines,399,398,184,183,0.4612,0.4598,False,False,5,5,0.9511,0.9506,False
+QueryTest.queryLimitOffsetQuantity,5,non-flaky,indent +4,485,512,280,348,0.5773,0.6797,False,True,5,5,0.9515,0.9504,False
+QueryTest.queryLimitOffsetQuantity,5,non-flaky,strip indent,485,232,280,26,0.5773,0.1121,False,False,5,0,0.9515,0.452,True
+QueryTest.queryLimitOffsetQuantity,5,non-flaky,trailing spaces,485,512,280,308,0.5773,0.6016,False,True,5,5,0.9515,0.9507,False
+QueryTest.queryLimitOffsetQuantity,5,non-flaky,remove blank lines,485,484,280,279,0.5773,0.5764,False,False,5,5,0.9515,0.9511,False
+TokenSequenceMatcherITest.testTokenSequenceOptimizeOrString,5,non-flaky,indent +4,512,512,28,53,0.0547,0.1035,True,True,5,5,0.9524,0.9527,False
+TokenSequenceMatcherITest.testTokenSequenceOptimizeOrString,5,non-flaky,strip indent,512,512,28,7,0.0547,0.0137,True,True,5,3,0.9524,0.6021,True
+TokenSequenceMatcherITest.testTokenSequenceOptimizeOrString,5,non-flaky,trailing spaces,512,512,28,35,0.0547,0.0684,True,True,5,5,0.9524,0.9527,False
+TokenSequenceMatcherITest.testTokenSequenceOptimizeOrString,5,non-flaky,remove blank lines,512,512,28,28,0.0547,0.0547,True,True,5,5,0.9524,0.9525,False
+CouchbaseTemplateQueryCollectionIntegrationTests.findByQueryOther,5,non-flaky,indent +4,230,281,14,65,0.0609,0.2313,False,False,5,5,0.9506,0.9511,False
+CouchbaseTemplateQueryCollectionIntegrationTests.findByQueryOther,5,non-flaky,strip indent,230,193,14,13,0.0609,0.0674,False,False,5,0,0.9506,0.5345,True
+CouchbaseTemplateQueryCollectionIntegrationTests.findByQueryOther,5,non-flaky,trailing spaces,230,243,14,27,0.0609,0.1111,False,False,5,5,0.9506,0.9508,False
+CouchbaseTemplateQueryCollectionIntegrationTests.findByQueryOther,5,non-flaky,remove blank lines,230,229,14,13,0.0609,0.0568,False,False,5,5,0.9506,0.9504,False
+WorkerSourceTaskTest.testCommitFailure,5,non-flaky,indent +4,512,512,230,298,0.4492,0.582,True,True,5,5,0.9501,0.95,False
+WorkerSourceTaskTest.testCommitFailure,5,non-flaky,strip indent,512,350,230,43,0.4492,0.1229,True,False,5,0,0.9501,0.9257,True
+WorkerSourceTaskTest.testCommitFailure,5,non-flaky,trailing spaces,512,512,230,251,0.4492,0.4902,True,True,5,5,0.9501,0.949,False
+WorkerSourceTaskTest.testCommitFailure,5,non-flaky,remove blank lines,512,512,230,230,0.4492,0.4492,True,True,5,5,0.9501,0.9498,False
+AbstractTestIntegrationSmokeTest.testJoinWithEmptySides,5,non-flaky,indent +4,284,323,72,111,0.2535,0.3437,False,False,5,5,0.9533,0.9522,False
+AbstractTestIntegrationSmokeTest.testJoinWithEmptySides,5,non-flaky,strip indent,284,222,72,10,0.2535,0.045,False,False,5,3,0.9533,0.4949,True
+AbstractTestIntegrationSmokeTest.testJoinWithEmptySides,5,non-flaky,trailing spaces,284,294,72,82,0.2535,0.2789,False,False,5,5,0.9533,0.9522,False
+AbstractTestIntegrationSmokeTest.testJoinWithEmptySides,5,non-flaky,remove blank lines,284,283,72,71,0.2535,0.2509,False,False,5,5,0.9533,0.953,False
+TestClientAccessPrivilege.testClientAccessPrivilegeForRemove,5,non-flaky,indent +4,382,504,94,216,0.2461,0.4286,False,False,5,5,0.9493,0.95,False
+TestClientAccessPrivilege.testClientAccessPrivilegeForRemove,5,non-flaky,strip indent,382,317,94,29,0.2461,0.0915,False,False,5,0,0.9493,0.897,True
+TestClientAccessPrivilege.testClientAccessPrivilegeForRemove,5,non-flaky,trailing spaces,382,418,94,130,0.2461,0.311,False,False,5,5,0.9493,0.9459,False
+TestClientAccessPrivilege.testClientAccessPrivilegeForRemove,5,non-flaky,remove blank lines,382,381,94,93,0.2461,0.2441,False,False,5,5,0.9493,0.9475,False
+DiscoveryClientConfigServiceBootstrapConfigurationTests.shouldRetryAndFailWithExceptionGetConfigServerInstanceFromDiscoveryClient,5,non-flaky,indent +4,138,183,10,55,0.0725,0.3005,False,False,5,5,0.9486,0.95,False
+DiscoveryClientConfigServiceBootstrapConfigurationTests.shouldRetryAndFailWithExceptionGetConfigServerInstanceFromDiscoveryClient,5,non-flaky,strip indent,138,115,10,11,0.0725,0.0957,False,False,5,0,0.9486,0.8679,True
+DiscoveryClientConfigServiceBootstrapConfigurationTests.shouldRetryAndFailWithExceptionGetConfigServerInstanceFromDiscoveryClient,5,non-flaky,trailing spaces,138,151,10,23,0.0725,0.1523,False,False,5,5,0.9486,0.9498,False
+DiscoveryClientConfigServiceBootstrapConfigurationTests.shouldRetryAndFailWithExceptionGetConfigServerInstanceFromDiscoveryClient,5,non-flaky,remove blank lines,138,137,10,9,0.0725,0.0657,False,False,5,5,0.9486,0.9486,False
+RowBucketIterableTest.testMultipleMissingDaysMultipleRowAtTheEnd,5,non-flaky,indent +4,512,512,113,198,0.2207,0.3867,True,True,5,5,0.9513,0.951,False
+RowBucketIterableTest.testMultipleMissingDaysMultipleRowAtTheEnd,5,non-flaky,strip indent,512,482,113,40,0.2207,0.083,True,False,5,3,0.9513,0.8254,True
+RowBucketIterableTest.testMultipleMissingDaysMultipleRowAtTheEnd,5,non-flaky,trailing spaces,512,512,113,146,0.2207,0.2852,True,True,5,5,0.9513,0.9507,False
+RowBucketIterableTest.testMultipleMissingDaysMultipleRowAtTheEnd,5,non-flaky,remove blank lines,512,512,113,113,0.2207,0.2207,True,True,5,5,0.9513,0.9512,False
+LLCRealtimeClusterIntegrationTest.testSegmentFlushSize,5,non-flaky,indent +4,182,217,46,81,0.2527,0.3733,False,False,5,5,0.953,0.952,False
+LLCRealtimeClusterIntegrationTest.testSegmentFlushSize,5,non-flaky,strip indent,182,145,46,9,0.2527,0.0621,False,False,5,4,0.953,0.696,True
+LLCRealtimeClusterIntegrationTest.testSegmentFlushSize,5,non-flaky,trailing spaces,182,191,46,55,0.2527,0.288,False,False,5,5,0.953,0.9522,False
+LLCRealtimeClusterIntegrationTest.testSegmentFlushSize,5,non-flaky,remove blank lines,182,181,46,45,0.2527,0.2486,False,False,5,5,0.953,0.953,False
+FastJsonViewTest.test5,5,non-flaky,indent +4,242,265,76,99,0.314,0.3736,False,False,5,5,0.9521,0.9511,False
+FastJsonViewTest.test5,5,non-flaky,strip indent,242,173,76,6,0.314,0.0347,False,False,5,0,0.9521,0.7646,True
+FastJsonViewTest.test5,5,non-flaky,trailing spaces,242,248,76,82,0.314,0.3306,False,False,5,5,0.9521,0.9508,False
+FastJsonViewTest.test5,5,non-flaky,remove blank lines,242,241,76,75,0.314,0.3112,False,False,5,5,0.9521,0.9515,False
+BigEndianCompositeByteBufTest.testInternalNioBufferAfterRelease,5,non-flaky,indent +4,56,67,20,31,0.3571,0.4627,False,False,5,5,0.9499,0.9508,False
+BigEndianCompositeByteBufTest.testInternalNioBufferAfterRelease,5,non-flaky,strip indent,56,39,20,3,0.3571,0.0769,False,False,5,4,0.9499,0.9468,True
+BigEndianCompositeByteBufTest.testInternalNioBufferAfterRelease,5,non-flaky,trailing spaces,56,59,20,23,0.3571,0.3898,False,False,5,5,0.9499,0.9505,False
+BigEndianCompositeByteBufTest.testInternalNioBufferAfterRelease,5,non-flaky,remove blank lines,56,55,20,19,0.3571,0.3455,False,False,5,5,0.9499,0.95,False
+JSONScannerTest.checkTime9,5,non-flaky,indent +4,512,512,123,233,0.2402,0.4551,True,True,5,5,0.9527,0.9525,False
+JSONScannerTest.checkTime9,5,non-flaky,strip indent,512,451,123,38,0.2402,0.0843,True,False,5,4,0.9527,0.4,True
+JSONScannerTest.checkTime9,5,non-flaky,trailing spaces,512,512,123,153,0.2402,0.2988,True,True,5,5,0.9527,0.9528,False
+JSONScannerTest.checkTime9,5,non-flaky,remove blank lines,512,512,123,123,0.2402,0.2402,True,True,5,5,0.9527,0.9525,False
+XmlItemTest.nameNumberTest,5,non-flaky,indent +4,39,50,20,31,0.5128,0.62,False,False,5,5,0.9509,0.951,False
+XmlItemTest.nameNumberTest,5,non-flaky,strip indent,39,22,20,3,0.5128,0.1364,False,False,5,4,0.9509,0.7757,True
+XmlItemTest.nameNumberTest,5,non-flaky,trailing spaces,39,42,20,23,0.5128,0.5476,False,False,5,5,0.9509,0.951,False
+XmlItemTest.nameNumberTest,5,non-flaky,remove blank lines,39,38,20,19,0.5128,0.5,False,False,5,5,0.9509,0.9512,False
+ConnectorClientPolicyIntegrationTest.testCreateWithAllowedOverridesForAllPolicy,5,non-flaky,indent +4,138,161,44,67,0.3188,0.4161,False,False,5,5,0.9508,0.951,False
+ConnectorClientPolicyIntegrationTest.testCreateWithAllowedOverridesForAllPolicy,5,non-flaky,strip indent,138,101,44,6,0.3188,0.0594,False,False,5,4,0.9508,0.9366,True
+ConnectorClientPolicyIntegrationTest.testCreateWithAllowedOverridesForAllPolicy,5,non-flaky,trailing spaces,138,144,44,50,0.3188,0.3472,False,False,5,5,0.9508,0.9513,False
+ConnectorClientPolicyIntegrationTest.testCreateWithAllowedOverridesForAllPolicy,5,non-flaky,remove blank lines,138,137,44,43,0.3188,0.3139,False,False,5,5,0.9508,0.951,False
+BaseDynamicPartitionPruningTest.testJoinLargeBuildSideRangeDynamicFiltering,5,non-flaky,indent +4,512,512,183,219,0.3574,0.4277,True,True,5,5,0.9518,0.9517,False
+BaseDynamicPartitionPruningTest.testJoinLargeBuildSideRangeDynamicFiltering,5,non-flaky,strip indent,512,398,183,25,0.3574,0.0628,True,False,5,0,0.9518,0.53,True
+BaseDynamicPartitionPruningTest.testJoinLargeBuildSideRangeDynamicFiltering,5,non-flaky,trailing spaces,512,512,183,192,0.3574,0.375,True,True,5,5,0.9518,0.9515,False
+BaseDynamicPartitionPruningTest.testJoinLargeBuildSideRangeDynamicFiltering,5,non-flaky,remove blank lines,512,512,183,183,0.3574,0.3574,True,True,5,5,0.9518,0.9517,False
+RowBucketIterableTest.testMultipleMissingDays,5,non-flaky,indent +4,462,512,104,211,0.2251,0.4121,False,True,5,5,0.9519,0.9507,False
+RowBucketIterableTest.testMultipleMissingDays,5,non-flaky,strip indent,462,394,104,34,0.2251,0.0863,False,False,5,3,0.9519,0.8386,True
+RowBucketIterableTest.testMultipleMissingDays,5,non-flaky,trailing spaces,462,503,104,145,0.2251,0.2883,False,False,5,5,0.9519,0.95,False
+RowBucketIterableTest.testMultipleMissingDays,5,non-flaky,remove blank lines,462,461,104,103,0.2251,0.2234,False,False,5,5,0.9519,0.9511,False
+ConfigServicePropertySourceLocatorTests.shouldThrowExceptionWhenNegativeReadTimeoutSet,5,non-flaky,indent +4,137,168,9,40,0.0657,0.2381,False,False,5,5,0.9443,0.9509,False
+ConfigServicePropertySourceLocatorTests.shouldThrowExceptionWhenNegativeReadTimeoutSet,5,non-flaky,strip indent,137,121,9,8,0.0657,0.0661,False,False,5,4,0.9443,0.9278,True
+ConfigServicePropertySourceLocatorTests.shouldThrowExceptionWhenNegativeReadTimeoutSet,5,non-flaky,trailing spaces,137,145,9,17,0.0657,0.1172,False,False,5,5,0.9443,0.9493,False
+ConfigServicePropertySourceLocatorTests.shouldThrowExceptionWhenNegativeReadTimeoutSet,5,non-flaky,remove blank lines,137,136,9,8,0.0657,0.0588,False,False,5,5,0.9443,0.9453,False
+TestRpcProgramNfs3.testRemove,5,non-flaky,indent +4,387,476,98,187,0.2532,0.3929,False,False,5,5,0.9492,0.95,False
+TestRpcProgramNfs3.testRemove,5,non-flaky,strip indent,387,311,98,22,0.2532,0.0707,False,False,5,0,0.9492,0.8506,True
+TestRpcProgramNfs3.testRemove,5,non-flaky,trailing spaces,387,411,98,122,0.2532,0.2968,False,False,5,5,0.9492,0.947,False
+TestRpcProgramNfs3.testRemove,5,non-flaky,remove blank lines,387,386,98,97,0.2532,0.2513,False,False,5,5,0.9492,0.9481,False
+EmptyByteBufTest.testIsReadable,5,non-flaky,indent +4,94,113,36,55,0.383,0.4867,False,False,5,5,0.9514,0.9515,False
+EmptyByteBufTest.testIsReadable,5,non-flaky,strip indent,94,63,36,5,0.383,0.0794,False,False,5,4,0.9514,0.9143,True
+EmptyByteBufTest.testIsReadable,5,non-flaky,trailing spaces,94,99,36,41,0.383,0.4141,False,False,5,5,0.9514,0.9517,False
+EmptyByteBufTest.testIsReadable,5,non-flaky,remove blank lines,94,93,36,35,0.383,0.3763,False,False,5,5,0.9514,0.9516,False
+BaseConnectorTest.testExplainAnalyzeVerbose,5,non-flaky,indent +4,153,176,40,63,0.2614,0.358,False,False,5,5,0.9524,0.9522,False
+BaseConnectorTest.testExplainAnalyzeVerbose,5,non-flaky,strip indent,153,119,40,6,0.2614,0.0504,False,False,5,4,0.9524,0.6216,True
+BaseConnectorTest.testExplainAnalyzeVerbose,5,non-flaky,trailing spaces,153,159,40,46,0.2614,0.2893,False,False,5,5,0.9524,0.9522,False
+BaseConnectorTest.testExplainAnalyzeVerbose,5,non-flaky,remove blank lines,153,152,40,39,0.2614,0.2566,False,False,5,5,0.9524,0.9524,False
+ConfigServicePropertySourceLocatorTests.sunnyDayWithLabelThatContainsASlash,5,non-flaky,indent +4,155,190,10,45,0.0645,0.2368,False,False,5,5,0.9494,0.9516,False
+ConfigServicePropertySourceLocatorTests.sunnyDayWithLabelThatContainsASlash,5,non-flaky,strip indent,155,133,10,9,0.0645,0.0677,False,False,5,4,0.9494,0.8186,True
+ConfigServicePropertySourceLocatorTests.sunnyDayWithLabelThatContainsASlash,5,non-flaky,trailing spaces,155,164,10,19,0.0645,0.1159,False,False,5,5,0.9494,0.9502,False
+ConfigServicePropertySourceLocatorTests.sunnyDayWithLabelThatContainsASlash,5,non-flaky,remove blank lines,155,154,10,9,0.0645,0.0584,False,False,5,5,0.9494,0.9496,False
+DownsampleIteratorTest.simpleGetOneSample,5,non-flaky,indent +4,378,449,192,263,0.5079,0.5857,False,False,5,5,0.9508,0.9506,False
+DownsampleIteratorTest.simpleGetOneSample,5,non-flaky,strip indent,378,204,192,18,0.5079,0.0882,False,False,5,3,0.9508,0.6717,True
+DownsampleIteratorTest.simpleGetOneSample,5,non-flaky,trailing spaces,378,396,192,210,0.5079,0.5303,False,False,5,5,0.9508,0.9506,False
+DownsampleIteratorTest.simpleGetOneSample,5,non-flaky,remove blank lines,378,377,192,191,0.5079,0.5066,False,False,5,5,0.9508,0.9505,False
+PetApiTest.getPetByIdTest,5,non-flaky,indent +4,108,139,62,93,0.5741,0.6691,False,False,5,5,0.9522,0.9514,False
+PetApiTest.getPetByIdTest,5,non-flaky,strip indent,108,53,62,7,0.5741,0.1321,False,False,5,5,0.9522,0.6443,False
+PetApiTest.getPetByIdTest,5,non-flaky,trailing spaces,108,116,62,70,0.5741,0.6034,False,False,5,5,0.9522,0.9507,False
+PetApiTest.getPetByIdTest,5,non-flaky,remove blank lines,108,89,62,43,0.5741,0.4831,False,False,5,5,0.9522,0.9522,False
+CookiesTestCase.testRequestCookieDomainPathVersion,5,non-flaky,indent +4,332,393,108,169,0.3253,0.43,False,False,5,5,0.9528,0.952,False
+CookiesTestCase.testRequestCookieDomainPathVersion,5,non-flaky,strip indent,332,240,108,15,0.3253,0.0625,False,False,5,3,0.9528,0.8511,True
+CookiesTestCase.testRequestCookieDomainPathVersion,5,non-flaky,trailing spaces,332,349,108,125,0.3253,0.3582,False,False,5,5,0.9528,0.9518,False
+CookiesTestCase.testRequestCookieDomainPathVersion,5,non-flaky,remove blank lines,332,331,108,107,0.3253,0.3233,False,False,5,5,0.9528,0.9526,False
+BucketNameValidatorTest.testValidation_startWithDot,5,non-flaky,indent +4,52,63,10,21,0.1923,0.3333,False,False,5,5,0.9448,0.9496,False
+BucketNameValidatorTest.testValidation_startWithDot,5,non-flaky,strip indent,52,45,10,3,0.1923,0.0667,False,False,5,4,0.9448,0.9456,True
+BucketNameValidatorTest.testValidation_startWithDot,5,non-flaky,trailing spaces,52,55,10,13,0.1923,0.2364,False,False,5,5,0.9448,0.9475,False
+BucketNameValidatorTest.testValidation_startWithDot,5,non-flaky,remove blank lines,52,51,10,9,0.1923,0.1765,False,False,5,5,0.9448,0.9443,False
+BaseConnectorTest.testShowCreateInformationSchema,5,non-flaky,indent +4,126,149,56,79,0.4444,0.5302,False,False,5,5,0.9522,0.952,False
+BaseConnectorTest.testShowCreateInformationSchema,5,non-flaky,strip indent,126,76,56,6,0.4444,0.0789,False,False,5,4,0.9522,0.9286,True
+BaseConnectorTest.testShowCreateInformationSchema,5,non-flaky,trailing spaces,126,132,56,62,0.4444,0.4697,False,False,5,5,0.9522,0.9523,False
+BaseConnectorTest.testShowCreateInformationSchema,5,non-flaky,remove blank lines,126,125,56,55,0.4444,0.44,False,False,5,5,0.9522,0.9521,False
+RocksDbKeyValueServiceTest.testCreate,5,non-flaky,indent +4,192,223,68,99,0.3542,0.4439,False,False,5,5,0.9526,0.9522,False
+RocksDbKeyValueServiceTest.testCreate,5,non-flaky,strip indent,192,132,68,8,0.3542,0.0606,False,False,5,4,0.9526,0.8403,True
+RocksDbKeyValueServiceTest.testCreate,5,non-flaky,trailing spaces,192,200,68,76,0.3542,0.38,False,False,5,5,0.9526,0.952,False
+RocksDbKeyValueServiceTest.testCreate,5,non-flaky,remove blank lines,192,191,68,67,0.3542,0.3508,False,False,5,5,0.9526,0.9525,False
+JsonWalkTest.testWalkWithDifferentListeners,5,non-flaky,indent +4,512,512,289,304,0.5645,0.5938,True,True,5,5,0.9517,0.9514,False
+JsonWalkTest.testWalkWithDifferentListeners,5,non-flaky,strip indent,512,512,289,126,0.5645,0.2461,True,True,5,4,0.9517,0.4184,True
+JsonWalkTest.testWalkWithDifferentListeners,5,non-flaky,trailing spaces,512,512,289,298,0.5645,0.582,True,True,5,5,0.9517,0.9513,False
+JsonWalkTest.testWalkWithDifferentListeners,5,non-flaky,remove blank lines,512,512,289,289,0.5645,0.5645,True,True,5,5,0.9517,0.9517,False
+ReactiveCouchbaseRepositoryQueryCollectionIntegrationTests.testScopeCollectionAnnotation,5,non-flaky,indent +4,380,463,22,105,0.0579,0.2268,False,False,5,5,0.9506,0.952,False
+ReactiveCouchbaseRepositoryQueryCollectionIntegrationTests.testScopeCollectionAnnotation,5,non-flaky,strip indent,380,275,22,21,0.0579,0.0764,False,False,5,4,0.9506,0.7162,True
+ReactiveCouchbaseRepositoryQueryCollectionIntegrationTests.testScopeCollectionAnnotation,5,non-flaky,trailing spaces,380,401,22,43,0.0579,0.1072,False,False,5,5,0.9506,0.9512,False
+ReactiveCouchbaseRepositoryQueryCollectionIntegrationTests.testScopeCollectionAnnotation,5,non-flaky,remove blank lines,380,379,22,21,0.0579,0.0554,False,False,5,5,0.9506,0.9504,False
+MaterializedViewSupervisorSpecTest.testSuspendResuume,5,non-flaky,indent +4,512,512,375,384,0.7324,0.75,True,True,5,5,0.9503,0.9505,False
+MaterializedViewSupervisorSpecTest.testSuspendResuume,5,non-flaky,strip indent,512,512,375,241,0.7324,0.4707,True,True,5,3,0.9503,0.4724,True
+MaterializedViewSupervisorSpecTest.testSuspendResuume,5,non-flaky,trailing spaces,512,512,375,383,0.7324,0.748,True,True,5,5,0.9503,0.9504,False
+MaterializedViewSupervisorSpecTest.testSuspendResuume,5,non-flaky,remove blank lines,512,512,375,375,0.7324,0.7324,True,True,5,5,0.9503,0.9503,False
+TokenSequenceMatcherITest.testTokenSequenceMatcherBeginEnd,5,non-flaky,indent +4,460,512,126,244,0.2739,0.4766,False,True,5,5,0.9527,0.9515,False
+TokenSequenceMatcherITest.testTokenSequenceMatcherBeginEnd,5,non-flaky,strip indent,460,378,126,43,0.2739,0.1138,False,False,5,4,0.9527,0.4808,True
+TokenSequenceMatcherITest.testTokenSequenceMatcherBeginEnd,5,non-flaky,trailing spaces,460,512,126,179,0.2739,0.3496,False,True,5,5,0.9527,0.9508,False
+TokenSequenceMatcherITest.testTokenSequenceMatcherBeginEnd,5,non-flaky,remove blank lines,460,459,126,125,0.2739,0.2723,False,False,5,5,0.9527,0.9523,False
+UpsertTableSegmentUploadIntegrationTest.testSegmentAssignment,5,non-flaky,indent +4,170,213,44,87,0.2588,0.4085,False,False,5,5,0.9511,0.9517,False
+UpsertTableSegmentUploadIntegrationTest.testSegmentAssignment,5,non-flaky,strip indent,170,141,44,11,0.2588,0.078,False,False,5,4,0.9511,0.9022,True
+UpsertTableSegmentUploadIntegrationTest.testSegmentAssignment,5,non-flaky,trailing spaces,170,181,44,55,0.2588,0.3039,False,False,5,5,0.9511,0.9505,False
+UpsertTableSegmentUploadIntegrationTest.testSegmentAssignment,5,non-flaky,remove blank lines,170,169,44,43,0.2588,0.2544,False,False,5,5,0.9511,0.9511,False
+AsyncStreamingInputPlusTest.consumeUntil_SingleBuffer_AllBytes_HappyPath,5,non-flaky,indent +4,61,76,24,39,0.3934,0.5132,False,False,5,5,0.9497,0.9506,False
+AsyncStreamingInputPlusTest.consumeUntil_SingleBuffer_AllBytes_HappyPath,5,non-flaky,strip indent,61,42,24,4,0.3934,0.0952,False,False,5,4,0.9497,0.9507,True
+AsyncStreamingInputPlusTest.consumeUntil_SingleBuffer_AllBytes_HappyPath,5,non-flaky,trailing spaces,61,65,24,28,0.3934,0.4308,False,False,5,5,0.9497,0.9506,False
+AsyncStreamingInputPlusTest.consumeUntil_SingleBuffer_AllBytes_HappyPath,5,non-flaky,remove blank lines,61,60,24,23,0.3934,0.3833,False,False,5,5,0.9497,0.9497,False
+TokenSequenceMatcherITest.testTokenSequenceMatcher8,5,non-flaky,indent +4,444,512,104,206,0.2342,0.4023,False,True,5,5,0.9525,0.9516,False
+TokenSequenceMatcherITest.testTokenSequenceMatcher8,5,non-flaky,strip indent,444,376,104,35,0.2342,0.0931,False,False,5,3,0.9525,0.6145,True
+TokenSequenceMatcherITest.testTokenSequenceMatcher8,5,non-flaky,trailing spaces,444,484,104,144,0.2342,0.2975,False,False,5,5,0.9525,0.9511,False
+TokenSequenceMatcherITest.testTokenSequenceMatcher8,5,non-flaky,remove blank lines,444,443,104,103,0.2342,0.2325,False,False,5,5,0.9525,0.9521,False
+UpdateByQueryBasicTests.testBasics,5,non-flaky,indent +4,512,512,140,198,0.2734,0.3867,True,True,5,5,0.9501,0.9489,False
+UpdateByQueryBasicTests.testBasics,5,non-flaky,strip indent,512,512,140,23,0.2734,0.0449,True,True,5,4,0.9501,0.3559,True
+UpdateByQueryBasicTests.testBasics,5,non-flaky,trailing spaces,512,512,140,159,0.2734,0.3105,True,True,5,5,0.9501,0.9502,False
+UpdateByQueryBasicTests.testBasics,5,non-flaky,remove blank lines,512,512,140,140,0.2734,0.2734,True,True,5,5,0.9501,0.9501,False
+LongRunningProcessPingTaskTest.testCallProcessNotFound,5,non-flaky,indent +4,177,232,68,123,0.3842,0.5302,False,False,5,5,0.9521,0.9508,False
+LongRunningProcessPingTaskTest.testCallProcessNotFound,5,non-flaky,strip indent,177,122,68,13,0.3842,0.1066,False,False,5,0,0.9521,0.6352,True
+LongRunningProcessPingTaskTest.testCallProcessNotFound,5,non-flaky,trailing spaces,177,194,68,85,0.3842,0.4381,False,False,5,5,0.9521,0.9506,False
+LongRunningProcessPingTaskTest.testCallProcessNotFound,5,non-flaky,remove blank lines,177,176,68,67,0.3842,0.3807,False,False,5,5,0.9521,0.9517,False
+TimeSeriesGroupingIteratorTest.testManySparseTimeSeries,5,non-flaky,indent +4,512,512,207,253,0.4043,0.4941,True,True,5,5,0.9495,0.9494,False
+TimeSeriesGroupingIteratorTest.testManySparseTimeSeries,5,non-flaky,strip indent,512,512,207,28,0.4043,0.0547,True,True,5,2,0.9495,0.7339,True
+TimeSeriesGroupingIteratorTest.testManySparseTimeSeries,5,non-flaky,trailing spaces,512,512,207,214,0.4043,0.418,True,True,5,5,0.9495,0.9495,False
+TimeSeriesGroupingIteratorTest.testManySparseTimeSeries,5,non-flaky,remove blank lines,512,512,207,207,0.4043,0.4043,True,True,5,5,0.9495,0.9495,False
+RepositoryIntegrationTests.returnsParticularRevisionForAnEntity,5,non-flaky,indent +4,301,421,20,140,0.0664,0.3325,False,False,5,5,0.952,0.9515,False
+RepositoryIntegrationTests.returnsParticularRevisionForAnEntity,5,non-flaky,strip indent,301,270,20,28,0.0664,0.1037,False,False,5,3,0.952,0.7972,True
+RepositoryIntegrationTests.returnsParticularRevisionForAnEntity,5,non-flaky,trailing spaces,301,338,20,57,0.0664,0.1686,False,False,5,5,0.952,0.9517,False
+RepositoryIntegrationTests.returnsParticularRevisionForAnEntity,5,non-flaky,remove blank lines,301,300,20,19,0.0664,0.0633,False,False,5,5,0.952,0.9519,False
+RobinHoodBackwardShiftHashMapTest.testClearAllWithControlMap,5,non-flaky,indent +4,69,89,28,48,0.4058,0.5393,False,False,5,5,0.9508,0.9512,False
+RobinHoodBackwardShiftHashMapTest.testClearAllWithControlMap,5,non-flaky,strip indent,69,46,28,5,0.4058,0.1087,False,False,5,4,0.9508,0.9069,True
+RobinHoodBackwardShiftHashMapTest.testClearAllWithControlMap,5,non-flaky,trailing spaces,69,75,28,34,0.4058,0.4533,False,False,5,5,0.9508,0.9497,False
+RobinHoodBackwardShiftHashMapTest.testClearAllWithControlMap,5,non-flaky,remove blank lines,69,68,28,27,0.4058,0.3971,False,False,5,5,0.9508,0.951,False
+CouchbaseRepositoryQueryCollectionIntegrationTests.afterEach,5,non-flaky,indent +4,52,75,7,30,0.1346,0.4,False,False,5,5,0.9485,0.9516,False
+CouchbaseRepositoryQueryCollectionIntegrationTests.afterEach,5,non-flaky,strip indent,52,40,7,6,0.1346,0.15,False,False,5,4,0.9485,0.503,True
+CouchbaseRepositoryQueryCollectionIntegrationTests.afterEach,5,non-flaky,trailing spaces,52,58,7,13,0.1346,0.2241,False,False,5,5,0.9485,0.9498,False
+CouchbaseRepositoryQueryCollectionIntegrationTests.afterEach,5,non-flaky,remove blank lines,52,51,7,6,0.1346,0.1176,False,False,5,5,0.9485,0.9487,False
+RocksDbKeyValueServiceTest.testReadBeforeTime,5,non-flaky,indent +4,138,161,44,67,0.3188,0.4161,False,False,5,5,0.952,0.9514,False
+RocksDbKeyValueServiceTest.testReadBeforeTime,5,non-flaky,strip indent,138,100,44,6,0.3188,0.06,False,False,5,4,0.952,0.629,True
+RocksDbKeyValueServiceTest.testReadBeforeTime,5,non-flaky,trailing spaces,138,144,44,50,0.3188,0.3472,False,False,5,5,0.952,0.9516,False
+RocksDbKeyValueServiceTest.testReadBeforeTime,5,non-flaky,remove blank lines,138,137,44,43,0.3188,0.3139,False,False,5,5,0.952,0.9519,False
+OpenUriSelectionListenerTest.testWidgetSelected_MalformedURL,5,non-flaky,indent +4,118,146,22,50,0.1864,0.3425,False,False,5,5,0.9446,0.9506,False
+OpenUriSelectionListenerTest.testWidgetSelected_MalformedURL,5,non-flaky,strip indent,118,105,22,7,0.1864,0.0667,False,False,5,4,0.9446,0.9348,True
+OpenUriSelectionListenerTest.testWidgetSelected_MalformedURL,5,non-flaky,trailing spaces,118,126,22,30,0.1864,0.2381,False,False,5,5,0.9446,0.9476,False
+OpenUriSelectionListenerTest.testWidgetSelected_MalformedURL,5,non-flaky,remove blank lines,118,117,22,21,0.1864,0.1795,False,False,5,5,0.9446,0.9449,False
+AbstractTestIntegrationSmokeTest.testShowCreateTable,5,non-flaky,indent +4,489,512,314,341,0.6421,0.666,False,True,5,5,0.9522,0.9523,False
+AbstractTestIntegrationSmokeTest.testShowCreateTable,5,non-flaky,strip indent,489,208,314,34,0.6421,0.1635,False,False,5,3,0.9522,0.8143,True
+AbstractTestIntegrationSmokeTest.testShowCreateTable,5,non-flaky,trailing spaces,489,505,314,330,0.6421,0.6535,False,False,5,5,0.9522,0.952,False
+AbstractTestIntegrationSmokeTest.testShowCreateTable,5,non-flaky,remove blank lines,489,488,314,313,0.6421,0.6414,False,False,5,5,0.9522,0.952,False

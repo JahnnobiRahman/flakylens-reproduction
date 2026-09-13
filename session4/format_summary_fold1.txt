@@ -1,0 +1,76 @@
+rows: 4488   flaky rows: 1188   non-flaky rows: 3300
+variants differing by more than whitespace: 0
+
+==========================================================================
+FLIP RATE BY TRANSFORMATION
+==========================================================================
+transformation             flaky flipped     non-flaky flipped
+indent +2                  107 / 108               0 / 300    
+indent +4                  107 / 108               0 / 300    
+indent +8                  107 / 108               0 / 300    
+spaces to tabs             107 / 108               0 / 300    
+tabs to spaces               0 / 108               0 / 300    
+strip indent                10 / 108             298 / 300    
+add blank lines              9 / 108               0 / 300    
+remove blank lines           0 / 108               0 / 300    
+trailing newline             3 / 108               0 / 300    
+trailing spaces             49 / 108               0 / 300    
+CRLF endings                 6 / 108               0 / 300    
+
+==========================================================================
+FLAKY ACCURACY BEFORE AND AFTER
+==========================================================================
+transformation          correct before   correct after
+indent +2                           57               0
+indent +4                           57               0
+indent +8                           57               0
+spaces to tabs                      57               0
+tabs to spaces                      57              57
+strip indent                        57              57
+add blank lines                     57              55
+remove blank lines                  57              57
+trailing newline                    57              58
+trailing spaces                     57              24
+CRLF endings                        57              58
+
+==========================================================================
+CONFIDENCE AND TOKEN SHIFT (flaky only)
+==========================================================================
+transformation           mean conf delta   mean token delta
+indent +2                         0.1397               17.2
+indent +4                         0.1552               33.0
+indent +8                         0.1454               59.1
+spaces to tabs                    0.1502              -25.4
+tabs to spaces                    0.0000                0.0
+strip indent                     -0.0061              -40.3
+add blank lines                  -0.0141                1.4
+remove blank lines                0.0000                0.0
+trailing newline                  0.0018                0.7
+trailing spaces                  -0.0733               10.2
+CRLF endings                      0.0005                9.5
+
+==========================================================================
+WHERE FLIPPED FLAKY TESTS END UP  (5 = non-flaky)
+==========================================================================
+indent +2             {5: 107}
+indent +4             {5: 107}
+indent +8             {5: 107}
+spaces to tabs        {5: 107}
+tabs to spaces        no flips
+strip indent          {0: 2, 3: 1, 4: 7}
+add blank lines       {0: 2, 3: 1, 5: 6}
+remove blank lines    no flips
+trailing newline      {3: 1, 4: 2}
+trailing spaces       {0: 8, 5: 41}
+CRLF endings          {0: 5, 5: 1}
+
+==========================================================================
+FLIPS BY CATEGORY (flaky)
+==========================================================================
+transform              CRLF endings  add blank lines  indent +2  indent +4  indent +8  remove blank lines  spaces to tabs  strip indent  tabs to spaces  trailing newline  trailing spaces
+true_label                                                                                                                                                                                
+async wait                        3                2         35         35         35                   0              35             2               0                 0               12
+concurrency                       2                4         20         20         20                   0              20             2               0                 0                5
+test order dependency             0                1         27         27         27                   0              27             3               0                 1               13
+time                              0                0          9          9          9                   0               9             0               0                 0                5
+unordered collections             1                2         16         16         16                   0              16             3               0                 2               14
